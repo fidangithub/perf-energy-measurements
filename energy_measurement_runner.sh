@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Number of perf repetitions
-PERF_REPEATS=10
+PERF_REPEATS=1
 
 # Valid scripts (original and optimized)
 SCRIPTS=(
@@ -146,7 +146,7 @@ for script_file in "${SCRIPTS[@]}"; do
     fi
 
     echo "Waiting 5 minutes before the next script..." | tee -a "$LOG_FILE"
-    sleep 300
+    # sleep 300
 done
 
 echo "All measurements complete!" | tee -a "$LOG_FILE"

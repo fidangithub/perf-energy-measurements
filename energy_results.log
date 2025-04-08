@@ -1,0 +1,737 @@
+Energy Measurement Results - Tue Apr  8 10:58:59 AM +04 2025
+-------------------------------------
+======================================
+Measuring: mergearrays.js
+--------------------------------------
+Running [mergearrays.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.43 Joules power/energy-pkg/                                                     
+
+       0.099258722 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: mergearrays_opt.js
+--------------------------------------
+Running [mergearrays_opt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.43 Joules power/energy-pkg/                                                     
+
+       0.100515969 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: mergearrays.py
+--------------------------------------
+Running [mergearrays.py] (Python) with perf -r 1...
+  File "/home/fidan/perf-energy-measurements/mergearrays.py", line 4
+    mergeArrays([1,2,3,4], [5,6,7,8])
+                                     ^
+IndentationError: unindent does not match any outer indentation level
+
+ Performance counter stats for 'system wide':
+
+              0.67 Joules power/energy-pkg/                                                     
+
+       0.155580589 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: mergearrays_opt.py
+--------------------------------------
+Running [mergearrays_opt.py] (Python) with perf -r 1...
+  File "/home/fidan/perf-energy-measurements/mergearrays_opt.py", line 6
+    mergeArrays([1,2,3,4], [5,6,7,8])
+                                     ^
+IndentationError: unindent does not match any outer indentation level
+
+ Performance counter stats for 'system wide':
+
+              0.60 Joules power/energy-pkg/                                                     
+
+       0.132552164 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+Rust compilation failed for perf-energy-measurements/mergearrays.rs
+Rust compilation failed for perf-energy-measurements/mergearrays_opt.rs
+======================================
+Measuring: mergearrays_gpt.js
+--------------------------------------
+Running [mergearrays_gpt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.43 Joules power/energy-pkg/                                                     
+
+       0.101702927 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: mergearrays_gpt_opt.js
+--------------------------------------
+Running [mergearrays_gpt_opt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.48 Joules power/energy-pkg/                                                     
+
+       0.109011784 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: mergearrays_gpt.py
+--------------------------------------
+Running [mergearrays_gpt.py] (Python) with perf -r 1...
+  File "/home/fidan/perf-energy-measurements/mergearrays_gpt.py", line 6
+    mergeArrays([1,2,3,4], [5,6,7,8])
+                                     ^
+IndentationError: unindent does not match any outer indentation level
+
+ Performance counter stats for 'system wide':
+
+              0.63 Joules power/energy-pkg/                                                     
+
+       0.137069329 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: mergearrays_llama.js
+--------------------------------------
+Running [mergearrays_llama.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.46 Joules power/energy-pkg/                                                     
+
+       0.108680674 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: mergearrays_llama_opt.js
+--------------------------------------
+Running [mergearrays_llama_opt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.50 Joules power/energy-pkg/                                                     
+
+       0.112216962 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: mergearrays_llama.py
+--------------------------------------
+Running [mergearrays_llama.py] (Python) with perf -r 1...
+  File "/home/fidan/perf-energy-measurements/mergearrays_llama.py", line 12
+    mergeArrays([1,2,3,4], [5,6,7,8])
+                                     ^
+IndentationError: unindent does not match any outer indentation level
+
+ Performance counter stats for 'system wide':
+
+              0.60 Joules power/energy-pkg/                                                     
+
+       0.132668171 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: mergearrays_llama_opt.py
+--------------------------------------
+Running [mergearrays_llama_opt.py] (Python) with perf -r 1...
+  File "/home/fidan/perf-energy-measurements/mergearrays_llama_opt.py", line 4
+    mergeArrays([1,2,3,4], [5,6,7,8])
+                                     ^
+IndentationError: unindent does not match any outer indentation level
+
+ Performance counter stats for 'system wide':
+
+              0.62 Joules power/energy-pkg/                                                     
+
+       0.135433396 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: mergearrays_qwen.js
+--------------------------------------
+Running [mergearrays_qwen.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.45 Joules power/energy-pkg/                                                     
+
+       0.106087266 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: mergearrays_qwen.py
+--------------------------------------
+Running [mergearrays_qwen.py] (Python) with perf -r 1...
+  File "/home/fidan/perf-energy-measurements/mergearrays_qwen.py", line 40
+    mergeArrays([1,2,3,4], [5,6,7,8])
+                                     ^
+IndentationError: unindent does not match any outer indentation level
+
+ Performance counter stats for 'system wide':
+
+              0.62 Joules power/energy-pkg/                                                     
+
+       0.136154001 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: queuetime.js
+--------------------------------------
+Running [queuetime.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.45 Joules power/energy-pkg/                                                     
+
+       0.101095725 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: queuetime_opt.js
+--------------------------------------
+Running [queuetime_opt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.47 Joules power/energy-pkg/                                                     
+
+       0.107946394 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: queuetime.py
+--------------------------------------
+Running [queuetime.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.07 Joules power/energy-pkg/                                                     
+
+       0.019723792 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+Rust compilation failed for perf-energy-measurements/queuetime.rs
+Rust compilation failed for perf-energy-measurements/queuetime_opt.rs
+======================================
+Measuring: queuetime_gpt.js
+--------------------------------------
+Running [queuetime_gpt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.44 Joules power/energy-pkg/                                                     
+
+       0.105039564 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: queuetime_gpt_opt.js
+--------------------------------------
+Running [queuetime_gpt_opt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.47 Joules power/energy-pkg/                                                     
+
+       0.106093969 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: queuetime_gpt.py
+--------------------------------------
+Running [queuetime_gpt.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.07 Joules power/energy-pkg/                                                     
+
+       0.019791186 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: queuetime_gpt_opt.py
+--------------------------------------
+Running [queuetime_gpt_opt.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.09 Joules power/energy-pkg/                                                     
+
+       0.021520205 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: queuetime_llama.js
+--------------------------------------
+Running [queuetime_llama.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.46 Joules power/energy-pkg/                                                     
+
+       0.103472628 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: queuetime_llama_opt.js
+--------------------------------------
+Running [queuetime_llama_opt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.49 Joules power/energy-pkg/                                                     
+
+       0.112313031 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: queuetime_llama.py
+--------------------------------------
+Running [queuetime_llama.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.08 Joules power/energy-pkg/                                                     
+
+       0.019663078 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: queuetime_llama_opt.py
+--------------------------------------
+Running [queuetime_llama_opt.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.07 Joules power/energy-pkg/                                                     
+
+       0.021354309 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: queuetime_qwen.js
+--------------------------------------
+Running [queuetime_qwen.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.44 Joules power/energy-pkg/                                                     
+
+       0.103051913 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: queuetime_qwen.py
+--------------------------------------
+Running [queuetime_qwen.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.09 Joules power/energy-pkg/                                                     
+
+       0.018366776 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: queuetime_qwen_opt.py
+--------------------------------------
+Running [queuetime_qwen_opt.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.08 Joules power/energy-pkg/                                                     
+
+       0.020330392 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: sjf.js
+--------------------------------------
+Running [sjf.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.43 Joules power/energy-pkg/                                                     
+
+       0.101480243 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: sjf_opt.js
+--------------------------------------
+Running [sjf_opt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.49 Joules power/energy-pkg/                                                     
+
+       0.111546902 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: sjf.py
+--------------------------------------
+Running [sjf.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.09 Joules power/energy-pkg/                                                     
+
+       0.020614830 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: sjf_opt.py
+--------------------------------------
+Running [sjf_opt.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.07 Joules power/energy-pkg/                                                     
+
+       0.017474283 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+Rust compilation failed for perf-energy-measurements/sjf.rs
+Rust compilation failed for perf-energy-measurements/sjf_opt.rs
+======================================
+Measuring: sjf_gpt.js
+--------------------------------------
+Running [sjf_gpt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.46 Joules power/energy-pkg/                                                     
+
+       0.108473560 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: sjf_gpt_opt.js
+--------------------------------------
+Running [sjf_gpt_opt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.49 Joules power/energy-pkg/                                                     
+
+       0.114323119 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: sjf_gpt.py
+--------------------------------------
+Running [sjf_gpt.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.09 Joules power/energy-pkg/                                                     
+
+       0.023701278 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: sjf_llama.js
+--------------------------------------
+Running [sjf_llama.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.43 Joules power/energy-pkg/                                                     
+
+       0.099395956 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: sjf_llama_opt.js
+--------------------------------------
+Running [sjf_llama_opt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.45 Joules power/energy-pkg/                                                     
+
+       0.107228699 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: sjf_llama.py
+--------------------------------------
+Running [sjf_llama.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.08 Joules power/energy-pkg/                                                     
+
+       0.018782684 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: sjf_llama_opt.py
+--------------------------------------
+Running [sjf_llama_opt.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.08 Joules power/energy-pkg/                                                     
+
+       0.018983256 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: sjf_qwen.js
+--------------------------------------
+Running [sjf_qwen.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.48 Joules power/energy-pkg/                                                     
+
+       0.112527382 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: sjf_qwen_opt.js
+--------------------------------------
+Running [sjf_qwen_opt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.46 Joules power/energy-pkg/                                                     
+
+       0.103128608 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: sjf_qwen.py
+--------------------------------------
+Running [sjf_qwen.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.07 Joules power/energy-pkg/                                                     
+
+       0.019077354 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+Rust compilation failed for perf-energy-measurements/sjf_qwen.rs
+Rust compilation failed for perf-energy-measurements/sjf_qwen_opt.rs
+======================================
+Measuring: treebylevels.js
+--------------------------------------
+Running [treebylevels.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.47 Joules power/energy-pkg/                                                     
+
+       0.109868788 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: treebylevels_opt.js
+--------------------------------------
+Running [treebylevels_opt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.46 Joules power/energy-pkg/                                                     
+
+       0.105857285 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: treebylevels.py
+--------------------------------------
+Running [treebylevels.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.10 Joules power/energy-pkg/                                                     
+
+       0.021921767 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: treebylevels_opt.py
+--------------------------------------
+Running [treebylevels_opt.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.09 Joules power/energy-pkg/                                                     
+
+       0.022358522 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+Rust compilation failed for perf-energy-measurements/treebylevels.rs
+Rust compilation failed for perf-energy-measurements/treebylevels_opt.rs
+======================================
+Measuring: treebylevels_gpt.js
+--------------------------------------
+Running [treebylevels_gpt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.46 Joules power/energy-pkg/                                                     
+
+       0.104032555 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: treebylevels_gpt_opt.js
+--------------------------------------
+Running [treebylevels_gpt_opt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.47 Joules power/energy-pkg/                                                     
+
+       0.110925762 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: treebylevels_gpt.py
+--------------------------------------
+Running [treebylevels_gpt.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.08 Joules power/energy-pkg/                                                     
+
+       0.020885193 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: treebylevels_gpt_opt.py
+--------------------------------------
+Running [treebylevels_gpt_opt.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.09 Joules power/energy-pkg/                                                     
+
+       0.024135498 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: treebylevels_llama.js
+--------------------------------------
+Running [treebylevels_llama.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.45 Joules power/energy-pkg/                                                     
+
+       0.107755478 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: treebylevels_llama_opt.js
+--------------------------------------
+Running [treebylevels_llama_opt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.46 Joules power/energy-pkg/                                                     
+
+       0.106110454 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: treebylevels_llama.py
+--------------------------------------
+Running [treebylevels_llama.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.10 Joules power/energy-pkg/                                                     
+
+       0.022809420 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: treebylevels_llama_opt.py
+--------------------------------------
+Running [treebylevels_llama_opt.py] (Python) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.08 Joules power/energy-pkg/                                                     
+
+       0.021992136 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: treebylevels_qwen.js
+--------------------------------------
+Running [treebylevels_qwen.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.45 Joules power/energy-pkg/                                                     
+
+       0.104988234 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: treebylevels_qwen_opt.js
+--------------------------------------
+Running [treebylevels_qwen_opt.js] (JavaScript) with perf -r 1...
+
+ Performance counter stats for 'system wide':
+
+              0.46 Joules power/energy-pkg/                                                     
+
+       0.107761479 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: treebylevels_qwen.py
+--------------------------------------
+Running [treebylevels_qwen.py] (Python) with perf -r 1...
+Traceback (most recent call last):
+  File "/home/fidan/perf-energy-measurements/treebylevels_qwen.py", line 31, in <module>
+    tree_by_levels(Node(Node(None, Node(None, None, 4), 2), Node(Node(None, None, 5), Node(None, None, 6), 3), 1))
+  File "/home/fidan/perf-energy-measurements/treebylevels_qwen.py", line 19, in tree_by_levels
+    result.append(node.value)
+                  ^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'value'
+
+ Performance counter stats for 'system wide':
+
+              0.64 Joules power/energy-pkg/                                                     
+
+       0.140908833 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+======================================
+Measuring: treebylevels_qwen_opt.py
+--------------------------------------
+Running [treebylevels_qwen_opt.py] (Python) with perf -r 1...
+Traceback (most recent call last):
+  File "/home/fidan/perf-energy-measurements/treebylevels_qwen_opt.py", line 27, in <module>
+    tree_by_levels(Node(Node(None, Node(None, None, 4), 2), Node(Node(None, None, 5), Node(None, None, 6), 3), 1))
+  File "/home/fidan/perf-energy-measurements/treebylevels_qwen_opt.py", line 19, in tree_by_levels
+    result.append(node.value)
+                  ^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'value'
+
+ Performance counter stats for 'system wide':
+
+              0.63 Joules power/energy-pkg/                                                     
+
+       0.137054793 seconds time elapsed
+
+Waiting 5 minutes before the next script...
+Rust compilation failed for perf-energy-measurements/treebylevels_qwen.rs
+Rust compilation failed for perf-energy-measurements/treebylevels_qwen_opt.rs
+All measurements complete!
