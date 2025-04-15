@@ -6,11 +6,8 @@ PERF_REPEATS=1
 # Valid scripts (original and optimized)
 SCRIPTS=(
     "mergearrays.js"
-    "mergearrays_opt.js"
     "mergearrays.py"
-    "mergearrays_opt.py"
     "mergearrays.rs"
-    "mergearrays_opt.rs"
     
     "mergearrays_gpt.js"
     "mergearrays_gpt_opt.js"
@@ -25,10 +22,8 @@ SCRIPTS=(
     "mergearrays_qwen.py"
 
     "queuetime.js"
-    "queuetime_opt.js"
     "queuetime.py"
     "queuetime.rs"
-    "queuetime_opt.rs"
 
     "queuetime_gpt.js"
     "queuetime_gpt_opt.js"
@@ -45,11 +40,8 @@ SCRIPTS=(
     "queuetime_qwen_opt.py"
 
     "sjf.js"
-    "sjf_opt.js"
     "sjf.py"
-    "sjf_opt.py"
     "sjf.rs"
-    "sjf_opt.rs"
 
     "sjf_gpt.js"
     "sjf_gpt_opt.js"
@@ -67,11 +59,8 @@ SCRIPTS=(
     "sjf_qwen_opt.rs"
 
     "treebylevels.js"
-    "treebylevels_opt.js"
     "treebylevels.py"
-    "treebylevels_opt.py"
     "treebylevels.rs"
-    "treebylevels_opt.rs"
 
     "treebylevels_gpt.js"
     "treebylevels_gpt_opt.js"
@@ -101,12 +90,26 @@ measure_energy() {
     local command=$3
 
     echo "Running [$label] ($language) with perf -r $PERF_REPEATS..." | tee -a "$LOG_FILE"
-    sudo perf stat -r $PERF_REPEATS -e power/energy-pkg/ $command 2>&1 | tee -a "$LOG_FILE"
+
+    perf_output=$(sudo perf stat -r $PERF_REPEATS -e power/energy-pkg/ $command 2>&1)
+
+    echo "$perf_output" >> "$LOG_FILE"
+
+    energy_joules=$(echo "$perf_output" | grep "power/energy-pkg/" | awk '{print $1}')
+    time_seconds=$(echo "$perf_output" | grep "seconds time elapsed" | awk '{print $1}')
+
+    # Fallback if missing
+    energy_joules=${energy_joules:-"N/A"}
+    time_seconds=${time_seconds:-"N/A"}
+
+    printf "%-35s | %-10s | %-15s | %-10s\n" "$label" "$language" "$energy_joules" "$time_seconds" >> "$LOG_FILE"
 }
 
 # Initialize log
-echo "Energy Measurement Results - $(date)" > "$LOG_FILE"
-echo "-------------------------------------" >> "$LOG_FILE"
+echo "Energy and Time Measurement Results - $(date)" > "$LOG_FILE"
+echo "---------------------------------------------------------------" >> "$LOG_FILE"
+printf "%-35s | %-10s | %-15s | %-10s\n" "Script" "Language" "Energy (Joules)" "Time (s)" >> "$LOG_FILE"
+echo "---------------------------------------------------------------" >> "$LOG_FILE"
 
 for script_file in "${SCRIPTS[@]}"; do
     script="$SCRIPT_DIR/$script_file"
@@ -145,7 +148,7 @@ for script_file in "${SCRIPTS[@]}"; do
         rm ./temp_exec
     fi
 
-    echo "Waiting 5 minutes before the next script..." | tee -a "$LOG_FILE"
+    echo "Waiting 1 minutes before the next script..." | tee -a "$LOG_FILE"
     # sleep 300
 done
 
