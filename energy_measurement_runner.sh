@@ -81,7 +81,7 @@ SCRIPTS=(
 )
 
 # Output log file
-LOG_FILE="energy_results.log"
+LOG_FILE="perf-energy-measurements/energy_results.log"
 SCRIPT_DIR="perf-energy-measurements"
 
 measure_energy() {
@@ -93,21 +93,22 @@ measure_energy() {
 
     perf_output=$(sudo perf stat -r $PERF_REPEATS -e power/energy-pkg/ $command 2>&1)
 
-    echo "$perf_output" >> "$LOG_FILE"
-
+    # Extract values
     energy_joules=$(echo "$perf_output" | grep "power/energy-pkg/" | awk '{print $1}')
     time_seconds=$(echo "$perf_output" | grep "seconds time elapsed" | awk '{print $1}')
 
-    # Fallback if missing
+    # Fallbacks
     energy_joules=${energy_joules:-"N/A"}
     time_seconds=${time_seconds:-"N/A"}
 
-    printf "%-35s | %-10s | %-15s | %-10s\n" "$label" "$language" "$energy_joules" "$time_seconds" >> "$LOG_FILE"
+    # Output to CSV
+    echo "$label,$language,$energy_joules,$time_seconds" >> "$LOG_FILE"
 }
 
 # Initialize log
-echo "Energy and Time Measurement Results - $(date)" > "$LOG_FILE"
-echo "---------------------------------------------------------------" >> "$LOG_FILE"
+echo "script,language,energy_joules,time_seconds" > "$LOG_FILE"
+
+
 printf "%-35s | %-10s | %-15s | %-10s\n" "Script" "Language" "Energy (Joules)" "Time (s)" >> "$LOG_FILE"
 echo "---------------------------------------------------------------" >> "$LOG_FILE"
 
@@ -137,9 +138,9 @@ for script_file in "${SCRIPTS[@]}"; do
             ;;
     esac
 
-    echo "======================================" | tee -a "$LOG_FILE"
-    echo "Measuring: $basefile" | tee -a "$LOG_FILE"
-    echo "--------------------------------------" | tee -a "$LOG_FILE"
+    echo "======================================"
+    echo "Measuring: $basefile"
+    echo "--------------------------------------"
 
     measure_energy "$basefile" "$language" "$command"
 
