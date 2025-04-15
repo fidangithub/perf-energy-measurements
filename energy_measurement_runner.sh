@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Number of perf repetitions
-PERF_REPEATS=1
+PERF_REPEATS=5
 
 # Valid scripts (original and optimized)
 SCRIPTS=(
