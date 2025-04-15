@@ -2,12 +2,6 @@ mod preloaded;
 use preloaded::Node;
 use std::collections::VecDeque;
 
-// struct Node {
-//   value: u32,
-//   left: Option<Box<Node>>,
-//   right: Option<Box<Node>>
-// }
-
 fn tree_by_levels(root: &Node) -> Vec<u32> {
     let mut result = vec![];
     let mut queue: VecDeque<&Node> = VecDeque::from([root]);
@@ -23,14 +17,13 @@ fn tree_by_levels(root: &Node) -> Vec<u32> {
     result
 }
 
-  let tree2 = Node::new(1)
+let tree2 = Node::new(1)
         .left(Node::new(2)
             .left(Node::new(4))
             .right(Node::new(5)))
         .right(Node::new(3)
             .left(Node::new(6)));
 
-tree_by_levels(&tree2)
 
 let tree3 = Node::new(45)
     .right(Node::new(35)
@@ -48,9 +41,9 @@ let tree3 = Node::new(45)
                     .right(Node::new(2)))
                 .right(Node::new(36)))));
 
-tree_by_levels(&tree3);
 
-  let tree4 = Node::new(42).right(Node::new(1)
+
+let tree4 = Node::new(42).right(Node::new(1)
         .right(Node::new(3)
         .right(Node::new(1)
         .right(Node::new(2)
@@ -66,4 +59,10 @@ tree_by_levels(&tree3);
         .right(Node::new(9)
         .right(Node::new(1))))))))))))))));
 
-tree_by_levels(&tree4)
+
+
+fn main() {
+    tree_by_levels(&tree2)
+    tree_by_levels(&tree3);
+    tree_by_levels(&tree4);
+}

@@ -42,7 +42,6 @@ let tree2 = Node::new(1)
         .right(Node::new(3)
             .left(Node::new(6)));
 
-tree_by_levels(&tree2)
 
 let tree3 = Node::new(45)
     .right(Node::new(35)
@@ -60,9 +59,9 @@ let tree3 = Node::new(45)
                     .right(Node::new(2)))
                 .right(Node::new(36)))));
 
-tree_by_levels(&tree3);
 
-  let tree4 = Node::new(42).right(Node::new(1)
+
+let tree4 = Node::new(42).right(Node::new(1)
         .right(Node::new(3)
         .right(Node::new(1)
         .right(Node::new(2)
@@ -78,4 +77,10 @@ tree_by_levels(&tree3);
         .right(Node::new(9)
         .right(Node::new(1))))))))))))))));
 
-tree_by_levels(&tree4)
+
+
+fn main() {
+    tree_by_levels(&tree2)
+    tree_by_levels(&tree3);
+    tree_by_levels(&tree4);
+}
