@@ -6,6 +6,27 @@ struct Node {
   right: Option<Box<Node>>
 }
 
+
+impl Node {
+    pub fn new(value: u32) -> Self {
+        Node {
+            value,
+            left: None,
+            right: None,
+        }
+    }
+
+    pub fn left(mut self, node: Node) -> Self {
+        self.left = Some(Box::new(node));
+        self
+    }
+
+    pub fn right(mut self, node: Node) -> Self {
+        self.right = Some(Box::new(node));
+        self
+    }
+}
+
 fn tree_by_levels(root: &Node) -> Vec<u32> {
     let mut result = Vec::new();
     let mut queue = VecDeque::from([root]);
