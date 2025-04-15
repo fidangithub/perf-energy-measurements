@@ -1,11 +1,9 @@
-mod preloaded;
-use preloaded::Node;
 use std::collections::VecDeque;
 
-pub struct Node {
-    pub val: i32,
-    pub left: Option<Box<Node>>,
-    pub right: Option<Box<Node>>,
+struct Node {
+  value: u32,
+  left: Option<Box<Node>>,
+  right: Option<Box<Node>>
 }
 
 impl Node {

@@ -8,6 +8,7 @@ struct Node {
   right: Option<Box<Node>>
 }
 
+
 fn tree_by_levels(root: Option<Rc<RefCell<Node>>>) -> Vec<i32> {
     let mut result = Vec::new();
 
