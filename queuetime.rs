@@ -8,12 +8,7 @@ fn queue_time(customers: &[u32], n: u32) -> u32 {
 
 
 fn main() {
-    let iterations: usize = env::var("ITERATIONS")
-        .unwrap()
-        .parse()
-        .unwrap();
-
-    for _ in 0..iterations {
+    for _ in 0..10000 {
         queue_time(&[], 1);
         queue_time(&[5], 1);
         queue_time(&[2], 5);

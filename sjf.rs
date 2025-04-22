@@ -6,12 +6,7 @@ fn sjf(jobs: &[usize], index: usize) -> usize {
         .sum()
 }
 fn main() {
-    let iterations: usize = env::var("ITERATIONS")
-        .unwrap()
-        .parse()
-        .unwrap();
-
-    for _ in 0..iterations {
+    for _ in 0..10000 {
         sjf(
             &[5, 8, 3, 20, 1, 7, 12, 6, 10, 2, 9, 15, 11, 4, 13, 14, 19, 18, 17, 16, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
             10
