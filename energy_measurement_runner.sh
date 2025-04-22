@@ -89,35 +89,25 @@ measure_energy() {
     local language=$2
     local command=$3
 
-    # echo "Running [$label] ($language) with perf -r $PERF_REPEATS..." | tee -a "$LOG_FILE"
+    echo "Running [$label] ($language) with perf -r $PERF_REPEATS..." | tee -a "$LOG_FILE"
 
-    # echo "script,language,energy_joules,time_seconds,instructions,cycles,cache_misses" > "$LOG_FILE"
+    perf_output=$(sudo perf stat -r $PERF_REPEATS -e power/energy-pkg/ $command 2>&1)
+    # perf_output=$(sudo perf stat -r $PERF_REPEATS -e power/energy-pkg/,instructions,cycles,cache-misses $command 2>&1)
 
-    perf_output=$(sudo perf stat -r $PERF_REPEATS -e power/energy-pkg/,instructions,cycles,cache-misses $command 2>&1)
-
-    
     # Extract values
     energy_joules=$(echo "$perf_output" | grep "power/energy-pkg/" | awk '{print $1}')
     time_seconds=$(echo "$perf_output" | grep "seconds time elapsed" | awk '{print $1}')
-
-    instructions=$(echo "$perf_output" | grep -m1 "instructions" | awk '{print $1}')
-    cycles=$(echo "$perf_output" | grep -m1 "cycles" | awk '{print $1}')
-    cache_misses=$(echo "$perf_output" | grep -m1 "cache-misses" | awk '{print $1}')
-
 
     # Fallbacks
     energy_joules=${energy_joules:-"N/A"}
     time_seconds=${time_seconds:-"N/A"}
 
     # Output to CSV
-    # echo "$label,$language,$energy_joules,$time_seconds" >> "$LOG_FILE"
-    echo "$label,$language,$energy_joules,$time_seconds,$instructions,$cycles,$cache_misses" >> "$LOG_FILE"
-
+    echo "$label,$language,$energy_joules,$time_seconds" >> "$LOG_FILE"
 }
 
 # Initialize log
-# echo "script,language,energy_joules,time_seconds" > "$LOG_FILE"
-echo "$label,$language,$energy_joules,$time_seconds,$instructions,$cycles,$cache_misses" >> "$LOG_FILE"
+echo "script,language,energy_joules,time_seconds" > "$LOG_FILE"
 
 
 printf "%-35s | %-10s | %-15s | %-10s\n" "Script" "Language" "Energy (Joules)" "Time (s)" >> "$LOG_FILE"
