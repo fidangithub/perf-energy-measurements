@@ -91,7 +91,7 @@ measure_energy() {
 
     # echo "Running [$label] ($language) with perf -r $PERF_REPEATS..." | tee -a "$LOG_FILE"
 
-    echo "script,language,energy_joules,time_seconds,instructions,cycles,cache_misses" > "$LOG_FILE"
+    # echo "script,language,energy_joules,time_seconds,instructions,cycles,cache_misses" > "$LOG_FILE"
 
     perf_output=$(sudo perf stat -r $PERF_REPEATS -e power/energy-pkg/,instructions,cycles,cache-misses $command 2>&1)
 
@@ -116,7 +116,8 @@ measure_energy() {
 }
 
 # Initialize log
-echo "script,language,energy_joules,time_seconds" > "$LOG_FILE"
+# echo "script,language,energy_joules,time_seconds" > "$LOG_FILE"
+echo "$label,$language,$energy_joules,$time_seconds,$instructions,$cycles,$cache_misses" >> "$LOG_FILE"
 
 
 printf "%-35s | %-10s | %-15s | %-10s\n" "Script" "Language" "Energy (Joules)" "Time (s)" >> "$LOG_FILE"
