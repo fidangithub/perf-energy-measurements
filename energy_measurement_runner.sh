@@ -150,7 +150,7 @@ for script_file in "${SCRIPTS[@]}"; do
     fi
 
     echo "Waiting 1 minutes before the next script..." | tee -a "$LOG_FILE"
-    # sleep 300
+    sleep 5
 done
 
 echo "All measurements complete!" | tee -a "$LOG_FILE"

@@ -42,7 +42,9 @@ fn tree_by_levels(root: &Node) -> Vec<u32> {
     result
 }
 
-let tree1 = Node::new(1)
+
+fn main() {
+    let tree1 = Node::new(1)
     .left(Node::new(2)
         .left(Node::new(4)
             .left(Node::new(8)
@@ -111,9 +113,6 @@ let tree3 = Node::new(100)
             .right(Node::new(95)
                 .right(Node::new(99)))));
 
-
-
-fn main() {
     for _ in 0..1000 {
         tree_by_levels(&tree1);
         tree_by_levels(&tree2);
