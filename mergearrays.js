@@ -60,7 +60,7 @@ if (process.env.MEASURE !== "true") {
 
 if (global.gc) global.gc();
 
-for (let i = 0; i < 10000; i++) {
+for (let i = 0; i < process.env.INTERVAL; i++) {
   mergeArrays(arr1, arr2);
   mergeArrays(arr3, arr4);
   mergeArrays(arr5, arr6);

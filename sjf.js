@@ -2,8 +2,8 @@ function SJF(jobs, index){
   return jobs.reduce((a,b,i)=>a+(b<jobs[index]||(b==jobs[index]&&i<=index) ? b:0),0);
 }
 
-for (let i = 0; i < 1000; i++) {
-  SJF(
+const runTests = () => {
+   SJF(
     [5, 8, 3, 20, 1, 7, 12, 6, 10, 2, 9, 15, 11, 4, 13, 14, 19, 18, 17, 16, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
     10
   );
@@ -24,3 +24,15 @@ for (let i = 0; i < 1000; i++) {
     59
   );
 }
+
+if (process.env.MEASURE !== "true") {
+  for (let i = 0; i < 500; i++) runTests();
+  if (global.gc) global.gc();
+  process.exit(0);
+}
+
+if (global.gc) global.gc();
+for (let i = 0; i < process.env.INTERVAL; i++) {
+  runTests();
+}
+if (global.gc) global.gc();

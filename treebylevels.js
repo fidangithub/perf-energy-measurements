@@ -145,9 +145,20 @@ const tree3 = new Node(100,
   )
 );
 
-
-for (let i = 0; i < 1000; i++) {
+const runTests = () => {
   treeByLevels(tree1);
   treeByLevels(tree2);
   treeByLevels(tree3);
 }
+
+if (process.env.MEASURE !== "true") {
+  for (let i = 0; i < 500; i++) runTests();
+  if (global.gc) global.gc();
+  process.exit(0);
+}
+
+if (global.gc) global.gc();
+for (let i = 0; i < process.env.INTERVAL; i++) {
+  runTests();
+}
+if (global.gc) global.gc();
