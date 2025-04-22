@@ -110,7 +110,9 @@ measure_energy() {
     time_seconds=${time_seconds:-"N/A"}
 
     # Output to CSV
-    echo "$label,$language,$energy_joules,$time_seconds" >> "$LOG_FILE"
+    # echo "$label,$language,$energy_joules,$time_seconds" >> "$LOG_FILE"
+    echo "$label,$language,$energy_joules,$time_seconds,$instructions,$cycles,$cache_misses" >> "$LOG_FILE"
+
 }
 
 # Initialize log
