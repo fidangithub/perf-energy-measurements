@@ -121,16 +121,16 @@ for script_file in "${SCRIPTS[@]}"; do
     case $extension in
         js)
             language="JavaScript"
-            command="node $script"
+            command="taskset -c 2 node --expose-gc --jitless $script"
             ;;
         py)
             language="Python"
-            command="python3 $script"
+            command="taskset -c 2 python3 $script"
             ;;
         rs)
             language="Rust"
             rustc "$script" -o temp_exec || { echo "Rust compilation failed for $script" | tee -a "$LOG_FILE"; continue; }
-            command="./temp_exec"
+            command="taskset -c 2 ./temp_exec"
             ;;
         *)
             echo "Unknown extension for $script — skipping." | tee -a "$LOG_FILE"
