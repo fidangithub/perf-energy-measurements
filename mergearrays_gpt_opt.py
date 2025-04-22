@@ -4,7 +4,7 @@ from itertools import groupby
 def merge_arrays(arr1, arr2):
   return [key for key, _ in groupby(merge(arr1, arr2))]
 
-for _ in range(process.env.INTERVAL):
+for _ in range(10000):
     merge_arrays(
         [1, 2, 3, 4, 6, 9, 10, 11, 13, 14, 15, 16, 18, 20, 21, 23, 24, 25, 27, 30,
          31, 32, 33, 34, 35, 36, 38, 39, 41, 42, 44, 45, 46, 47, 48, 49, 50, 52, 53, 55,

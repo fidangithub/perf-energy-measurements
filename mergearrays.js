@@ -50,6 +50,7 @@ const arr6 = [
   169, 167, 165, 163, 161, 159, 157, 155, 153, 151, 149, 147, 145, 143, 141, 139, 137, 135, 133, 131
 ];
 
+//warm up
 if (process.env.MEASURE !== "true") {
   for (let i = 0; i < 5000; i++) {
     mergeArrays([1, 2, 3], [4, 5, 6]);
@@ -60,7 +61,7 @@ if (process.env.MEASURE !== "true") {
 
 if (global.gc) global.gc();
 
-for (let i = 0; i < process.env.INTERVAL; i++) {
+for (let i = 0; i < 10000; i++) {
   mergeArrays(arr1, arr2);
   mergeArrays(arr3, arr4);
   mergeArrays(arr5, arr6);

@@ -9,7 +9,7 @@ def queue_time(customers, n):
     return max(tills)
 
 
-for _ in range(1000):
+for _ in range(10000):
     queue_time([], 1)
     queue_time([5], 1)
     queue_time([2], 5)

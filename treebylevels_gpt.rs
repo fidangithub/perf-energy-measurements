@@ -107,7 +107,7 @@ let tree3 = Node::new(100)
 
 
 fn main() {
-    for _ in 0..1000 {
+    for _ in 0..10000 {
         tree_by_levels(&tree1);
         tree_by_levels(&tree2);
         tree_by_levels(&tree3);

@@ -118,7 +118,6 @@ for script_file in "${SCRIPTS[@]}"; do
     basefile=$(basename -- "$script")
     extension="${basefile##*.}"
     label="${basefile%.*}"
-    export INTERVAL=10000
 
     case $extension in
         js)

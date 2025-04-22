@@ -143,7 +143,7 @@ const tree3 = new Node(100,
 );
 
 
-for (let i = 0; i < 1000; i++) {
+for (let i = 0; i < 10000; i++) {
   treeByLevels(tree1);
   treeByLevels(tree2);
   treeByLevels(tree3);

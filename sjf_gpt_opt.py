@@ -3,7 +3,7 @@ def SJF(jobs, index):
     return sum(job for i, job in sorted(enumerate(jobs), key=lambda x: (x[1], x[0])) if (i, job) <= target_job)
 
 
-for _ in range(1000):
+for _ in range(10000):
     SJF(
         [5, 8, 3, 20, 1, 7, 12, 6, 10, 2, 9, 15, 11, 4, 13, 14, 19, 18, 17, 16, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
         10

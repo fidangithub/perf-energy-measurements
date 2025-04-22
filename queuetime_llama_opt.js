@@ -43,7 +43,7 @@ function queueTime(customers, n) {
 }
 
 
-for (let i = 0; i < 1000; i++) {
+for (let i = 0; i < 10000; i++) {
   
   queueTime([], 1);
   queueTime([5], 1);

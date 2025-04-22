@@ -143,7 +143,7 @@ tree3 = Node(100,
 )
 
 
-for _ in range(1000):
+for _ in range(10000):
     tree_by_levels(tree1)
     tree_by_levels(tree2)
     tree_by_levels(tree3)

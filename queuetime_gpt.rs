@@ -21,7 +21,7 @@ fn queue_time(customers: Vec<u32>, n: usize) -> u32 {
 }
 
 fn main() {
-    for _ in 0..1000 {
+    for _ in 0..10000 {
         queue_time(&[], 1);
         queue_time(&[5], 1);
         queue_time(&[2], 5);

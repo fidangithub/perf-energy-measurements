@@ -113,7 +113,12 @@ let tree3 = Node::new(100)
             .right(Node::new(95)
                 .right(Node::new(99)))));
 
-    for _ in 0..1000 {
+    let iterations: usize = env::var("ITERATIONS")
+        .unwrap()
+        .parse()
+        .unwrap();
+
+    for _ in 0..iterations  {
         tree_by_levels(&tree1);
         tree_by_levels(&tree2);
         tree_by_levels(&tree3);

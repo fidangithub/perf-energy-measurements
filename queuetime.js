@@ -73,7 +73,7 @@ if (process.env.MEASURE !== "true") {
 }
 
 if (global.gc) global.gc();
-for (let i = 0; i < process.env.INTERVAL; i++) {
+for (let i = 0; i < 10000; i++) {
   runTests();
 }
 
