@@ -1,101 +1,3457 @@
 script,language,run_id,energy_joules,time_seconds
-[sjf.js][JavaScript] Run #10
-sjf.js,JavaScript,10,0.85,0.068703030
+[mergearrays_llama_opt.py][Python] Run #3
+mergearrays_llama_opt.py,Python,3,1.58,0.104944039
+[mergearrays_llama_opt.py][Python] Run #3
+mergearrays_llama_opt.py,Python,3,2.20,0.147041309
+SUCCESS: mergearrays_llama_opt Run #3 completed
 Sleeping 1 minute before next run...
-[sjf_qwen.rs][Rust] Run #6
-sjf_qwen.rs,Rust,6,1.57,0.116250187
+[queuetime_gpt_opt.js][JavaScript] Run #8
+queuetime_gpt_opt.js,JavaScript,8,0.87,0.069754057
+[queuetime_gpt_opt.js][JavaScript] Run #8
+queuetime_gpt_opt.js,JavaScript,8,0.86,0.072163161
+SUCCESS: queuetime_gpt_opt Run #8 completed
 Sleeping 1 minute before next run...
-[mergearrays_gpt.js][JavaScript] Run #2
-mergearrays_gpt.js,JavaScript,2,0.85,0.068779471
+[queuetime_gpt_opt.js][JavaScript] Run #1
+queuetime_gpt_opt.js,JavaScript,1,0.88,0.073086258
+[queuetime_gpt_opt.js][JavaScript] Run #1
+queuetime_gpt_opt.js,JavaScript,1,0.90,0.075772894
+SUCCESS: queuetime_gpt_opt Run #1 completed
 Sleeping 1 minute before next run...
-[treebylevels.rs][Rust] Run #2
-treebylevels.rs,Rust,2,0.21,0.017202041
+[treebylevels_qwen.js][JavaScript] Run #8
+treebylevels_qwen.js,JavaScript,8,0.85,0.073490779
+[treebylevels_qwen.js][JavaScript] Run #8
+treebylevels_qwen.js,JavaScript,8,0.82,0.072699554
+SUCCESS: treebylevels_qwen Run #8 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.js][JavaScript] Run #7
+treebylevels_llama_opt.js,JavaScript,7,0.86,0.062831786
+[treebylevels_llama_opt.js][JavaScript] Run #7
+treebylevels_llama_opt.js,JavaScript,7,0.86,0.066910579
+SUCCESS: treebylevels_llama_opt Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen_opt.py][Python] Run #7
+queuetime_qwen_opt.py,Python,7,2.49,0.158433516
+[queuetime_qwen_opt.py][Python] Run #7
+queuetime_qwen_opt.py,Python,7,2.49,0.157632375
+SUCCESS: queuetime_qwen_opt Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.py][Python] Run #9
+mergearrays_llama.py,Python,9,1.83,0.126782631
+[mergearrays_llama.py][Python] Run #9
+mergearrays_llama.py,Python,9,1.70,0.115222027
+SUCCESS: mergearrays_llama Run #9 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.js][JavaScript] Run #7
+mergearrays_llama_opt.js,JavaScript,7,0.87,0.062868031
+[mergearrays_llama_opt.js][JavaScript] Run #7
+mergearrays_llama_opt.js,JavaScript,7,1.04,0.082634370
+SUCCESS: mergearrays_llama_opt Run #7 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.js][JavaScript] Run #10
+sjf_llama_opt.js,JavaScript,10,0.85,0.063339516
+[sjf_llama_opt.js][JavaScript] Run #10
+sjf_llama_opt.js,JavaScript,10,0.94,0.071682824
+SUCCESS: sjf_llama_opt Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen_opt.py][Python] Run #6
+queuetime_qwen_opt.py,Python,6,2.44,0.153272076
+[queuetime_qwen_opt.py][Python] Run #6
+queuetime_qwen_opt.py,Python,6,3.02,0.190199267
+SUCCESS: queuetime_qwen_opt Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.js][JavaScript] Run #4
+treebylevels_gpt_opt.js,JavaScript,4,0.81,0.056973855
+[treebylevels_gpt_opt.js][JavaScript] Run #4
+treebylevels_gpt_opt.js,JavaScript,4,0.89,0.066414110
+SUCCESS: treebylevels_gpt_opt Run #4 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.js][JavaScript] Run #7
+sjf_qwen.js,JavaScript,7,0.95,0.069177041
+[sjf_qwen.js][JavaScript] Run #7
+sjf_qwen.js,JavaScript,7,1.05,0.084700671
+SUCCESS: sjf_qwen Run #7 completed
+Sleeping 1 minute before next run...
+[treebylevels.rs][Rust] Run #8
+treebylevels.rs,Rust,8,0.21,0.014614680
+[treebylevels.rs][Rust] Run #8
+treebylevels.rs,Rust,8,0.22,0.014870274
+SUCCESS: treebylevels Run #8 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.rs][Rust] Run #1
+sjf_qwen_opt.rs,Rust,1,1.62,0.109941486
+[sjf_qwen_opt.rs][Rust] Run #1
+sjf_qwen_opt.rs,Rust,1,1.60,0.101635505
+SUCCESS: sjf_qwen_opt Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.rs][Rust] Run #9
+treebylevels_qwen.rs,Rust,9,0.21,0.014835767
+[treebylevels_qwen.rs][Rust] Run #9
+treebylevels_qwen.rs,Rust,9,0.21,0.015346233
+SUCCESS: treebylevels_qwen Run #9 completed
 Sleeping 1 minute before next run...
 [sjf.rs][Rust] Run #2
-sjf.rs,Rust,2,0.26,0.020549110
-Sleeping 1 minute before next run...
-[queuetime_gpt_opt.py][Python] Run #7
-queuetime_gpt_opt.py,Python,7,1.35,0.094702752
-Sleeping 1 minute before next run...
-[sjf_gpt.py][Python] Run #1
-sjf_gpt.py,Python,1,3.64,0.240919963
-Sleeping 1 minute before next run...
-[mergearrays_qwen.py][Python] Run #5
-mergearrays_qwen.py,Python,5,7.71,0.466530345
-Sleeping 1 minute before next run...
-[sjf_gpt_opt.js][JavaScript] Run #7
-sjf_gpt_opt.js,JavaScript,7,0.83,0.068438246
-Sleeping 1 minute before next run...
-[sjf_qwen_opt.js][JavaScript] Run #1
-sjf_qwen_opt.js,JavaScript,1,1.06,0.084536397
-Sleeping 1 minute before next run...
-[mergearrays.py][Python] Run #9
-mergearrays.py,Python,9,1.72,0.125647146
-Sleeping 1 minute before next run...
-[treebylevels_gpt.js][JavaScript] Run #4
-treebylevels_gpt.js,JavaScript,4,0.88,0.068017964
-Sleeping 1 minute before next run...
-[sjf_llama_opt.py][Python] Run #8
-sjf_llama_opt.py,Python,8,23.90,1.530538865
-Sleeping 1 minute before next run...
-[sjf_gpt_opt.js][JavaScript] Run #8
-sjf_gpt_opt.js,JavaScript,8,0.80,0.064335205
-Sleeping 1 minute before next run...
-[treebylevels_llama_opt.js][JavaScript] Run #4
-treebylevels_llama_opt.js,JavaScript,4,0.88,0.064528149
-Sleeping 1 minute before next run...
-[sjf_llama.js][JavaScript] Run #6
-sjf_llama.js,JavaScript,6,0.89,0.061333549
-Sleeping 1 minute before next run...
-[mergearrays.rs][Rust] Run #7
-mergearrays.rs,Rust,7,0.92,0.063334964
-Sleeping 1 minute before next run...
-[sjf_qwen.py][Python] Run #1
-sjf_qwen.py,Python,1,2.07,0.134634809
-Sleeping 1 minute before next run...
-[queuetime_qwen.py][Python] Run #9
-queuetime_qwen.py,Python,9,6.17,0.377518063
-Sleeping 1 minute before next run...
-[treebylevels_qwen_opt.py][Python] Run #2
-treebylevels_qwen_opt.py,Python,2,2.12,0.131719093
-Sleeping 1 minute before next run...
-[mergearrays_qwen.py][Python] Run #4
-mergearrays_qwen.py,Python,4,7.78,0.449610048
-Sleeping 1 minute before next run...
-[queuetime_gpt.py][Python] Run #7
-queuetime_gpt.py,Python,7,2.44,0.155517614
-Sleeping 1 minute before next run...
-[mergearrays_llama_opt.py][Python] Run #3
-mergearrays_llama_opt.py,Python,3,1.68,0.113940311
-Sleeping 1 minute before next run...
-[sjf_gpt.py][Python] Run #7
-sjf_gpt.py,Python,7,3.72,0.224347627
-Sleeping 1 minute before next run...
-[treebylevels_qwen.rs][Rust] Run #10
-treebylevels_qwen.rs,Rust,10,0.23,0.016297808
-Sleeping 1 minute before next run...
-[mergearrays.js][JavaScript] Run #1
-mergearrays.js,JavaScript,1,0.87,0.062457761
-Sleeping 1 minute before next run...
-[treebylevels_gpt.js][JavaScript] Run #3
-treebylevels_gpt.js,JavaScript,3,0.80,0.054435743
-Sleeping 1 minute before next run...
-[treebylevels_qwen_opt.js][JavaScript] Run #4
-treebylevels_qwen_opt.js,JavaScript,4,0.82,0.060226039
-Sleeping 1 minute before next run...
-[treebylevels_llama.js][JavaScript] Run #2
-treebylevels_llama.js,JavaScript,2,1.07,0.082418776
+sjf.rs,Rust,2,0.24,0.018635986
+[sjf.rs][Rust] Run #2
+sjf.rs,Rust,2,0.26,0.017581881
+SUCCESS: sjf Run #2 completed
 Sleeping 1 minute before next run...
 [treebylevels.js][JavaScript] Run #8
-treebylevels.js,JavaScript,8,0.85,0.059917782
+treebylevels.js,JavaScript,8,0.81,0.058305919
+[treebylevels.js][JavaScript] Run #8
+treebylevels.js,JavaScript,8,0.91,0.065415485
+SUCCESS: treebylevels Run #8 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.py][Python] Run #8
+mergearrays_qwen.py,Python,8,7.58,0.449898348
+[mergearrays_qwen.py][Python] Run #8
+mergearrays_qwen.py,Python,8,7.64,0.445475093
+SUCCESS: mergearrays_qwen Run #8 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt_opt.js][JavaScript] Run #1
+mergearrays_gpt_opt.js,JavaScript,1,1.28,0.095405270
+[mergearrays_gpt_opt.js][JavaScript] Run #1
+mergearrays_gpt_opt.js,JavaScript,1,1.07,0.087791990
+SUCCESS: mergearrays_gpt_opt Run #1 completed
+Sleeping 1 minute before next run...
+[mergearrays.py][Python] Run #10
+mergearrays.py,Python,10,1.71,0.117501196
+[mergearrays.py][Python] Run #10
+mergearrays.py,Python,10,1.66,0.105164570
+SUCCESS: mergearrays Run #10 completed
+Sleeping 1 minute before next run...
+[sjf_llama.py][Python] Run #1
+sjf_llama.py,Python,1,3.90,0.240769987
+[sjf_llama.py][Python] Run #1
+sjf_llama.py,Python,1,4.02,0.242593684
+SUCCESS: sjf_llama Run #1 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.js][JavaScript] Run #2
+mergearrays_llama.js,JavaScript,2,0.81,0.059322200
+[mergearrays_llama.js][JavaScript] Run #2
+mergearrays_llama.js,JavaScript,2,0.93,0.069172286
+SUCCESS: mergearrays_llama Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.py][Python] Run #8
+queuetime_llama_opt.py,Python,8,2.43,0.158860059
+[queuetime_llama_opt.py][Python] Run #8
+queuetime_llama_opt.py,Python,8,2.54,0.155946213
+SUCCESS: queuetime_llama_opt Run #8 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.py][Python] Run #4
+mergearrays_qwen.py,Python,4,7.90,0.470908966
+[mergearrays_qwen.py][Python] Run #4
+mergearrays_qwen.py,Python,4,7.85,0.450939597
+SUCCESS: mergearrays_qwen Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.js][JavaScript] Run #2
+treebylevels_llama.js,JavaScript,2,0.87,0.059885398
+[treebylevels_llama.js][JavaScript] Run #2
+treebylevels_llama.js,JavaScript,2,0.90,0.066645685
+SUCCESS: treebylevels_llama Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.py][Python] Run #9
+mergearrays_llama_opt.py,Python,9,1.77,0.123523471
+[mergearrays_llama_opt.py][Python] Run #9
+mergearrays_llama_opt.py,Python,9,1.60,0.105096440
+SUCCESS: mergearrays_llama_opt Run #9 completed
+Sleeping 1 minute before next run...
+[sjf.rs][Rust] Run #9
+sjf.rs,Rust,9,0.26,0.018610549
+[sjf.rs][Rust] Run #9
+sjf.rs,Rust,9,0.26,0.017756023
+SUCCESS: sjf Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.js][JavaScript] Run #5
+sjf_gpt.js,JavaScript,5,0.93,0.066325244
+[sjf_gpt.js][JavaScript] Run #5
+sjf_gpt.js,JavaScript,5,0.91,0.067243074
+SUCCESS: sjf_gpt Run #5 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.py][Python] Run #8
+sjf_qwen.py,Python,8,1.97,0.130343558
+[sjf_qwen.py][Python] Run #8
+sjf_qwen.py,Python,8,2.05,0.121655656
+SUCCESS: sjf_qwen Run #8 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.py][Python] Run #4
+treebylevels_llama_opt.py,Python,4,0.98,0.067197576
+[treebylevels_llama_opt.py][Python] Run #4
+treebylevels_llama_opt.py,Python,4,1.00,0.073898801
+SUCCESS: treebylevels_llama_opt Run #4 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.py][Python] Run #4
+mergearrays_llama.py,Python,4,1.81,0.123443297
+[mergearrays_llama.py][Python] Run #4
+mergearrays_llama.py,Python,4,1.74,0.114710131
+SUCCESS: mergearrays_llama Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.py][Python] Run #9
+treebylevels_qwen.py,Python,9,0.62,0.041174013
+[treebylevels_qwen.py][Python] Run #9
+treebylevels_qwen.py,Python,9,0.72,0.048945978
+SUCCESS: treebylevels_qwen Run #9 completed
+Sleeping 1 minute before next run...
+[sjf.js][JavaScript] Run #9
+sjf.js,JavaScript,9,0.82,0.056850930
+[sjf.js][JavaScript] Run #9
+sjf.js,JavaScript,9,0.85,0.065209683
+SUCCESS: sjf Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.js][JavaScript] Run #1
+sjf_qwen_opt.js,JavaScript,1,1.02,0.071315219
+[sjf_qwen_opt.js][JavaScript] Run #1
+sjf_qwen_opt.js,JavaScript,1,0.94,0.068219456
+SUCCESS: sjf_qwen_opt Run #1 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.js][JavaScript] Run #4
+mergearrays_llama_opt.js,JavaScript,4,0.84,0.061556479
+[mergearrays_llama_opt.js][JavaScript] Run #4
+mergearrays_llama_opt.js,JavaScript,4,0.96,0.068587307
+SUCCESS: mergearrays_llama_opt Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.js][JavaScript] Run #10
+queuetime_qwen.js,JavaScript,10,0.80,0.057717668
+[queuetime_qwen.js][JavaScript] Run #10
+queuetime_qwen.js,JavaScript,10,0.89,0.069777280
+SUCCESS: queuetime_qwen Run #10 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.js][JavaScript] Run #10
+sjf_gpt.js,JavaScript,10,0.92,0.067537952
+[sjf_gpt.js][JavaScript] Run #10
+sjf_gpt.js,JavaScript,10,0.97,0.071786758
+SUCCESS: sjf_gpt Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.py][Python] Run #2
+treebylevels_llama.py,Python,2,1.00,0.068478396
+[treebylevels_llama.py][Python] Run #2
+treebylevels_llama.py,Python,2,0.97,0.067816452
+SUCCESS: treebylevels_llama Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.js][JavaScript] Run #7
+mergearrays_gpt.js,JavaScript,7,0.87,0.064220441
+[mergearrays_gpt.js][JavaScript] Run #7
+mergearrays_gpt.js,JavaScript,7,0.88,0.065025530
+SUCCESS: mergearrays_gpt Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.py][Python] Run #5
+queuetime_llama.py,Python,5,6.06,0.375847159
+[queuetime_llama.py][Python] Run #5
+queuetime_llama.py,Python,5,6.11,0.375680069
+SUCCESS: queuetime_llama Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.js][JavaScript] Run #1
+queuetime_gpt.js,JavaScript,1,0.91,0.066740458
+[queuetime_gpt.js][JavaScript] Run #1
+queuetime_gpt.js,JavaScript,1,0.87,0.061608841
+SUCCESS: queuetime_gpt Run #1 completed
+Sleeping 1 minute before next run...
+[sjf_llama.js][JavaScript] Run #10
+sjf_llama.js,JavaScript,10,0.84,0.063127301
+[sjf_llama.js][JavaScript] Run #10
+sjf_llama.js,JavaScript,10,0.90,0.067632041
+SUCCESS: sjf_llama Run #10 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.py][Python] Run #1
+mergearrays_qwen.py,Python,1,8.51,0.526120366
+[mergearrays_qwen.py][Python] Run #1
+mergearrays_qwen.py,Python,1,8.01,0.486676434
+SUCCESS: mergearrays_qwen Run #1 completed
+Sleeping 1 minute before next run...
+[sjf.py][Python] Run #6
+sjf.py,Python,6,1.33,0.096155738
+[sjf.py][Python] Run #6
+sjf.py,Python,6,1.34,0.098102728
+SUCCESS: sjf Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.rs][Rust] Run #2
+sjf_qwen.rs,Rust,2,1.84,0.137859103
+[sjf_qwen.rs][Rust] Run #2
+sjf_qwen.rs,Rust,2,1.52,0.116880793
+SUCCESS: sjf_qwen Run #2 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.js][JavaScript] Run #10
+treebylevels_llama_opt.js,JavaScript,10,0.94,0.071858857
+[treebylevels_llama_opt.js][JavaScript] Run #10
+treebylevels_llama_opt.js,JavaScript,10,0.90,0.064798031
+SUCCESS: treebylevels_llama_opt Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.py][Python] Run #3
+queuetime_llama_opt.py,Python,3,2.45,0.145047418
+[queuetime_llama_opt.py][Python] Run #3
+queuetime_llama_opt.py,Python,3,2.49,0.147055381
+SUCCESS: queuetime_llama_opt Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels.py][Python] Run #4
+treebylevels.py,Python,4,0.98,0.067147759
+[treebylevels.py][Python] Run #4
+treebylevels.py,Python,4,1.00,0.070086303
+SUCCESS: treebylevels Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.py][Python] Run #4
+treebylevels_gpt_opt.py,Python,4,0.96,0.065698972
+[treebylevels_gpt_opt.py][Python] Run #4
+treebylevels_gpt_opt.py,Python,4,0.94,0.064588309
+SUCCESS: treebylevels_gpt_opt Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.py][Python] Run #2
+queuetime_gpt.py,Python,2,2.35,0.164259471
+[queuetime_gpt.py][Python] Run #2
+queuetime_gpt.py,Python,2,2.45,0.145075914
+SUCCESS: queuetime_gpt Run #2 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.rs][Rust] Run #10
+sjf_qwen.rs,Rust,10,1.66,0.109703818
+[sjf_qwen.rs][Rust] Run #10
+sjf_qwen.rs,Rust,10,1.62,0.101054807
+SUCCESS: sjf_qwen Run #10 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.js][JavaScript] Run #6
+mergearrays_llama_opt.js,JavaScript,6,0.91,0.062651660
+[mergearrays_llama_opt.js][JavaScript] Run #6
+mergearrays_llama_opt.js,JavaScript,6,0.89,0.060796570
+SUCCESS: mergearrays_llama_opt Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.rs][Rust] Run #3
+treebylevels_qwen_opt.rs,Rust,3,0.20,0.014420382
+[treebylevels_qwen_opt.rs][Rust] Run #3
+treebylevels_qwen_opt.rs,Rust,3,0.21,0.014389762
+SUCCESS: treebylevels_qwen_opt Run #3 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.rs][Rust] Run #10
+sjf_qwen_opt.rs,Rust,10,1.79,0.132887459
+[sjf_qwen_opt.rs][Rust] Run #10
+sjf_qwen_opt.rs,Rust,10,1.54,0.118423028
+SUCCESS: sjf_qwen_opt Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.js][JavaScript] Run #7
+treebylevels_qwen.js,JavaScript,7,0.87,0.071243955
+[treebylevels_qwen.js][JavaScript] Run #7
+treebylevels_qwen.js,JavaScript,7,0.91,0.074829955
+SUCCESS: treebylevels_qwen Run #7 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.py][Python] Run #1
+treebylevels_llama_opt.py,Python,1,1.20,0.090314044
+[treebylevels_llama_opt.py][Python] Run #1
+treebylevels_llama_opt.py,Python,1,1.01,0.078804311
+SUCCESS: treebylevels_llama_opt Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.js][JavaScript] Run #6
+treebylevels_gpt.js,JavaScript,6,0.88,0.067714341
+[treebylevels_gpt.js][JavaScript] Run #6
+treebylevels_gpt.js,JavaScript,6,0.91,0.072722394
+SUCCESS: treebylevels_gpt Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.py][Python] Run #7
+treebylevels_gpt_opt.py,Python,7,1.03,0.081539394
+[treebylevels_gpt_opt.py][Python] Run #7
+treebylevels_gpt_opt.py,Python,7,1.01,0.078231611
+SUCCESS: treebylevels_gpt_opt Run #7 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.js][JavaScript] Run #1
+treebylevels_qwen_opt.js,JavaScript,1,0.84,0.068024206
+[treebylevels_qwen_opt.js][JavaScript] Run #1
+treebylevels_qwen_opt.js,JavaScript,1,0.86,0.067673568
+SUCCESS: treebylevels_qwen_opt Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.js][JavaScript] Run #4
+treebylevels_llama_opt.js,JavaScript,4,0.98,0.077224110
+[treebylevels_llama_opt.js][JavaScript] Run #4
+treebylevels_llama_opt.js,JavaScript,4,0.89,0.066095566
+SUCCESS: treebylevels_llama_opt Run #4 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.py][Python] Run #7
+mergearrays_qwen.py,Python,7,8.00,0.492197217
+[mergearrays_qwen.py][Python] Run #7
+mergearrays_qwen.py,Python,7,8.05,0.488482348
+SUCCESS: mergearrays_qwen Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.js][JavaScript] Run #2
+queuetime_qwen.js,JavaScript,2,0.87,0.063098009
+[queuetime_qwen.js][JavaScript] Run #2
+queuetime_qwen.js,JavaScript,2,0.93,0.069231913
+SUCCESS: queuetime_qwen Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.js][JavaScript] Run #10
+mergearrays_gpt.js,JavaScript,10,1.02,0.078576938
+[mergearrays_gpt.js][JavaScript] Run #10
+mergearrays_gpt.js,JavaScript,10,0.92,0.073913780
+SUCCESS: mergearrays_gpt Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen_opt.py][Python] Run #9
+queuetime_qwen_opt.py,Python,9,2.46,0.147285858
+[queuetime_qwen_opt.py][Python] Run #9
+queuetime_qwen_opt.py,Python,9,2.56,0.166230043
+SUCCESS: queuetime_qwen_opt Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.py][Python] Run #3
+treebylevels_gpt_opt.py,Python,3,1.07,0.085090281
+[treebylevels_gpt_opt.py][Python] Run #3
+treebylevels_gpt_opt.py,Python,3,1.02,0.080936859
+SUCCESS: treebylevels_gpt_opt Run #3 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.js][JavaScript] Run #4
+mergearrays_gpt.js,JavaScript,4,0.86,0.062219320
+[mergearrays_gpt.js][JavaScript] Run #4
+mergearrays_gpt.js,JavaScript,4,0.91,0.064304090
+SUCCESS: mergearrays_gpt Run #4 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.js][JavaScript] Run #1
+sjf_qwen.js,JavaScript,1,1.02,0.070813062
+[sjf_qwen.js][JavaScript] Run #1
+sjf_qwen.js,JavaScript,1,1.05,0.076237047
+SUCCESS: sjf_qwen Run #1 completed
+Sleeping 1 minute before next run...
+[queuetime.rs][Rust] Run #6
+queuetime.rs,Rust,6,2.49,0.165038148
+[queuetime.rs][Rust] Run #6
+queuetime.rs,Rust,6,2.40,0.160898752
+SUCCESS: queuetime Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.py][Python] Run #2
+treebylevels_qwen.py,Python,2,0.70,0.043026319
+[treebylevels_qwen.py][Python] Run #2
+treebylevels_qwen.py,Python,2,0.69,0.040936504
+SUCCESS: treebylevels_qwen Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays.py][Python] Run #5
+mergearrays.py,Python,5,1.70,0.106919013
+[mergearrays.py][Python] Run #5
+mergearrays.py,Python,5,1.66,0.107539588
+SUCCESS: mergearrays Run #5 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.py][Python] Run #6
+mergearrays_gpt.py,Python,6,1.70,0.110794975
+[mergearrays_gpt.py][Python] Run #6
+mergearrays_gpt.py,Python,6,1.69,0.107442393
+SUCCESS: mergearrays_gpt Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.rs][Rust] Run #9
+sjf_qwen_opt.rs,Rust,9,1.66,0.113729215
+[sjf_qwen_opt.rs][Rust] Run #9
+sjf_qwen_opt.rs,Rust,9,1.70,0.121186209
+SUCCESS: sjf_qwen_opt Run #9 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.js][JavaScript] Run #1
+queuetime_llama_opt.js,JavaScript,1,1.72,0.107142289
+[queuetime_llama_opt.js][JavaScript] Run #1
+queuetime_llama_opt.js,JavaScript,1,1.61,0.105833255
+SUCCESS: queuetime_llama_opt Run #1 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.py][Python] Run #8
+mergearrays_gpt.py,Python,8,1.68,0.111309806
+[mergearrays_gpt.py][Python] Run #8
+mergearrays_gpt.py,Python,8,1.71,0.108874781
+SUCCESS: mergearrays_gpt Run #8 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt_opt.js][JavaScript] Run #5
+mergearrays_gpt_opt.js,JavaScript,5,0.91,0.062434760
+[mergearrays_gpt_opt.js][JavaScript] Run #5
+mergearrays_gpt_opt.js,JavaScript,5,0.92,0.060581533
+SUCCESS: mergearrays_gpt_opt Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.js][JavaScript] Run #8
+treebylevels_llama_opt.js,JavaScript,8,0.90,0.059865018
+[treebylevels_llama_opt.js][JavaScript] Run #8
+treebylevels_llama_opt.js,JavaScript,8,0.86,0.058410529
+SUCCESS: treebylevels_llama_opt Run #8 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.js][JavaScript] Run #3
+mergearrays_gpt.js,JavaScript,3,0.92,0.059876099
+[mergearrays_gpt.js][JavaScript] Run #3
+mergearrays_gpt.js,JavaScript,3,0.84,0.058733458
+SUCCESS: mergearrays_gpt Run #3 completed
 Sleeping 1 minute before next run...
 [sjf_llama_opt.js][JavaScript] Run #9
-sjf_llama_opt.js,JavaScript,9,0.86,0.059260772
+sjf_llama_opt.js,JavaScript,9,0.94,0.067466947
+[sjf_llama_opt.js][JavaScript] Run #9
+sjf_llama_opt.js,JavaScript,9,0.88,0.060746520
+SUCCESS: sjf_llama_opt Run #9 completed
 Sleeping 1 minute before next run...
-[mergearrays_gpt.py][Python] Run #4
-mergearrays_gpt.py,Python,4,1.74,0.116592985
+[queuetime_qwen.py][Python] Run #5
+queuetime_qwen.py,Python,5,5.88,0.359824683
+[queuetime_qwen.py][Python] Run #5
+queuetime_qwen.py,Python,5,6.12,0.362013710
+SUCCESS: queuetime_qwen Run #5 completed
 Sleeping 1 minute before next run...
-[queuetime_gpt_opt.js][JavaScript] Run #4
-queuetime_gpt_opt.js,JavaScript,4,0.85,0.059769633
+[mergearrays_qwen.py][Python] Run #6
+mergearrays_qwen.py,Python,6,7.65,0.431385501
+[mergearrays_qwen.py][Python] Run #6
+mergearrays_qwen.py,Python,6,7.85,0.437341519
+SUCCESS: mergearrays_qwen Run #6 completed
+Sleeping 1 minute before next run...
+[sjf.py][Python] Run #9
+sjf.py,Python,9,1.34,0.082547501
+[sjf.py][Python] Run #9
+sjf.py,Python,9,1.50,0.084912423
+SUCCESS: sjf Run #9 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.js][JavaScript] Run #3
+mergearrays_llama.js,JavaScript,3,0.90,0.061807384
+[mergearrays_llama.js][JavaScript] Run #3
+mergearrays_llama.js,JavaScript,3,0.85,0.055773071
+SUCCESS: mergearrays_llama Run #3 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.js][JavaScript] Run #8
+queuetime_llama_opt.js,JavaScript,8,1.78,0.117240822
+[queuetime_llama_opt.js][JavaScript] Run #8
+queuetime_llama_opt.js,JavaScript,8,1.71,0.108946128
+SUCCESS: queuetime_llama_opt Run #8 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.py][Python] Run #4
+queuetime_llama.py,Python,4,6.33,0.377751316
+[queuetime_llama.py][Python] Run #4
+queuetime_llama.py,Python,4,6.38,0.375467457
+SUCCESS: queuetime_llama Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.py][Python] Run #10
+treebylevels_llama.py,Python,10,1.02,0.064959690
+[treebylevels_llama.py][Python] Run #10
+treebylevels_llama.py,Python,10,1.03,0.067225329
+SUCCESS: treebylevels_llama Run #10 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.js][JavaScript] Run #2
+sjf_qwen_opt.js,JavaScript,2,1.02,0.069076672
+[sjf_qwen_opt.js][JavaScript] Run #2
+sjf_qwen_opt.js,JavaScript,2,0.97,0.064719629
+SUCCESS: sjf_qwen_opt Run #2 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.py][Python] Run #7
+sjf_gpt.py,Python,7,3.82,0.218990924
+[sjf_gpt.py][Python] Run #7
+sjf_gpt.py,Python,7,3.79,0.221817956
+SUCCESS: sjf_gpt Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime.rs][Rust] Run #7
+queuetime.rs,Rust,7,2.49,0.164239395
+[queuetime.rs][Rust] Run #7
+queuetime.rs,Rust,7,2.46,0.164461674
+SUCCESS: queuetime Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.py][Python] Run #4
+queuetime_llama_opt.py,Python,4,2.55,0.147436764
+[queuetime_llama_opt.py][Python] Run #4
+queuetime_llama_opt.py,Python,4,2.53,0.147710761
+SUCCESS: queuetime_llama_opt Run #4 completed
+Sleeping 1 minute before next run...
+[mergearrays.rs][Rust] Run #7
+mergearrays.rs,Rust,7,0.96,0.063028190
+[mergearrays.rs][Rust] Run #7
+mergearrays.rs,Rust,7,0.96,0.062372065
+SUCCESS: mergearrays Run #7 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.rs][Rust] Run #4
+sjf_qwen.rs,Rust,4,1.69,0.102295182
+[sjf_qwen.rs][Rust] Run #4
+sjf_qwen.rs,Rust,4,1.62,0.105499408
+SUCCESS: sjf_qwen Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels.js][JavaScript] Run #1
+treebylevels.js,JavaScript,1,0.91,0.063775839
+[treebylevels.js][JavaScript] Run #1
+treebylevels.js,JavaScript,1,0.91,0.061903108
+SUCCESS: treebylevels Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels.rs][Rust] Run #2
+treebylevels.rs,Rust,2,0.22,0.014476416
+[treebylevels.rs][Rust] Run #2
+treebylevels.rs,Rust,2,0.22,0.014840805
+SUCCESS: treebylevels Run #2 completed
+Sleeping 1 minute before next run...
+[treebylevels.py][Python] Run #3
+treebylevels.py,Python,3,1.07,0.069054128
+[treebylevels.py][Python] Run #3
+treebylevels.py,Python,3,1.05,0.067047900
+SUCCESS: treebylevels Run #3 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.js][JavaScript] Run #5
+queuetime_gpt_opt.js,JavaScript,5,1.00,0.068490947
+[queuetime_gpt_opt.js][JavaScript] Run #5
+queuetime_gpt_opt.js,JavaScript,5,0.94,0.063850266
+SUCCESS: queuetime_gpt_opt Run #5 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.js][JavaScript] Run #1
+mergearrays_gpt.js,JavaScript,1,0.92,0.060262400
+[mergearrays_gpt.js][JavaScript] Run #1
+mergearrays_gpt.js,JavaScript,1,0.90,0.061105840
+SUCCESS: mergearrays_gpt Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.js][JavaScript] Run #5
+treebylevels_gpt.js,JavaScript,5,0.87,0.059280381
+[treebylevels_gpt.js][JavaScript] Run #5
+treebylevels_gpt.js,JavaScript,5,0.87,0.059931730
+SUCCESS: treebylevels_gpt Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.js][JavaScript] Run #3
+queuetime_llama_opt.js,JavaScript,3,1.65,0.111066656
+[queuetime_llama_opt.js][JavaScript] Run #3
+queuetime_llama_opt.js,JavaScript,3,1.65,0.101031708
+SUCCESS: queuetime_llama_opt Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.js][JavaScript] Run #2
+treebylevels_qwen.js,JavaScript,2,0.87,0.058168844
+[treebylevels_qwen.js][JavaScript] Run #2
+treebylevels_qwen.js,JavaScript,2,0.88,0.059451664
+SUCCESS: treebylevels_qwen Run #2 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.js][JavaScript] Run #2
+treebylevels_gpt_opt.js,JavaScript,2,0.88,0.058338105
+[treebylevels_gpt_opt.js][JavaScript] Run #2
+treebylevels_gpt_opt.js,JavaScript,2,0.87,0.058267258
+SUCCESS: treebylevels_gpt_opt Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays.py][Python] Run #8
+mergearrays.py,Python,8,1.90,0.118736430
+[mergearrays.py][Python] Run #8
+mergearrays.py,Python,8,1.75,0.106935076
+SUCCESS: mergearrays Run #8 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.py][Python] Run #10
+sjf_gpt.py,Python,10,3.82,0.220316810
+[sjf_gpt.py][Python] Run #10
+sjf_gpt.py,Python,10,3.88,0.229065088
+SUCCESS: sjf_gpt Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.py][Python] Run #5
+treebylevels_gpt_opt.py,Python,5,1.04,0.067868778
+[treebylevels_gpt_opt.py][Python] Run #5
+treebylevels_gpt_opt.py,Python,5,1.06,0.071483822
+SUCCESS: treebylevels_gpt_opt Run #5 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.js][JavaScript] Run #8
+sjf_qwen.js,JavaScript,8,1.04,0.070026641
+[sjf_qwen.js][JavaScript] Run #8
+sjf_qwen.js,JavaScript,8,0.97,0.066484817
+SUCCESS: sjf_qwen Run #8 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.js][JavaScript] Run #9
+treebylevels_qwen_opt.js,JavaScript,9,0.83,0.056194806
+[treebylevels_qwen_opt.js][JavaScript] Run #9
+treebylevels_qwen_opt.js,JavaScript,9,0.86,0.056680848
+SUCCESS: treebylevels_qwen_opt Run #9 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.js][JavaScript] Run #9
+queuetime_gpt.js,JavaScript,9,0.92,0.062571356
+[queuetime_gpt.js][JavaScript] Run #9
+queuetime_gpt.js,JavaScript,9,0.94,0.064169154
+SUCCESS: queuetime_gpt Run #9 completed
+Sleeping 1 minute before next run...
+[sjf.js][JavaScript] Run #5
+sjf.js,JavaScript,5,0.84,0.058397727
+[sjf.js][JavaScript] Run #5
+sjf.js,JavaScript,5,0.86,0.057099980
+SUCCESS: sjf Run #5 completed
+Sleeping 1 minute before next run...
+[mergearrays.py][Python] Run #7
+mergearrays.py,Python,7,1.70,0.107744146
+[mergearrays.py][Python] Run #7
+mergearrays.py,Python,7,1.72,0.107374930
+SUCCESS: mergearrays Run #7 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.rs][Rust] Run #1
+treebylevels_qwen.rs,Rust,1,0.22,0.015046863
+[treebylevels_qwen.rs][Rust] Run #1
+treebylevels_qwen.rs,Rust,1,0.24,0.014457532
+SUCCESS: treebylevels_qwen Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels.js][JavaScript] Run #10
+treebylevels.js,JavaScript,10,0.94,0.058630296
+[treebylevels.js][JavaScript] Run #10
+treebylevels.js,JavaScript,10,0.86,0.056796745
+SUCCESS: treebylevels Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.py][Python] Run #6
+treebylevels_gpt_opt.py,Python,6,1.04,0.065401442
+[treebylevels_gpt_opt.py][Python] Run #6
+treebylevels_gpt_opt.py,Python,6,1.03,0.064285065
+SUCCESS: treebylevels_gpt_opt Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.py][Python] Run #5
+sjf_qwen.py,Python,5,2.04,0.117307451
+[sjf_qwen.py][Python] Run #5
+sjf_qwen.py,Python,5,2.03,0.117159124
+SUCCESS: sjf_qwen Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.py][Python] Run #10
+treebylevels_qwen_opt.py,Python,10,2.25,0.126015083
+[treebylevels_qwen_opt.py][Python] Run #10
+treebylevels_qwen_opt.py,Python,10,2.11,0.118165779
+SUCCESS: treebylevels_qwen_opt Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.py][Python] Run #3
+treebylevels_llama_opt.py,Python,3,1.07,0.074089277
+[treebylevels_llama_opt.py][Python] Run #3
+treebylevels_llama_opt.py,Python,3,1.03,0.071072900
+SUCCESS: treebylevels_llama_opt Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels.rs][Rust] Run #9
+treebylevels.rs,Rust,9,0.22,0.014005837
+[treebylevels.rs][Rust] Run #9
+treebylevels.rs,Rust,9,0.26,0.015682119
+SUCCESS: treebylevels Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.js][JavaScript] Run #9
+treebylevels_llama.js,JavaScript,9,0.82,0.053467869
+[treebylevels_llama.js][JavaScript] Run #9
+treebylevels_llama.js,JavaScript,9,0.80,0.055480078
+SUCCESS: treebylevels_llama Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_llama.js][JavaScript] Run #2
+sjf_llama.js,JavaScript,2,0.91,0.067112786
+[sjf_llama.js][JavaScript] Run #2
+sjf_llama.js,JavaScript,2,0.93,0.067523185
+SUCCESS: sjf_llama Run #2 completed
+Sleeping 1 minute before next run...
+[sjf_gpt_opt.js][JavaScript] Run #1
+sjf_gpt_opt.js,JavaScript,1,0.85,0.056024760
+[sjf_gpt_opt.js][JavaScript] Run #1
+sjf_gpt_opt.js,JavaScript,1,0.88,0.056845325
+SUCCESS: sjf_gpt_opt Run #1 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.js][JavaScript] Run #8
+mergearrays_llama_opt.js,JavaScript,8,0.87,0.058279358
+[mergearrays_llama_opt.js][JavaScript] Run #8
+mergearrays_llama_opt.js,JavaScript,8,0.92,0.059665469
+SUCCESS: mergearrays_llama_opt Run #8 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.py][Python] Run #2
+queuetime_gpt_opt.py,Python,2,1.49,0.087914646
+[queuetime_gpt_opt.py][Python] Run #2
+queuetime_gpt_opt.py,Python,2,1.41,0.082647749
+SUCCESS: queuetime_gpt_opt Run #2 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.py][Python] Run #1
+sjf_llama_opt.py,Python,1,24.85,1.401672507
+[sjf_llama_opt.py][Python] Run #1
+sjf_llama_opt.py,Python,1,26.10,1.424025711
+SUCCESS: sjf_llama_opt Run #1 completed
+Sleeping 1 minute before next run...
+[queuetime.js][JavaScript] Run #10
+queuetime.js,JavaScript,10,0.99,0.063124932
+[queuetime.js][JavaScript] Run #10
+queuetime.js,JavaScript,10,0.99,0.061502864
+SUCCESS: queuetime Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.js][JavaScript] Run #3
+treebylevels_gpt_opt.js,JavaScript,3,0.88,0.057268985
+[treebylevels_gpt_opt.js][JavaScript] Run #3
+treebylevels_gpt_opt.js,JavaScript,3,0.94,0.058789168
+SUCCESS: treebylevels_gpt_opt Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels.js][JavaScript] Run #5
+treebylevels.js,JavaScript,5,0.92,0.057291984
+[treebylevels.js][JavaScript] Run #5
+treebylevels.js,JavaScript,5,0.89,0.057220116
+SUCCESS: treebylevels Run #5 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.js][JavaScript] Run #8
+sjf_qwen_opt.js,JavaScript,8,1.07,0.076042865
+[sjf_qwen_opt.js][JavaScript] Run #8
+sjf_qwen_opt.js,JavaScript,8,1.10,0.076578964
+SUCCESS: sjf_qwen_opt Run #8 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.py][Python] Run #5
+sjf_llama_opt.py,Python,5,25.47,1.396297930
+[sjf_llama_opt.py][Python] Run #5
+sjf_llama_opt.py,Python,5,26.28,1.421134660
+SUCCESS: sjf_llama_opt Run #5 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.py][Python] Run #9
+sjf_qwen.py,Python,9,2.12,0.121666738
+[sjf_qwen.py][Python] Run #9
+sjf_qwen.py,Python,9,2.26,0.127342566
+SUCCESS: sjf_qwen Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_llama.js][JavaScript] Run #7
+sjf_llama.js,JavaScript,7,1.25,0.076623192
+[sjf_llama.js][JavaScript] Run #7
+sjf_llama.js,JavaScript,7,0.92,0.060060289
+SUCCESS: sjf_llama Run #7 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.py][Python] Run #6
+sjf_llama_opt.py,Python,6,26.83,1.443028248
+[sjf_llama_opt.py][Python] Run #6
+sjf_llama_opt.py,Python,6,26.09,1.389209811
+SUCCESS: sjf_llama_opt Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.js][JavaScript] Run #1
+sjf_llama_opt.js,JavaScript,1,0.98,0.064060706
+[sjf_llama_opt.js][JavaScript] Run #1
+sjf_llama_opt.js,JavaScript,1,0.98,0.066994941
+SUCCESS: sjf_llama_opt Run #1 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.py][Python] Run #6
+mergearrays_llama_opt.py,Python,6,1.88,0.112591944
+[mergearrays_llama_opt.py][Python] Run #6
+mergearrays_llama_opt.py,Python,6,1.78,0.108258891
+SUCCESS: mergearrays_llama_opt Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_gpt_opt.js][JavaScript] Run #8
+sjf_gpt_opt.js,JavaScript,8,0.87,0.057981764
+[sjf_gpt_opt.js][JavaScript] Run #8
+sjf_gpt_opt.js,JavaScript,8,0.88,0.056753251
+SUCCESS: sjf_gpt_opt Run #8 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.py][Python] Run #4
+queuetime_qwen.py,Python,4,6.64,0.375221905
+[queuetime_qwen.py][Python] Run #4
+queuetime_qwen.py,Python,4,6.64,0.365249914
+SUCCESS: queuetime_qwen Run #4 completed
+Sleeping 1 minute before next run...
+[sjf.js][JavaScript] Run #2
+sjf.js,JavaScript,2,0.88,0.056982866
+[sjf.js][JavaScript] Run #2
+sjf.js,JavaScript,2,0.91,0.059215790
+SUCCESS: sjf Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays.js][JavaScript] Run #4
+mergearrays.js,JavaScript,4,0.91,0.059425262
+[mergearrays.js][JavaScript] Run #4
+mergearrays.js,JavaScript,4,0.87,0.058579923
+SUCCESS: mergearrays Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels.py][Python] Run #7
+treebylevels.py,Python,7,1.30,0.082029840
+[treebylevels.py][Python] Run #7
+treebylevels.py,Python,7,1.12,0.071824406
+SUCCESS: treebylevels Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.js][JavaScript] Run #1
+mergearrays_llama_opt.js,JavaScript,1,0.86,0.056554622
+[mergearrays_llama_opt.js][JavaScript] Run #1
+mergearrays_llama_opt.js,JavaScript,1,0.95,0.062158366
+SUCCESS: mergearrays_llama_opt Run #1 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.js][JavaScript] Run #6
+sjf_qwen_opt.js,JavaScript,6,1.04,0.068653069
+[sjf_qwen_opt.js][JavaScript] Run #6
+sjf_qwen_opt.js,JavaScript,6,1.04,0.068551686
+SUCCESS: sjf_qwen_opt Run #6 completed
+Sleeping 1 minute before next run...
+[sjf.rs][Rust] Run #4
+sjf.rs,Rust,4,0.33,0.021042121
+[sjf.rs][Rust] Run #4
+sjf.rs,Rust,4,0.32,0.021172767
+SUCCESS: sjf Run #4 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.py][Python] Run #1
+mergearrays_gpt.py,Python,1,1.77,0.108206778
+[mergearrays_gpt.py][Python] Run #1
+mergearrays_gpt.py,Python,1,1.75,0.105473121
+SUCCESS: mergearrays_gpt Run #1 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.js][JavaScript] Run #7
+mergearrays_qwen.js,JavaScript,7,0.98,0.067493347
+[mergearrays_qwen.js][JavaScript] Run #7
+mergearrays_qwen.js,JavaScript,7,0.91,0.064374210
+SUCCESS: mergearrays_qwen Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.py][Python] Run #8
+queuetime_gpt.py,Python,8,2.70,0.166077221
+[queuetime_gpt.py][Python] Run #8
+queuetime_gpt.py,Python,8,2.50,0.158121434
+SUCCESS: queuetime_gpt Run #8 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.py][Python] Run #6
+mergearrays_llama.py,Python,6,1.89,0.125928264
+[mergearrays_llama.py][Python] Run #6
+mergearrays_llama.py,Python,6,2.51,0.142729920
+SUCCESS: mergearrays_llama Run #6 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.py][Python] Run #7
+queuetime_gpt.py,Python,7,2.66,0.159967260
+[queuetime_gpt.py][Python] Run #7
+queuetime_gpt.py,Python,7,2.68,0.150824267
+SUCCESS: queuetime_gpt Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays.py][Python] Run #2
+mergearrays.py,Python,2,1.87,0.115494765
+[mergearrays.py][Python] Run #2
+mergearrays.py,Python,2,1.88,0.118556834
+SUCCESS: mergearrays Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.py][Python] Run #7
+mergearrays_llama.py,Python,7,2.01,0.130425357
+[mergearrays_llama.py][Python] Run #7
+mergearrays_llama.py,Python,7,2.07,0.127987795
+SUCCESS: mergearrays_llama Run #7 completed
+Sleeping 1 minute before next run...
+[treebylevels.js][JavaScript] Run #7
+treebylevels.js,JavaScript,7,0.89,0.059318685
+[treebylevels.js][JavaScript] Run #7
+treebylevels.js,JavaScript,7,0.96,0.066355278
+SUCCESS: treebylevels Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.js][JavaScript] Run #8
+mergearrays_qwen.js,JavaScript,8,1.40,0.081695311
+[mergearrays_qwen.js][JavaScript] Run #8
+mergearrays_qwen.js,JavaScript,8,1.16,0.071870262
+SUCCESS: mergearrays_qwen Run #8 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.py][Python] Run #9
+queuetime_llama_opt.py,Python,9,2.57,0.143778105
+[queuetime_llama_opt.py][Python] Run #9
+queuetime_llama_opt.py,Python,9,2.54,0.143841313
+SUCCESS: queuetime_llama_opt Run #9 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.js][JavaScript] Run #5
+mergearrays_gpt.js,JavaScript,5,0.92,0.060136002
+[mergearrays_gpt.js][JavaScript] Run #5
+mergearrays_gpt.js,JavaScript,5,0.93,0.060052380
+SUCCESS: mergearrays_gpt Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen_opt.py][Python] Run #1
+queuetime_qwen_opt.py,Python,1,2.58,0.143656751
+[queuetime_qwen_opt.py][Python] Run #1
+queuetime_qwen_opt.py,Python,1,2.52,0.144330802
+SUCCESS: queuetime_qwen_opt Run #1 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.py][Python] Run #5
+mergearrays_llama.py,Python,5,1.80,0.113295127
+[mergearrays_llama.py][Python] Run #5
+mergearrays_llama.py,Python,5,1.86,0.114142768
+SUCCESS: mergearrays_llama Run #5 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.js][JavaScript] Run #4
+sjf_qwen.js,JavaScript,4,1.02,0.066752412
+[sjf_qwen.js][JavaScript] Run #4
+sjf_qwen.js,JavaScript,4,0.96,0.061629720
+SUCCESS: sjf_qwen Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime.rs][Rust] Run #3
+queuetime.rs,Rust,3,2.38,0.158436524
+[queuetime.rs][Rust] Run #3
+queuetime.rs,Rust,3,2.40,0.155648426
+SUCCESS: queuetime Run #3 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.js][JavaScript] Run #9
+queuetime_qwen.js,JavaScript,9,1.02,0.061823928
+[queuetime_qwen.js][JavaScript] Run #9
+queuetime_qwen.js,JavaScript,9,0.89,0.058745154
+SUCCESS: queuetime_qwen Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.rs][Rust] Run #6
+sjf_qwen_opt.rs,Rust,6,1.64,0.099205388
+[sjf_qwen_opt.rs][Rust] Run #6
+sjf_qwen_opt.rs,Rust,6,1.59,0.099185704
+SUCCESS: sjf_qwen_opt Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.py][Python] Run #9
+treebylevels_gpt.py,Python,9,1.00,0.065196801
+[treebylevels_gpt.py][Python] Run #9
+treebylevels_gpt.py,Python,9,1.19,0.069404469
+SUCCESS: treebylevels_gpt Run #9 completed
+Sleeping 1 minute before next run...
+[mergearrays.js][JavaScript] Run #3
+mergearrays.js,JavaScript,3,0.91,0.058778552
+[mergearrays.js][JavaScript] Run #3
+mergearrays.js,JavaScript,3,0.88,0.059520671
+SUCCESS: mergearrays Run #3 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.py][Python] Run #6
+queuetime_gpt.py,Python,6,2.49,0.141506363
+[queuetime_gpt.py][Python] Run #6
+queuetime_gpt.py,Python,6,2.54,0.144934322
+SUCCESS: queuetime_gpt Run #6 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.js][JavaScript] Run #4
+mergearrays_llama.js,JavaScript,4,0.86,0.056792295
+[mergearrays_llama.js][JavaScript] Run #4
+mergearrays_llama.js,JavaScript,4,0.92,0.060521633
+SUCCESS: mergearrays_llama Run #4 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.js][JavaScript] Run #3
+mergearrays_qwen.js,JavaScript,3,0.92,0.060425611
+[mergearrays_qwen.js][JavaScript] Run #3
+mergearrays_qwen.js,JavaScript,3,0.83,0.055206294
+SUCCESS: mergearrays_qwen Run #3 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.js][JavaScript] Run #2
+sjf_gpt.js,JavaScript,2,0.98,0.065492536
+[sjf_gpt.js][JavaScript] Run #2
+sjf_gpt.js,JavaScript,2,0.98,0.063088322
+SUCCESS: sjf_gpt Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt_opt.js][JavaScript] Run #6
+mergearrays_gpt_opt.js,JavaScript,6,0.91,0.060662073
+[mergearrays_gpt_opt.js][JavaScript] Run #6
+mergearrays_gpt_opt.js,JavaScript,6,0.85,0.057286397
+SUCCESS: mergearrays_gpt_opt Run #6 completed
+Sleeping 1 minute before next run...
+[queuetime.js][JavaScript] Run #3
+queuetime.js,JavaScript,3,0.93,0.062335987
+[queuetime.js][JavaScript] Run #3
+queuetime.js,JavaScript,3,0.86,0.058405871
+SUCCESS: queuetime Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.js][JavaScript] Run #4
+treebylevels_llama.js,JavaScript,4,0.91,0.058534318
+[treebylevels_llama.js][JavaScript] Run #4
+treebylevels_llama.js,JavaScript,4,0.83,0.055837775
+SUCCESS: treebylevels_llama Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.js][JavaScript] Run #9
+queuetime_llama_opt.js,JavaScript,9,1.76,0.105717190
+[queuetime_llama_opt.js][JavaScript] Run #9
+queuetime_llama_opt.js,JavaScript,9,1.59,0.100358571
+SUCCESS: queuetime_llama_opt Run #9 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.py][Python] Run #10
+queuetime_llama_opt.py,Python,10,2.46,0.143054453
+[queuetime_llama_opt.py][Python] Run #10
+queuetime_llama_opt.py,Python,10,2.45,0.142945477
+SUCCESS: queuetime_llama_opt Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.js][JavaScript] Run #6
+queuetime_gpt.js,JavaScript,6,0.91,0.062443254
+[queuetime_gpt.js][JavaScript] Run #6
+queuetime_gpt.js,JavaScript,6,0.88,0.057080975
+SUCCESS: queuetime_gpt Run #6 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.js][JavaScript] Run #2
+queuetime_llama.js,JavaScript,2,0.94,0.062529306
+[queuetime_llama.js][JavaScript] Run #2
+queuetime_llama.js,JavaScript,2,0.91,0.059134323
+SUCCESS: queuetime_llama Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.py][Python] Run #5
+mergearrays_qwen.py,Python,5,7.87,0.430993378
+[mergearrays_qwen.py][Python] Run #5
+mergearrays_qwen.py,Python,5,7.99,0.428534811
+SUCCESS: mergearrays_qwen Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels.py][Python] Run #2
+treebylevels.py,Python,2,1.00,0.064803030
+[treebylevels.py][Python] Run #2
+treebylevels.py,Python,2,1.03,0.063566338
+SUCCESS: treebylevels Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt_opt.js][JavaScript] Run #4
+mergearrays_gpt_opt.js,JavaScript,4,0.93,0.060637793
+[mergearrays_gpt_opt.js][JavaScript] Run #4
+mergearrays_gpt_opt.js,JavaScript,4,0.95,0.061489258
+SUCCESS: mergearrays_gpt_opt Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.py][Python] Run #6
+queuetime_gpt_opt.py,Python,6,1.37,0.079733045
+[queuetime_gpt_opt.py][Python] Run #6
+queuetime_gpt_opt.py,Python,6,1.35,0.079102488
+SUCCESS: queuetime_gpt_opt Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.py][Python] Run #10
+sjf_qwen.py,Python,10,2.02,0.116919840
+[sjf_qwen.py][Python] Run #10
+sjf_qwen.py,Python,10,2.11,0.119197945
+SUCCESS: sjf_qwen Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.js][JavaScript] Run #2
+treebylevels_gpt.js,JavaScript,2,0.87,0.058046772
+[treebylevels_gpt.js][JavaScript] Run #2
+treebylevels_gpt.js,JavaScript,2,0.87,0.059360162
+SUCCESS: treebylevels_gpt Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.py][Python] Run #7
+queuetime_llama.py,Python,7,6.01,0.355873252
+[queuetime_llama.py][Python] Run #7
+queuetime_llama.py,Python,7,6.29,0.357552498
+SUCCESS: queuetime_llama Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays.js][JavaScript] Run #9
+mergearrays.js,JavaScript,9,0.88,0.059537519
+[mergearrays.js][JavaScript] Run #9
+mergearrays.js,JavaScript,9,0.92,0.061662444
+SUCCESS: mergearrays Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.js][JavaScript] Run #5
+treebylevels_llama_opt.js,JavaScript,5,0.85,0.057537530
+[treebylevels_llama_opt.js][JavaScript] Run #5
+treebylevels_llama_opt.js,JavaScript,5,0.88,0.058555499
+SUCCESS: treebylevels_llama_opt Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.rs][Rust] Run #6
+treebylevels_qwen_opt.rs,Rust,6,0.22,0.014707744
+[treebylevels_qwen_opt.rs][Rust] Run #6
+treebylevels_qwen_opt.rs,Rust,6,0.24,0.014518181
+SUCCESS: treebylevels_qwen_opt Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_llama.py][Python] Run #3
+sjf_llama.py,Python,3,4.13,0.228853218
+[sjf_llama.py][Python] Run #3
+sjf_llama.py,Python,3,3.86,0.221900525
+SUCCESS: sjf_llama Run #3 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.js][JavaScript] Run #9
+sjf_qwen_opt.js,JavaScript,9,0.94,0.064020803
+[sjf_qwen_opt.js][JavaScript] Run #9
+sjf_qwen_opt.js,JavaScript,9,0.95,0.064024082
+SUCCESS: sjf_qwen_opt Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.py][Python] Run #6
+treebylevels_qwen.py,Python,6,0.66,0.040058647
+[treebylevels_qwen.py][Python] Run #6
+treebylevels_qwen.py,Python,6,0.70,0.040945205
+SUCCESS: treebylevels_qwen Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.js][JavaScript] Run #1
+treebylevels_llama_opt.js,JavaScript,1,0.83,0.055955616
+[treebylevels_llama_opt.js][JavaScript] Run #1
+treebylevels_llama_opt.js,JavaScript,1,0.87,0.057797567
+SUCCESS: treebylevels_llama_opt Run #1 completed
+Sleeping 1 minute before next run...
+[queuetime.py][Python] Run #8
+queuetime.py,Python,8,5.93,0.352662935
+[queuetime.py][Python] Run #8
+queuetime.py,Python,8,6.18,0.353470936
+SUCCESS: queuetime Run #8 completed
+Sleeping 1 minute before next run...
+[sjf.rs][Rust] Run #3
+sjf.rs,Rust,3,0.26,0.017097472
+[sjf.rs][Rust] Run #3
+sjf.rs,Rust,3,0.26,0.017483003
+SUCCESS: sjf Run #3 completed
+Sleeping 1 minute before next run...
+[queuetime.js][JavaScript] Run #5
+queuetime.js,JavaScript,5,0.92,0.059281139
+[queuetime.js][JavaScript] Run #5
+queuetime.js,JavaScript,5,0.94,0.062065423
+SUCCESS: queuetime Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.js][JavaScript] Run #1
+treebylevels_gpt.js,JavaScript,1,0.84,0.058635884
+[treebylevels_gpt.js][JavaScript] Run #1
+treebylevels_gpt.js,JavaScript,1,0.87,0.058564564
+SUCCESS: treebylevels_gpt Run #1 completed
+Sleeping 1 minute before next run...
+[sjf.py][Python] Run #7
+sjf.py,Python,7,1.34,0.077009806
+[sjf.py][Python] Run #7
+sjf.py,Python,7,1.30,0.076376988
+SUCCESS: sjf Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays.js][JavaScript] Run #1
+mergearrays.js,JavaScript,1,0.82,0.056010157
+[mergearrays.js][JavaScript] Run #1
+mergearrays.js,JavaScript,1,0.85,0.057364522
+SUCCESS: mergearrays Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.rs][Rust] Run #10
+treebylevels_qwen_opt.rs,Rust,10,0.22,0.013479479
+[treebylevels_qwen_opt.rs][Rust] Run #10
+treebylevels_qwen_opt.rs,Rust,10,0.21,0.014285712
+SUCCESS: treebylevels_qwen_opt Run #10 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt_opt.js][JavaScript] Run #7
+mergearrays_gpt_opt.js,JavaScript,7,0.90,0.060413805
+[mergearrays_gpt_opt.js][JavaScript] Run #7
+mergearrays_gpt_opt.js,JavaScript,7,0.87,0.057758094
+SUCCESS: mergearrays_gpt_opt Run #7 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.js][JavaScript] Run #2
+sjf_qwen.js,JavaScript,2,1.00,0.065943643
+[sjf_qwen.js][JavaScript] Run #2
+sjf_qwen.js,JavaScript,2,1.16,0.069449035
+SUCCESS: sjf_qwen Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.js][JavaScript] Run #7
+queuetime_llama.js,JavaScript,7,0.89,0.060687161
+[queuetime_llama.js][JavaScript] Run #7
+queuetime_llama.js,JavaScript,7,0.94,0.060632832
+SUCCESS: queuetime_llama Run #7 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.py][Python] Run #7
+treebylevels_qwen_opt.py,Python,7,2.04,0.115898607
+[treebylevels_qwen_opt.py][Python] Run #7
+treebylevels_qwen_opt.py,Python,7,2.11,0.117610777
+SUCCESS: treebylevels_qwen_opt Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen_opt.py][Python] Run #2
+queuetime_qwen_opt.py,Python,2,2.53,0.143340458
+[queuetime_qwen_opt.py][Python] Run #2
+queuetime_qwen_opt.py,Python,2,2.50,0.144369373
+SUCCESS: queuetime_qwen_opt Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.js][JavaScript] Run #2
+queuetime_gpt.js,JavaScript,2,0.91,0.060249820
+[queuetime_gpt.js][JavaScript] Run #2
+queuetime_gpt.js,JavaScript,2,0.97,0.062935959
+SUCCESS: queuetime_gpt Run #2 completed
+Sleeping 1 minute before next run...
+[sjf.js][JavaScript] Run #8
+sjf.js,JavaScript,8,0.86,0.058050477
+[sjf.js][JavaScript] Run #8
+sjf.js,JavaScript,8,0.79,0.054749451
+SUCCESS: sjf Run #8 completed
+Sleeping 1 minute before next run...
+[treebylevels.rs][Rust] Run #6
+treebylevels.rs,Rust,6,0.21,0.014094330
+[treebylevels.rs][Rust] Run #6
+treebylevels.rs,Rust,6,0.21,0.013872092
+SUCCESS: treebylevels Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.js][JavaScript] Run #10
+treebylevels_qwen.js,JavaScript,10,0.86,0.058676382
+[treebylevels_qwen.js][JavaScript] Run #10
+treebylevels_qwen.js,JavaScript,10,0.85,0.056676319
+SUCCESS: treebylevels_qwen Run #10 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.js][JavaScript] Run #4
+sjf_gpt.js,JavaScript,4,0.94,0.062883926
+[sjf_gpt.js][JavaScript] Run #4
+sjf_gpt.js,JavaScript,4,1.05,0.063024320
+SUCCESS: sjf_gpt Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels.py][Python] Run #1
+treebylevels.py,Python,1,0.97,0.065480084
+[treebylevels.py][Python] Run #1
+treebylevels.py,Python,1,0.99,0.064104625
+SUCCESS: treebylevels Run #1 completed
+Sleeping 1 minute before next run...
+[sjf_llama.py][Python] Run #9
+sjf_llama.py,Python,9,3.79,0.224492955
+[sjf_llama.py][Python] Run #9
+sjf_llama.py,Python,9,4.00,0.223423552
+SUCCESS: sjf_llama Run #9 completed
+Sleeping 1 minute before next run...
+[queuetime.rs][Rust] Run #8
+queuetime.rs,Rust,8,2.43,0.158371595
+[queuetime.rs][Rust] Run #8
+queuetime.rs,Rust,8,2.45,0.159101008
+SUCCESS: queuetime Run #8 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.js][JavaScript] Run #10
+mergearrays_llama.js,JavaScript,10,0.92,0.060626014
+[mergearrays_llama.js][JavaScript] Run #10
+mergearrays_llama.js,JavaScript,10,0.88,0.059576589
+SUCCESS: mergearrays_llama Run #10 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.py][Python] Run #10
+mergearrays_llama_opt.py,Python,10,1.65,0.104411103
+[mergearrays_llama_opt.py][Python] Run #10
+mergearrays_llama_opt.py,Python,10,1.64,0.104774917
+SUCCESS: mergearrays_llama_opt Run #10 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.py][Python] Run #8
+sjf_llama_opt.py,Python,8,24.11,1.376179913
+[sjf_llama_opt.py][Python] Run #8
+sjf_llama_opt.py,Python,8,24.49,1.370593814
+SUCCESS: sjf_llama_opt Run #8 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.py][Python] Run #10
+treebylevels_gpt_opt.py,Python,10,1.02,0.067778383
+[treebylevels_gpt_opt.py][Python] Run #10
+treebylevels_gpt_opt.py,Python,10,0.99,0.064867966
+SUCCESS: treebylevels_gpt_opt Run #10 completed
+Sleeping 1 minute before next run...
+[mergearrays.js][JavaScript] Run #8
+mergearrays.js,JavaScript,8,0.88,0.059581607
+[mergearrays.js][JavaScript] Run #8
+mergearrays.js,JavaScript,8,1.18,0.064157920
+SUCCESS: mergearrays Run #8 completed
+Sleeping 1 minute before next run...
+[queuetime.rs][Rust] Run #1
+queuetime.rs,Rust,1,2.35,0.157081893
+[queuetime.rs][Rust] Run #1
+queuetime.rs,Rust,1,2.48,0.158779448
+SUCCESS: queuetime Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.js][JavaScript] Run #10
+treebylevels_llama.js,JavaScript,10,0.83,0.053105718
+[treebylevels_llama.js][JavaScript] Run #10
+treebylevels_llama.js,JavaScript,10,0.87,0.059029754
+SUCCESS: treebylevels_llama Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.py][Python] Run #6
+treebylevels_qwen_opt.py,Python,6,2.07,0.115604449
+[treebylevels_qwen_opt.py][Python] Run #6
+treebylevels_qwen_opt.py,Python,6,2.12,0.116738676
+SUCCESS: treebylevels_qwen_opt Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.js][JavaScript] Run #3
+treebylevels_qwen.js,JavaScript,3,0.82,0.052970832
+[treebylevels_qwen.js][JavaScript] Run #3
+treebylevels_qwen.js,JavaScript,3,0.85,0.057047483
+SUCCESS: treebylevels_qwen Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.js][JavaScript] Run #9
+treebylevels_gpt_opt.js,JavaScript,9,0.90,0.059457028
+[treebylevels_gpt_opt.js][JavaScript] Run #9
+treebylevels_gpt_opt.js,JavaScript,9,0.88,0.059339876
+SUCCESS: treebylevels_gpt_opt Run #9 completed
+Sleeping 1 minute before next run...
+[mergearrays.js][JavaScript] Run #10
+mergearrays.js,JavaScript,10,0.82,0.053866648
+[mergearrays.js][JavaScript] Run #10
+mergearrays.js,JavaScript,10,0.84,0.056036518
+SUCCESS: mergearrays Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.js][JavaScript] Run #5
+treebylevels_qwen_opt.js,JavaScript,5,0.87,0.056970960
+[treebylevels_qwen_opt.js][JavaScript] Run #5
+treebylevels_qwen_opt.js,JavaScript,5,0.86,0.058224971
+SUCCESS: treebylevels_qwen_opt Run #5 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.py][Python] Run #5
+sjf_gpt.py,Python,5,3.68,0.214681383
+[sjf_gpt.py][Python] Run #5
+sjf_gpt.py,Python,5,3.77,0.213630488
+SUCCESS: sjf_gpt Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.js][JavaScript] Run #10
+queuetime_llama.js,JavaScript,10,0.91,0.062125913
+[queuetime_llama.js][JavaScript] Run #10
+queuetime_llama.js,JavaScript,10,0.91,0.060807470
+SUCCESS: queuetime_llama Run #10 completed
+Sleeping 1 minute before next run...
+[sjf_llama.js][JavaScript] Run #4
+sjf_llama.js,JavaScript,4,0.83,0.055191092
+[sjf_llama.js][JavaScript] Run #4
+sjf_llama.js,JavaScript,4,0.87,0.057646707
+SUCCESS: sjf_llama Run #4 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.js][JavaScript] Run #9
+sjf_gpt.js,JavaScript,9,0.95,0.060766482
+[sjf_gpt.js][JavaScript] Run #9
+sjf_gpt.js,JavaScript,9,0.95,0.063130531
+SUCCESS: sjf_gpt Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.js][JavaScript] Run #6
+treebylevels_qwen_opt.js,JavaScript,6,0.86,0.058737766
+[treebylevels_qwen_opt.js][JavaScript] Run #6
+treebylevels_qwen_opt.js,JavaScript,6,0.89,0.060547001
+SUCCESS: treebylevels_qwen_opt Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.py][Python] Run #7
+treebylevels_llama_opt.py,Python,7,0.98,0.064682704
+[treebylevels_llama_opt.py][Python] Run #7
+treebylevels_llama_opt.py,Python,7,1.02,0.065347902
+SUCCESS: treebylevels_llama_opt Run #7 completed
+Sleeping 1 minute before next run...
+[treebylevels.js][JavaScript] Run #2
+treebylevels.js,JavaScript,2,0.86,0.058570328
+[treebylevels.js][JavaScript] Run #2
+treebylevels.js,JavaScript,2,0.87,0.056889975
+SUCCESS: treebylevels Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime.js][JavaScript] Run #8
+queuetime.js,JavaScript,8,1.08,0.065647737
+[queuetime.js][JavaScript] Run #8
+queuetime.js,JavaScript,8,0.90,0.061887547
+SUCCESS: queuetime Run #8 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.js][JavaScript] Run #9
+sjf_qwen.js,JavaScript,9,1.00,0.066180945
+[sjf_qwen.js][JavaScript] Run #9
+sjf_qwen.js,JavaScript,9,0.93,0.062208968
+SUCCESS: sjf_qwen Run #9 completed
+Sleeping 1 minute before next run...
+[mergearrays.rs][Rust] Run #1
+mergearrays.rs,Rust,1,0.91,0.058857750
+[mergearrays.rs][Rust] Run #1
+mergearrays.rs,Rust,1,0.89,0.058345323
+SUCCESS: mergearrays Run #1 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.js][JavaScript] Run #8
+sjf_llama_opt.js,JavaScript,8,0.90,0.060599817
+[sjf_llama_opt.js][JavaScript] Run #8
+sjf_llama_opt.js,JavaScript,8,0.94,0.061393474
+SUCCESS: sjf_llama_opt Run #8 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.py][Python] Run #5
+treebylevels_qwen.py,Python,5,0.70,0.040638462
+[treebylevels_qwen.py][Python] Run #5
+treebylevels_qwen.py,Python,5,0.72,0.040768845
+SUCCESS: treebylevels_qwen Run #5 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.js][JavaScript] Run #2
+mergearrays_gpt.js,JavaScript,2,0.90,0.057602995
+[mergearrays_gpt.js][JavaScript] Run #2
+mergearrays_gpt.js,JavaScript,2,0.91,0.060599819
+SUCCESS: mergearrays_gpt Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.js][JavaScript] Run #1
+queuetime_qwen.js,JavaScript,1,0.91,0.061209455
+[queuetime_qwen.js][JavaScript] Run #1
+queuetime_qwen.js,JavaScript,1,0.91,0.061086576
+SUCCESS: queuetime_qwen Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels.py][Python] Run #6
+treebylevels.py,Python,6,1.03,0.066247170
+[treebylevels.py][Python] Run #6
+treebylevels.py,Python,6,1.01,0.064315356
+SUCCESS: treebylevels Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.rs][Rust] Run #4
+treebylevels_qwen_opt.rs,Rust,4,0.23,0.014735039
+[treebylevels_qwen_opt.rs][Rust] Run #4
+treebylevels_qwen_opt.rs,Rust,4,0.22,0.013627520
+SUCCESS: treebylevels_qwen_opt Run #4 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.js][JavaScript] Run #1
+mergearrays_llama.js,JavaScript,1,0.91,0.061924314
+[mergearrays_llama.js][JavaScript] Run #1
+mergearrays_llama.js,JavaScript,1,0.91,0.060738176
+SUCCESS: mergearrays_llama Run #1 completed
+Sleeping 1 minute before next run...
+[sjf.rs][Rust] Run #10
+sjf.rs,Rust,10,0.27,0.017015572
+[sjf.rs][Rust] Run #10
+sjf.rs,Rust,10,0.26,0.016954086
+SUCCESS: sjf Run #10 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.js][JavaScript] Run #9
+mergearrays_gpt.js,JavaScript,9,0.90,0.060703192
+[mergearrays_gpt.js][JavaScript] Run #9
+mergearrays_gpt.js,JavaScript,9,0.85,0.057434703
+SUCCESS: mergearrays_gpt Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.py][Python] Run #7
+sjf_qwen.py,Python,7,2.02,0.118200410
+[sjf_qwen.py][Python] Run #7
+sjf_qwen.py,Python,7,2.10,0.120385448
+SUCCESS: sjf_qwen Run #7 completed
+Sleeping 1 minute before next run...
+[treebylevels.rs][Rust] Run #1
+treebylevels.rs,Rust,1,0.23,0.014555743
+[treebylevels.rs][Rust] Run #1
+treebylevels.rs,Rust,1,0.22,0.013983912
+SUCCESS: treebylevels Run #1 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.js][JavaScript] Run #3
+queuetime_qwen.js,JavaScript,3,0.92,0.061572417
+[queuetime_qwen.js][JavaScript] Run #3
+queuetime_qwen.js,JavaScript,3,0.85,0.054864233
+SUCCESS: queuetime_qwen Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels.py][Python] Run #8
+treebylevels.py,Python,8,1.01,0.064862492
+[treebylevels.py][Python] Run #8
+treebylevels.py,Python,8,1.00,0.063805341
+SUCCESS: treebylevels Run #8 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.js][JavaScript] Run #7
+treebylevels_qwen_opt.js,JavaScript,7,0.81,0.055616515
+[treebylevels_qwen_opt.js][JavaScript] Run #7
+treebylevels_qwen_opt.js,JavaScript,7,0.85,0.056822582
+SUCCESS: treebylevels_qwen_opt Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.js][JavaScript] Run #6
+queuetime_llama.js,JavaScript,6,0.88,0.060398449
+[queuetime_llama.js][JavaScript] Run #6
+queuetime_llama.js,JavaScript,6,0.94,0.060368116
+SUCCESS: queuetime_llama Run #6 completed
+Sleeping 1 minute before next run...
+[queuetime.js][JavaScript] Run #7
+queuetime.js,JavaScript,7,0.94,0.060720897
+[queuetime.js][JavaScript] Run #7
+queuetime.js,JavaScript,7,0.91,0.061156992
+SUCCESS: queuetime Run #7 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.js][JavaScript] Run #1
+treebylevels_llama.js,JavaScript,1,0.86,0.058361121
+[treebylevels_llama.js][JavaScript] Run #1
+treebylevels_llama.js,JavaScript,1,0.82,0.054689249
+SUCCESS: treebylevels_llama Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels.rs][Rust] Run #10
+treebylevels.rs,Rust,10,0.22,0.014515411
+[treebylevels.rs][Rust] Run #10
+treebylevels.rs,Rust,10,0.20,0.013587250
+SUCCESS: treebylevels Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.py][Python] Run #4
+treebylevels_qwen.py,Python,4,0.67,0.039711269
+[treebylevels_qwen.py][Python] Run #4
+treebylevels_qwen.py,Python,4,0.72,0.040778279
+SUCCESS: treebylevels_qwen Run #4 completed
+Sleeping 1 minute before next run...
+[sjf_gpt_opt.js][JavaScript] Run #2
+sjf_gpt_opt.js,JavaScript,2,0.87,0.057716155
+[sjf_gpt_opt.js][JavaScript] Run #2
+sjf_gpt_opt.js,JavaScript,2,0.79,0.051473307
+SUCCESS: sjf_gpt_opt Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime.py][Python] Run #5
+queuetime.py,Python,5,6.27,0.356931763
+[queuetime.py][Python] Run #5
+queuetime.py,Python,5,6.33,0.359221898
+SUCCESS: queuetime Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen_opt.py][Python] Run #8
+queuetime_qwen_opt.py,Python,8,2.44,0.142322435
+[queuetime_qwen_opt.py][Python] Run #8
+queuetime_qwen_opt.py,Python,8,2.46,0.144870032
+SUCCESS: queuetime_qwen_opt Run #8 completed
+Sleeping 1 minute before next run...
+[queuetime.js][JavaScript] Run #6
+queuetime.js,JavaScript,6,0.92,0.061228736
+[queuetime.js][JavaScript] Run #6
+queuetime.js,JavaScript,6,0.94,0.060643913
+SUCCESS: queuetime Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_llama.py][Python] Run #6
+sjf_llama.py,Python,6,4.07,0.228596402
+[sjf_llama.py][Python] Run #6
+sjf_llama.py,Python,6,4.08,0.228245223
+SUCCESS: sjf_llama Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.py][Python] Run #3
+treebylevels_qwen.py,Python,3,0.69,0.040569677
+[treebylevels_qwen.py][Python] Run #3
+treebylevels_qwen.py,Python,3,0.73,0.042088399
+SUCCESS: treebylevels_qwen Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.py][Python] Run #5
+treebylevels_llama_opt.py,Python,5,1.01,0.065127492
+[treebylevels_llama_opt.py][Python] Run #5
+treebylevels_llama_opt.py,Python,5,0.99,0.062678773
+SUCCESS: treebylevels_llama_opt Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime.py][Python] Run #6
+queuetime.py,Python,6,5.95,0.353478572
+[queuetime.py][Python] Run #6
+queuetime.py,Python,6,6.09,0.354287148
+SUCCESS: queuetime Run #6 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.js][JavaScript] Run #10
+queuetime_gpt.js,JavaScript,10,0.87,0.056361737
+[queuetime_gpt.js][JavaScript] Run #10
+queuetime_gpt.js,JavaScript,10,0.96,0.062803165
+SUCCESS: queuetime_gpt Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen_opt.py][Python] Run #10
+queuetime_qwen_opt.py,Python,10,2.52,0.143265673
+[queuetime_qwen_opt.py][Python] Run #10
+queuetime_qwen_opt.py,Python,10,2.55,0.143460456
+SUCCESS: queuetime_qwen_opt Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.py][Python] Run #9
+queuetime_gpt.py,Python,9,2.58,0.143412299
+[queuetime_gpt.py][Python] Run #9
+queuetime_gpt.py,Python,9,2.56,0.144158797
+SUCCESS: queuetime_gpt Run #9 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.py][Python] Run #1
+queuetime_gpt_opt.py,Python,1,1.37,0.078868532
+[queuetime_gpt_opt.py][Python] Run #1
+queuetime_gpt_opt.py,Python,1,1.36,0.079109474
+SUCCESS: queuetime_gpt_opt Run #1 completed
+Sleeping 1 minute before next run...
+[sjf_gpt_opt.js][JavaScript] Run #6
+sjf_gpt_opt.js,JavaScript,6,0.86,0.056246783
+[sjf_gpt_opt.js][JavaScript] Run #6
+sjf_gpt_opt.js,JavaScript,6,0.85,0.054748855
+SUCCESS: sjf_gpt_opt Run #6 completed
+Sleeping 1 minute before next run...
+[sjf.js][JavaScript] Run #7
+sjf.js,JavaScript,7,0.80,0.051724088
+[sjf.js][JavaScript] Run #7
+sjf.js,JavaScript,7,0.76,0.051146839
+SUCCESS: sjf Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.py][Python] Run #8
+mergearrays_llama.py,Python,8,1.82,0.112236628
+[mergearrays_llama.py][Python] Run #8
+mergearrays_llama.py,Python,8,1.85,0.111907256
+SUCCESS: mergearrays_llama Run #8 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.js][JavaScript] Run #5
+queuetime_llama.js,JavaScript,5,0.92,0.061178291
+[queuetime_llama.js][JavaScript] Run #5
+queuetime_llama.js,JavaScript,5,0.90,0.059053328
+SUCCESS: queuetime_llama Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.py][Python] Run #4
+treebylevels_llama.py,Python,4,1.01,0.064674875
+[treebylevels_llama.py][Python] Run #4
+treebylevels_llama.py,Python,4,1.04,0.065103653
+SUCCESS: treebylevels_llama Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.py][Python] Run #2
+queuetime_qwen.py,Python,2,6.18,0.355958916
+[queuetime_qwen.py][Python] Run #2
+queuetime_qwen.py,Python,2,6.16,0.357901706
+SUCCESS: queuetime_qwen Run #2 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.js][JavaScript] Run #6
+treebylevels_qwen.js,JavaScript,6,0.87,0.057819150
+[treebylevels_qwen.js][JavaScript] Run #6
+treebylevels_qwen.js,JavaScript,6,0.89,0.058269189
+SUCCESS: treebylevels_qwen Run #6 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.js][JavaScript] Run #7
+queuetime_gpt_opt.js,JavaScript,7,0.91,0.060361502
+[queuetime_gpt_opt.js][JavaScript] Run #7
+queuetime_gpt_opt.js,JavaScript,7,1.05,0.062769261
+SUCCESS: queuetime_gpt_opt Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime.rs][Rust] Run #9
+queuetime.rs,Rust,9,2.56,0.160308230
+[queuetime.rs][Rust] Run #9
+queuetime.rs,Rust,9,2.39,0.158805314
+SUCCESS: queuetime Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.js][JavaScript] Run #9
+treebylevels_gpt.js,JavaScript,9,0.87,0.057223238
+[treebylevels_gpt.js][JavaScript] Run #9
+treebylevels_gpt.js,JavaScript,9,0.83,0.053386489
+SUCCESS: treebylevels_gpt Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.py][Python] Run #8
+treebylevels_qwen_opt.py,Python,8,2.06,0.115311442
+[treebylevels_qwen_opt.py][Python] Run #8
+treebylevels_qwen_opt.py,Python,8,2.11,0.117070149
+SUCCESS: treebylevels_qwen_opt Run #8 completed
+Sleeping 1 minute before next run...
+[queuetime.py][Python] Run #4
+queuetime.py,Python,4,6.44,0.363841910
+[queuetime.py][Python] Run #4
+queuetime.py,Python,4,6.21,0.355630814
+SUCCESS: queuetime Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.py][Python] Run #5
+queuetime_gpt.py,Python,5,2.54,0.142720281
+[queuetime_gpt.py][Python] Run #5
+queuetime_gpt.py,Python,5,2.48,0.143129398
+SUCCESS: queuetime_gpt Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.js][JavaScript] Run #3
+treebylevels_llama.js,JavaScript,3,0.87,0.058159942
+[treebylevels_llama.js][JavaScript] Run #3
+treebylevels_llama.js,JavaScript,3,0.82,0.052962258
+SUCCESS: treebylevels_llama Run #3 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.py][Python] Run #2
+mergearrays_llama.py,Python,2,1.78,0.112074220
+[mergearrays_llama.py][Python] Run #2
+mergearrays_llama.py,Python,2,1.76,0.112985096
+SUCCESS: mergearrays_llama Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays.py][Python] Run #3
+mergearrays.py,Python,3,1.73,0.105435949
+[mergearrays.py][Python] Run #3
+mergearrays.py,Python,3,1.65,0.103699248
+SUCCESS: mergearrays Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.js][JavaScript] Run #8
+treebylevels_gpt.js,JavaScript,8,0.85,0.058159874
+[treebylevels_gpt.js][JavaScript] Run #8
+treebylevels_gpt.js,JavaScript,8,0.84,0.056090666
+SUCCESS: treebylevels_gpt Run #8 completed
+Sleeping 1 minute before next run...
+[treebylevels.rs][Rust] Run #4
+treebylevels.rs,Rust,4,0.24,0.014743411
+[treebylevels.rs][Rust] Run #4
+treebylevels.rs,Rust,4,0.21,0.013860204
+SUCCESS: treebylevels Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.js][JavaScript] Run #1
+queuetime_llama.js,JavaScript,1,0.92,0.063530811
+[queuetime_llama.js][JavaScript] Run #1
+queuetime_llama.js,JavaScript,1,0.88,0.057315082
+SUCCESS: queuetime_llama Run #1 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.py][Python] Run #6
+queuetime_llama_opt.py,Python,6,2.60,0.143848558
+[queuetime_llama_opt.py][Python] Run #6
+queuetime_llama_opt.py,Python,6,2.51,0.142566874
+SUCCESS: queuetime_llama_opt Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.rs][Rust] Run #2
+treebylevels_qwen_opt.rs,Rust,2,0.21,0.014083002
+[treebylevels_qwen_opt.rs][Rust] Run #2
+treebylevels_qwen_opt.rs,Rust,2,0.22,0.014244670
+SUCCESS: treebylevels_qwen_opt Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.js][JavaScript] Run #5
+mergearrays_llama.js,JavaScript,5,0.84,0.056906260
+[mergearrays_llama.js][JavaScript] Run #5
+mergearrays_llama.js,JavaScript,5,0.86,0.059209247
+SUCCESS: mergearrays_llama Run #5 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.py][Python] Run #2
+mergearrays_qwen.py,Python,2,7.99,0.429444746
+[mergearrays_qwen.py][Python] Run #2
+mergearrays_qwen.py,Python,2,8.08,0.431090027
+SUCCESS: mergearrays_qwen Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.js][JavaScript] Run #2
+mergearrays_qwen.js,JavaScript,2,0.89,0.057718900
+[mergearrays_qwen.js][JavaScript] Run #2
+mergearrays_qwen.js,JavaScript,2,0.89,0.056950978
+SUCCESS: mergearrays_qwen Run #2 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.rs][Rust] Run #8
+sjf_qwen.rs,Rust,8,1.64,0.099003586
+[sjf_qwen.rs][Rust] Run #8
+sjf_qwen.rs,Rust,8,1.59,0.098936770
+SUCCESS: sjf_qwen Run #8 completed
+Sleeping 1 minute before next run...
+[sjf.rs][Rust] Run #5
+sjf.rs,Rust,5,0.27,0.017164294
+[sjf.rs][Rust] Run #5
+sjf.rs,Rust,5,0.26,0.016796184
+SUCCESS: sjf Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.py][Python] Run #10
+queuetime_gpt.py,Python,10,2.54,0.142709158
+[queuetime_gpt.py][Python] Run #10
+queuetime_gpt.py,Python,10,2.53,0.144597458
+SUCCESS: queuetime_gpt Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.js][JavaScript] Run #10
+treebylevels_gpt_opt.js,JavaScript,10,0.86,0.058648608
+[treebylevels_gpt_opt.js][JavaScript] Run #10
+treebylevels_gpt_opt.js,JavaScript,10,0.80,0.053126429
+SUCCESS: treebylevels_gpt_opt Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.js][JavaScript] Run #4
+queuetime_gpt.js,JavaScript,4,0.90,0.059909281
+[queuetime_gpt.js][JavaScript] Run #4
+queuetime_gpt.js,JavaScript,4,0.93,0.059926914
+SUCCESS: queuetime_gpt Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.py][Python] Run #2
+treebylevels_gpt.py,Python,2,1.04,0.066763220
+[treebylevels_gpt.py][Python] Run #2
+treebylevels_gpt.py,Python,2,1.02,0.063181633
+SUCCESS: treebylevels_gpt Run #2 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.js][JavaScript] Run #6
+treebylevels_llama.js,JavaScript,6,0.87,0.057904706
+[treebylevels_llama.js][JavaScript] Run #6
+treebylevels_llama.js,JavaScript,6,0.95,0.062055688
+SUCCESS: treebylevels_llama Run #6 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.py][Python] Run #1
+mergearrays_llama.py,Python,1,1.91,0.114673750
+[mergearrays_llama.py][Python] Run #1
+mergearrays_llama.py,Python,1,1.76,0.113028239
+SUCCESS: mergearrays_llama Run #1 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.rs][Rust] Run #2
+sjf_qwen_opt.rs,Rust,2,1.57,0.099296565
+[sjf_qwen_opt.rs][Rust] Run #2
+sjf_qwen_opt.rs,Rust,2,1.61,0.099193041
+SUCCESS: sjf_qwen_opt Run #2 completed
+Sleeping 1 minute before next run...
+[treebylevels.rs][Rust] Run #3
+treebylevels.rs,Rust,3,0.24,0.014305172
+[treebylevels.rs][Rust] Run #3
+treebylevels.rs,Rust,3,0.22,0.014401639
+SUCCESS: treebylevels Run #3 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.rs][Rust] Run #7
+sjf_qwen.rs,Rust,7,1.68,0.101221662
+[sjf_qwen.rs][Rust] Run #7
+sjf_qwen.rs,Rust,7,1.59,0.098983163
+SUCCESS: sjf_qwen Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.py][Python] Run #4
+queuetime_gpt.py,Python,4,2.46,0.142759426
+[queuetime_gpt.py][Python] Run #4
+queuetime_gpt.py,Python,4,2.46,0.141818530
+SUCCESS: queuetime_gpt Run #4 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.rs][Rust] Run #7
+sjf_qwen_opt.rs,Rust,7,1.60,0.098426589
+[sjf_qwen_opt.rs][Rust] Run #7
+sjf_qwen_opt.rs,Rust,7,1.58,0.098959178
+SUCCESS: sjf_qwen_opt Run #7 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.rs][Rust] Run #8
+treebylevels_qwen_opt.rs,Rust,8,0.23,0.013359971
+[treebylevels_qwen_opt.rs][Rust] Run #8
+treebylevels_qwen_opt.rs,Rust,8,0.23,0.013817095
+SUCCESS: treebylevels_qwen_opt Run #8 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.py][Python] Run #10
+treebylevels_llama_opt.py,Python,10,1.02,0.063873538
+[treebylevels_llama_opt.py][Python] Run #10
+treebylevels_llama_opt.py,Python,10,1.00,0.064267603
+SUCCESS: treebylevels_llama_opt Run #10 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.rs][Rust] Run #5
+sjf_qwen.rs,Rust,5,1.59,0.099504939
+[sjf_qwen.rs][Rust] Run #5
+sjf_qwen.rs,Rust,5,1.58,0.098200811
+SUCCESS: sjf_qwen Run #5 completed
+Sleeping 1 minute before next run...
+[mergearrays.js][JavaScript] Run #6
+mergearrays.js,JavaScript,6,0.83,0.054907672
+[mergearrays.js][JavaScript] Run #6
+mergearrays.js,JavaScript,6,0.88,0.057243541
+SUCCESS: mergearrays Run #6 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen_opt.py][Python] Run #3
+queuetime_qwen_opt.py,Python,3,2.55,0.143014537
+[queuetime_qwen_opt.py][Python] Run #3
+queuetime_qwen_opt.py,Python,3,2.54,0.143499412
+SUCCESS: queuetime_qwen_opt Run #3 completed
+Sleeping 1 minute before next run...
+[mergearrays.js][JavaScript] Run #2
+mergearrays.js,JavaScript,2,0.91,0.059645401
+[mergearrays.js][JavaScript] Run #2
+mergearrays.js,JavaScript,2,0.84,0.055531091
+SUCCESS: mergearrays Run #2 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.py][Python] Run #1
+treebylevels_gpt_opt.py,Python,1,1.03,0.065595060
+[treebylevels_gpt_opt.py][Python] Run #1
+treebylevels_gpt_opt.py,Python,1,1.01,0.063638597
+SUCCESS: treebylevels_gpt_opt Run #1 completed
+Sleeping 1 minute before next run...
+[sjf_llama.py][Python] Run #8
+sjf_llama.py,Python,8,3.88,0.223525488
+[sjf_llama.py][Python] Run #8
+sjf_llama.py,Python,8,4.05,0.225860183
+SUCCESS: sjf_llama Run #8 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.js][JavaScript] Run #4
+queuetime_llama_opt.js,JavaScript,4,1.75,0.106079186
+[queuetime_llama_opt.js][JavaScript] Run #4
+queuetime_llama_opt.js,JavaScript,4,1.76,0.108220837
+SUCCESS: queuetime_llama_opt Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.py][Python] Run #10
+treebylevels_gpt.py,Python,10,1.01,0.064793542
+[treebylevels_gpt.py][Python] Run #10
+treebylevels_gpt.py,Python,10,1.00,0.063884130
+SUCCESS: treebylevels_gpt Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.js][JavaScript] Run #6
+queuetime_qwen.js,JavaScript,6,0.91,0.060367901
+[queuetime_qwen.js][JavaScript] Run #6
+queuetime_qwen.js,JavaScript,6,0.88,0.059777544
+SUCCESS: queuetime_qwen Run #6 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.py][Python] Run #9
+mergearrays_gpt.py,Python,9,1.66,0.103939306
+[mergearrays_gpt.py][Python] Run #9
+mergearrays_gpt.py,Python,9,1.62,0.103390418
+SUCCESS: mergearrays_gpt Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels.js][JavaScript] Run #3
+treebylevels.js,JavaScript,3,0.84,0.055486591
+[treebylevels.js][JavaScript] Run #3
+treebylevels.js,JavaScript,3,0.88,0.057460990
+SUCCESS: treebylevels Run #3 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.js][JavaScript] Run #9
+mergearrays_qwen.js,JavaScript,9,0.90,0.059513755
+[mergearrays_qwen.js][JavaScript] Run #9
+mergearrays_qwen.js,JavaScript,9,0.83,0.055109581
+SUCCESS: mergearrays_qwen Run #9 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen_opt.py][Python] Run #5
+queuetime_qwen_opt.py,Python,5,2.53,0.145470530
+[queuetime_qwen_opt.py][Python] Run #5
+queuetime_qwen_opt.py,Python,5,2.48,0.144123013
+SUCCESS: queuetime_qwen_opt Run #5 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.js][JavaScript] Run #3
+sjf_gpt.js,JavaScript,3,0.96,0.060307458
+[sjf_gpt.js][JavaScript] Run #3
+sjf_gpt.js,JavaScript,3,0.92,0.061854793
+SUCCESS: sjf_gpt Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.py][Python] Run #6
+treebylevels_llama_opt.py,Python,6,1.07,0.067119814
+[treebylevels_llama_opt.py][Python] Run #6
+treebylevels_llama_opt.py,Python,6,1.04,0.064475669
+SUCCESS: treebylevels_llama_opt Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.py][Python] Run #7
+sjf_llama_opt.py,Python,7,24.74,1.374909654
+[sjf_llama_opt.py][Python] Run #7
+sjf_llama_opt.py,Python,7,25.15,1.369852591
+SUCCESS: sjf_llama_opt Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime.py][Python] Run #7
+queuetime.py,Python,7,6.36,0.355813301
+[queuetime.py][Python] Run #7
+queuetime.py,Python,7,6.18,0.355595601
+SUCCESS: queuetime Run #7 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.py][Python] Run #7
+treebylevels_llama.py,Python,7,1.01,0.066108468
+[treebylevels_llama.py][Python] Run #7
+treebylevels_llama.py,Python,7,1.03,0.064535914
+SUCCESS: treebylevels_llama Run #7 completed
+Sleeping 1 minute before next run...
+[sjf_gpt_opt.js][JavaScript] Run #3
+sjf_gpt_opt.js,JavaScript,3,0.86,0.056683424
+[sjf_gpt_opt.js][JavaScript] Run #3
+sjf_gpt_opt.js,JavaScript,3,0.81,0.053281424
+SUCCESS: sjf_gpt_opt Run #3 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.py][Python] Run #3
+mergearrays_qwen.py,Python,3,7.91,0.429303404
+[mergearrays_qwen.py][Python] Run #3
+mergearrays_qwen.py,Python,3,8.10,0.430059938
+SUCCESS: mergearrays_qwen Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.rs][Rust] Run #6
+treebylevels_qwen.rs,Rust,6,0.21,0.014124329
+[treebylevels_qwen.rs][Rust] Run #6
+treebylevels_qwen.rs,Rust,6,0.22,0.013995652
+SUCCESS: treebylevels_qwen Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.js][JavaScript] Run #4
+sjf_llama_opt.js,JavaScript,4,0.95,0.063048871
+[sjf_llama_opt.js][JavaScript] Run #4
+sjf_llama_opt.js,JavaScript,4,0.88,0.058099606
+SUCCESS: sjf_llama_opt Run #4 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.py][Python] Run #9
+sjf_llama_opt.py,Python,9,25.52,1.394543718
+[sjf_llama_opt.py][Python] Run #9
+sjf_llama_opt.py,Python,9,24.85,1.370320398
+SUCCESS: sjf_llama_opt Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_llama.js][JavaScript] Run #6
+sjf_llama.js,JavaScript,6,0.90,0.060224759
+[sjf_llama.js][JavaScript] Run #6
+sjf_llama.js,JavaScript,6,0.93,0.058797121
+SUCCESS: sjf_llama Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.py][Python] Run #8
+treebylevels_gpt_opt.py,Python,8,0.99,0.064041054
+[treebylevels_gpt_opt.py][Python] Run #8
+treebylevels_gpt_opt.py,Python,8,1.02,0.065117329
+SUCCESS: treebylevels_gpt_opt Run #8 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.rs][Rust] Run #6
+sjf_qwen.rs,Rust,6,1.66,0.100718630
+[sjf_qwen.rs][Rust] Run #6
+sjf_qwen.rs,Rust,6,1.67,0.099596182
+SUCCESS: sjf_qwen Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels.js][JavaScript] Run #9
+treebylevels.js,JavaScript,9,0.87,0.057193365
+[treebylevels.js][JavaScript] Run #9
+treebylevels.js,JavaScript,9,0.86,0.057168498
+SUCCESS: treebylevels Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.js][JavaScript] Run #3
+treebylevels_gpt.js,JavaScript,3,0.89,0.058766225
+[treebylevels_gpt.js][JavaScript] Run #3
+treebylevels_gpt.js,JavaScript,3,0.85,0.056655638
+SUCCESS: treebylevels_gpt Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.py][Python] Run #2
+treebylevels_qwen_opt.py,Python,2,2.15,0.118979872
+[treebylevels_qwen_opt.py][Python] Run #2
+treebylevels_qwen_opt.py,Python,2,2.09,0.116407896
+SUCCESS: treebylevels_qwen_opt Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.js][JavaScript] Run #4
+queuetime_llama.js,JavaScript,4,0.97,0.061088579
+[queuetime_llama.js][JavaScript] Run #4
+queuetime_llama.js,JavaScript,4,0.89,0.057652080
+SUCCESS: queuetime_llama Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.py][Python] Run #9
+queuetime_gpt_opt.py,Python,9,1.38,0.080510672
+[queuetime_gpt_opt.py][Python] Run #9
+queuetime_gpt_opt.py,Python,9,1.40,0.079694163
+SUCCESS: queuetime_gpt_opt Run #9 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.js][JavaScript] Run #9
+mergearrays_llama.js,JavaScript,9,0.91,0.059410079
+[mergearrays_llama.js][JavaScript] Run #9
+mergearrays_llama.js,JavaScript,9,0.92,0.059595261
+SUCCESS: mergearrays_llama Run #9 completed
+Sleeping 1 minute before next run...
+[sjf.rs][Rust] Run #6
+sjf.rs,Rust,6,0.26,0.016859457
+[sjf.rs][Rust] Run #6
+sjf.rs,Rust,6,0.27,0.016703721
+SUCCESS: sjf Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.py][Python] Run #2
+treebylevels_gpt_opt.py,Python,2,0.98,0.065082948
+[treebylevels_gpt_opt.py][Python] Run #2
+treebylevels_gpt_opt.py,Python,2,1.00,0.065061248
+SUCCESS: treebylevels_gpt_opt Run #2 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.rs][Rust] Run #2
+treebylevels_qwen.rs,Rust,2,0.23,0.014434488
+[treebylevels_qwen.rs][Rust] Run #2
+treebylevels_qwen.rs,Rust,2,0.22,0.014178746
+SUCCESS: treebylevels_qwen Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.py][Python] Run #9
+queuetime_qwen.py,Python,9,6.12,0.357983471
+[queuetime_qwen.py][Python] Run #9
+queuetime_qwen.py,Python,9,6.29,0.357439953
+SUCCESS: queuetime_qwen Run #9 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.js][JavaScript] Run #10
+mergearrays_qwen.js,JavaScript,10,0.90,0.059544767
+[mergearrays_qwen.js][JavaScript] Run #10
+mergearrays_qwen.js,JavaScript,10,0.91,0.059624370
+SUCCESS: mergearrays_qwen Run #10 completed
+Sleeping 1 minute before next run...
+[mergearrays.rs][Rust] Run #10
+mergearrays.rs,Rust,10,0.91,0.058952109
+[mergearrays.rs][Rust] Run #10
+mergearrays.rs,Rust,10,0.93,0.059640979
+SUCCESS: mergearrays Run #10 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.js][JavaScript] Run #9
+mergearrays_llama_opt.js,JavaScript,9,0.96,0.061391182
+[mergearrays_llama_opt.js][JavaScript] Run #9
+mergearrays_llama_opt.js,JavaScript,9,0.94,0.061041893
+SUCCESS: mergearrays_llama_opt Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_gpt_opt.js][JavaScript] Run #4
+sjf_gpt_opt.js,JavaScript,4,0.82,0.056889870
+[sjf_gpt_opt.js][JavaScript] Run #4
+sjf_gpt_opt.js,JavaScript,4,0.86,0.057297351
+SUCCESS: sjf_gpt_opt Run #4 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.py][Python] Run #9
+mergearrays_qwen.py,Python,9,8.06,0.434387182
+[mergearrays_qwen.py][Python] Run #9
+mergearrays_qwen.py,Python,9,8.04,0.434880412
+SUCCESS: mergearrays_qwen Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels.rs][Rust] Run #7
+treebylevels.rs,Rust,7,0.23,0.014520488
+[treebylevels.rs][Rust] Run #7
+treebylevels.rs,Rust,7,0.23,0.014038020
+SUCCESS: treebylevels Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.js][JavaScript] Run #7
+mergearrays_llama.js,JavaScript,7,0.91,0.061589691
+[mergearrays_llama.js][JavaScript] Run #7
+mergearrays_llama.js,JavaScript,7,0.84,0.055443024
+SUCCESS: mergearrays_llama Run #7 completed
+Sleeping 1 minute before next run...
+[sjf_gpt_opt.js][JavaScript] Run #10
+sjf_gpt_opt.js,JavaScript,10,0.85,0.058139550
+[sjf_gpt_opt.js][JavaScript] Run #10
+sjf_gpt_opt.js,JavaScript,10,0.87,0.056812695
+SUCCESS: sjf_gpt_opt Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.py][Python] Run #8
+queuetime_gpt_opt.py,Python,8,1.35,0.079827391
+[queuetime_gpt_opt.py][Python] Run #8
+queuetime_gpt_opt.py,Python,8,1.38,0.079338338
+SUCCESS: queuetime_gpt_opt Run #8 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.js][JavaScript] Run #6
+mergearrays_qwen.js,JavaScript,6,0.88,0.059075183
+[mergearrays_qwen.js][JavaScript] Run #6
+mergearrays_qwen.js,JavaScript,6,0.87,0.058982788
+SUCCESS: mergearrays_qwen Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.py][Python] Run #3
+treebylevels_llama.py,Python,3,1.00,0.063801998
+[treebylevels_llama.py][Python] Run #3
+treebylevels_llama.py,Python,3,1.04,0.064820134
+SUCCESS: treebylevels_llama Run #3 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.py][Python] Run #7
+mergearrays_gpt.py,Python,7,1.67,0.104411286
+[mergearrays_gpt.py][Python] Run #7
+mergearrays_gpt.py,Python,7,1.72,0.105084449
+SUCCESS: mergearrays_gpt Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime.rs][Rust] Run #5
+queuetime.rs,Rust,5,2.43,0.160287339
+[queuetime.rs][Rust] Run #5
+queuetime.rs,Rust,5,2.42,0.156305582
+SUCCESS: queuetime Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.py][Python] Run #3
+treebylevels_gpt.py,Python,3,0.98,0.064079660
+[treebylevels_gpt.py][Python] Run #3
+treebylevels_gpt.py,Python,3,0.98,0.064292237
+SUCCESS: treebylevels_gpt Run #3 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.js][JavaScript] Run #7
+queuetime_llama_opt.js,JavaScript,7,1.72,0.104051836
+[queuetime_llama_opt.js][JavaScript] Run #7
+queuetime_llama_opt.js,JavaScript,7,1.70,0.106830231
+SUCCESS: queuetime_llama_opt Run #7 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.py][Python] Run #2
+sjf_qwen.py,Python,2,2.05,0.117670398
+[sjf_qwen.py][Python] Run #2
+sjf_qwen.py,Python,2,2.11,0.121060679
+SUCCESS: sjf_qwen Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.js][JavaScript] Run #9
+queuetime_gpt_opt.js,JavaScript,9,0.84,0.056410174
+[queuetime_gpt_opt.js][JavaScript] Run #9
+queuetime_gpt_opt.js,JavaScript,9,1.38,0.075448813
+SUCCESS: queuetime_gpt_opt Run #9 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.py][Python] Run #5
+queuetime_gpt_opt.py,Python,5,1.36,0.079628235
+[queuetime_gpt_opt.py][Python] Run #5
+queuetime_gpt_opt.py,Python,5,1.36,0.079212195
+SUCCESS: queuetime_gpt_opt Run #5 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.py][Python] Run #10
+mergearrays_qwen.py,Python,10,7.70,0.428916324
+[mergearrays_qwen.py][Python] Run #10
+mergearrays_qwen.py,Python,10,7.79,0.428972536
+SUCCESS: mergearrays_qwen Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime.js][JavaScript] Run #9
+queuetime.js,JavaScript,9,0.93,0.061311525
+[queuetime.js][JavaScript] Run #9
+queuetime.js,JavaScript,9,0.95,0.063448149
+SUCCESS: queuetime Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.rs][Rust] Run #10
+treebylevels_qwen.rs,Rust,10,0.22,0.013938922
+[treebylevels_qwen.rs][Rust] Run #10
+treebylevels_qwen.rs,Rust,10,0.22,0.013714863
+SUCCESS: treebylevels_qwen Run #10 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.py][Python] Run #6
+sjf_gpt.py,Python,6,3.64,0.213770099
+[sjf_gpt.py][Python] Run #6
+sjf_gpt.py,Python,6,3.81,0.214009598
+SUCCESS: sjf_gpt Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.py][Python] Run #9
+treebylevels_qwen_opt.py,Python,9,2.06,0.117648237
+[treebylevels_qwen_opt.py][Python] Run #9
+treebylevels_qwen_opt.py,Python,9,2.07,0.115957114
+SUCCESS: treebylevels_qwen_opt Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.rs][Rust] Run #5
+treebylevels_qwen_opt.rs,Rust,5,0.22,0.014003549
+[treebylevels_qwen_opt.rs][Rust] Run #5
+treebylevels_qwen_opt.rs,Rust,5,0.21,0.014353677
+SUCCESS: treebylevels_qwen_opt Run #5 completed
+Sleeping 1 minute before next run...
+[mergearrays.rs][Rust] Run #3
+mergearrays.rs,Rust,3,0.93,0.059546837
+[mergearrays.rs][Rust] Run #3
+mergearrays.rs,Rust,3,0.93,0.059627502
+SUCCESS: mergearrays Run #3 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.py][Python] Run #1
+sjf_qwen.py,Python,1,1.98,0.116629881
+[sjf_qwen.py][Python] Run #1
+sjf_qwen.py,Python,1,2.01,0.117026070
+SUCCESS: sjf_qwen Run #1 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.rs][Rust] Run #3
+sjf_qwen_opt.rs,Rust,3,1.60,0.100364444
+[sjf_qwen_opt.rs][Rust] Run #3
+sjf_qwen_opt.rs,Rust,3,1.60,0.100142404
+SUCCESS: sjf_qwen_opt Run #3 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.py][Python] Run #7
+mergearrays_llama_opt.py,Python,7,1.69,0.104012012
+[mergearrays_llama_opt.py][Python] Run #7
+mergearrays_llama_opt.py,Python,7,1.63,0.104414828
+SUCCESS: mergearrays_llama_opt Run #7 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.py][Python] Run #4
+treebylevels_qwen_opt.py,Python,4,2.04,0.119002822
+[treebylevels_qwen_opt.py][Python] Run #4
+treebylevels_qwen_opt.py,Python,4,2.07,0.117925004
+SUCCESS: treebylevels_qwen_opt Run #4 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.js][JavaScript] Run #10
+mergearrays_llama_opt.js,JavaScript,10,0.89,0.059991201
+[mergearrays_llama_opt.js][JavaScript] Run #10
+mergearrays_llama_opt.js,JavaScript,10,0.89,0.058872536
+SUCCESS: mergearrays_llama_opt Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.py][Python] Run #3
+queuetime_gpt_opt.py,Python,3,1.43,0.082275135
+[queuetime_gpt_opt.py][Python] Run #3
+queuetime_gpt_opt.py,Python,3,1.47,0.081599886
+SUCCESS: queuetime_gpt_opt Run #3 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.py][Python] Run #5
+mergearrays_llama_opt.py,Python,5,1.67,0.105201778
+[mergearrays_llama_opt.py][Python] Run #5
+mergearrays_llama_opt.py,Python,5,1.66,0.103878722
+SUCCESS: mergearrays_llama_opt Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.js][JavaScript] Run #5
+treebylevels_llama.js,JavaScript,5,0.86,0.058517951
+[treebylevels_llama.js][JavaScript] Run #5
+treebylevels_llama.js,JavaScript,5,0.88,0.058250359
+SUCCESS: treebylevels_llama Run #5 completed
+Sleeping 1 minute before next run...
+[mergearrays.py][Python] Run #9
+mergearrays.py,Python,9,1.71,0.105783431
+[mergearrays.py][Python] Run #9
+mergearrays.py,Python,9,1.66,0.104282833
+SUCCESS: mergearrays Run #9 completed
+Sleeping 1 minute before next run...
+[sjf.js][JavaScript] Run #6
+sjf.js,JavaScript,6,0.85,0.057320729
+[sjf.js][JavaScript] Run #6
+sjf.js,JavaScript,6,1.01,0.060786429
+SUCCESS: sjf Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.py][Python] Run #8
+treebylevels_gpt.py,Python,8,0.99,0.064484286
+[treebylevels_gpt.py][Python] Run #8
+treebylevels_gpt.py,Python,8,1.01,0.064787700
+SUCCESS: treebylevels_gpt Run #8 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.js][JavaScript] Run #3
+sjf_llama_opt.js,JavaScript,3,0.82,0.057150471
+[sjf_llama_opt.js][JavaScript] Run #3
+sjf_llama_opt.js,JavaScript,3,0.91,0.061112487
+SUCCESS: sjf_llama_opt Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.js][JavaScript] Run #7
+treebylevels_gpt_opt.js,JavaScript,7,0.85,0.055043863
+[treebylevels_gpt_opt.js][JavaScript] Run #7
+treebylevels_gpt_opt.js,JavaScript,7,0.84,0.055421234
+SUCCESS: treebylevels_gpt_opt Run #7 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.py][Python] Run #10
+treebylevels_qwen.py,Python,10,0.65,0.039603152
+[treebylevels_qwen.py][Python] Run #10
+treebylevels_qwen.py,Python,10,0.70,0.040584804
+SUCCESS: treebylevels_qwen Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.js][JavaScript] Run #8
+treebylevels_qwen_opt.js,JavaScript,8,0.86,0.062684725
+[treebylevels_qwen_opt.js][JavaScript] Run #8
+treebylevels_qwen_opt.js,JavaScript,8,0.88,0.064190056
+SUCCESS: treebylevels_qwen_opt Run #8 completed
+Sleeping 1 minute before next run...
+[mergearrays.rs][Rust] Run #2
+mergearrays.rs,Rust,2,0.92,0.059983866
+[mergearrays.rs][Rust] Run #2
+mergearrays.rs,Rust,2,0.91,0.061970920
+SUCCESS: mergearrays Run #2 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.js][JavaScript] Run #8
+treebylevels_gpt_opt.js,JavaScript,8,0.89,0.060251502
+[treebylevels_gpt_opt.js][JavaScript] Run #8
+treebylevels_gpt_opt.js,JavaScript,8,0.98,0.062772357
+SUCCESS: treebylevels_gpt_opt Run #8 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.py][Python] Run #9
+treebylevels_gpt_opt.py,Python,9,1.22,0.074921537
+[treebylevels_gpt_opt.py][Python] Run #9
+treebylevels_gpt_opt.py,Python,9,1.02,0.069559184
+SUCCESS: treebylevels_gpt_opt Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.js][JavaScript] Run #7
+treebylevels_gpt.js,JavaScript,7,0.98,0.059294738
+[treebylevels_gpt.js][JavaScript] Run #7
+treebylevels_gpt.js,JavaScript,7,0.89,0.058448488
+SUCCESS: treebylevels_gpt Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.py][Python] Run #10
+mergearrays_llama.py,Python,10,2.15,0.122523371
+[mergearrays_llama.py][Python] Run #10
+mergearrays_llama.py,Python,10,2.14,0.119394504
+SUCCESS: mergearrays_llama Run #10 completed
+Sleeping 1 minute before next run...
+[sjf_llama.py][Python] Run #4
+sjf_llama.py,Python,4,4.80,0.236461512
+[sjf_llama.py][Python] Run #4
+sjf_llama.py,Python,4,4.98,0.242461896
+SUCCESS: sjf_llama Run #4 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.py][Python] Run #2
+mergearrays_gpt.py,Python,2,1.65,0.104782257
+[mergearrays_gpt.py][Python] Run #2
+mergearrays_gpt.py,Python,2,1.79,0.108125565
+SUCCESS: mergearrays_gpt Run #2 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.py][Python] Run #1
+treebylevels_gpt.py,Python,1,2.05,0.106105254
+[treebylevels_gpt.py][Python] Run #1
+treebylevels_gpt.py,Python,1,2.72,0.130357449
+SUCCESS: treebylevels_gpt Run #1 completed
+Sleeping 1 minute before next run...
+[sjf.py][Python] Run #2
+sjf.py,Python,2,1.36,0.076825865
+[sjf.py][Python] Run #2
+sjf.py,Python,2,1.38,0.076855660
+SUCCESS: sjf Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.py][Python] Run #2
+mergearrays_llama_opt.py,Python,2,1.85,0.120758869
+[mergearrays_llama_opt.py][Python] Run #2
+mergearrays_llama_opt.py,Python,2,1.81,0.113760439
+SUCCESS: mergearrays_llama_opt Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.js][JavaScript] Run #5
+queuetime_gpt.js,JavaScript,5,1.10,0.066132467
+[queuetime_gpt.js][JavaScript] Run #5
+queuetime_gpt.js,JavaScript,5,1.01,0.067661089
+SUCCESS: queuetime_gpt Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels.py][Python] Run #10
+treebylevels.py,Python,10,1.37,0.082431864
+[treebylevels.py][Python] Run #10
+treebylevels.py,Python,10,1.53,0.086890477
+SUCCESS: treebylevels Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.js][JavaScript] Run #8
+queuetime_qwen.js,JavaScript,8,1.03,0.065611528
+[queuetime_qwen.js][JavaScript] Run #8
+queuetime_qwen.js,JavaScript,8,1.03,0.065374921
+SUCCESS: queuetime_qwen Run #8 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.py][Python] Run #8
+mergearrays_llama_opt.py,Python,8,1.87,0.125362140
+[mergearrays_llama_opt.py][Python] Run #8
+mergearrays_llama_opt.py,Python,8,1.89,0.124327164
+SUCCESS: mergearrays_llama_opt Run #8 completed
+Sleeping 1 minute before next run...
+[mergearrays.rs][Rust] Run #9
+mergearrays.rs,Rust,9,0.96,0.060284987
+[mergearrays.rs][Rust] Run #9
+mergearrays.rs,Rust,9,0.99,0.063960763
+SUCCESS: mergearrays Run #9 completed
+Sleeping 1 minute before next run...
+[mergearrays.py][Python] Run #1
+mergearrays.py,Python,1,1.94,0.122849336
+[mergearrays.py][Python] Run #1
+mergearrays.py,Python,1,1.82,0.109717840
+SUCCESS: mergearrays Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.py][Python] Run #4
+treebylevels_gpt.py,Python,4,1.11,0.076996109
+[treebylevels_gpt.py][Python] Run #4
+treebylevels_gpt.py,Python,4,1.12,0.075044739
+SUCCESS: treebylevels_gpt Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.rs][Rust] Run #9
+treebylevels_qwen_opt.rs,Rust,9,0.22,0.015355612
+[treebylevels_qwen_opt.rs][Rust] Run #9
+treebylevels_qwen_opt.rs,Rust,9,0.21,0.015889647
+SUCCESS: treebylevels_qwen_opt Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.py][Python] Run #9
+sjf_gpt.py,Python,9,4.10,0.247618198
+[sjf_gpt.py][Python] Run #9
+sjf_gpt.py,Python,9,4.38,0.235248438
+SUCCESS: sjf_gpt Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.js][JavaScript] Run #4
+treebylevels_qwen_opt.js,JavaScript,4,0.90,0.063546513
+[treebylevels_qwen_opt.js][JavaScript] Run #4
+treebylevels_qwen_opt.js,JavaScript,4,1.53,0.085504730
+SUCCESS: treebylevels_qwen_opt Run #4 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.py][Python] Run #3
+mergearrays_llama.py,Python,3,1.95,0.126529347
+[mergearrays_llama.py][Python] Run #3
+mergearrays_llama.py,Python,3,1.92,0.120139741
+SUCCESS: mergearrays_llama Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.rs][Rust] Run #7
+treebylevels_qwen_opt.rs,Rust,7,0.23,0.016144605
+[treebylevels_qwen_opt.rs][Rust] Run #7
+treebylevels_qwen_opt.rs,Rust,7,0.23,0.016183351
+SUCCESS: treebylevels_qwen_opt Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.js][JavaScript] Run #2
+queuetime_gpt_opt.js,JavaScript,2,1.07,0.071646263
+[queuetime_gpt_opt.js][JavaScript] Run #2
+queuetime_gpt_opt.js,JavaScript,2,0.91,0.061681528
+SUCCESS: queuetime_gpt_opt Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.py][Python] Run #1
+queuetime_llama.py,Python,1,6.53,0.387249188
+[queuetime_llama.py][Python] Run #1
+queuetime_llama.py,Python,1,6.63,0.386113896
+SUCCESS: queuetime_llama Run #1 completed
+Sleeping 1 minute before next run...
+[sjf.js][JavaScript] Run #4
+sjf.js,JavaScript,4,0.93,0.062411471
+[sjf.js][JavaScript] Run #4
+sjf.js,JavaScript,4,0.93,0.063740510
+SUCCESS: sjf Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.py][Python] Run #1
+treebylevels_qwen_opt.py,Python,1,2.16,0.121085075
+[treebylevels_qwen_opt.py][Python] Run #1
+treebylevels_qwen_opt.py,Python,1,2.27,0.123190899
+SUCCESS: treebylevels_qwen_opt Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.js][JavaScript] Run #10
+treebylevels_gpt.js,JavaScript,10,0.87,0.058106072
+[treebylevels_gpt.js][JavaScript] Run #10
+treebylevels_gpt.js,JavaScript,10,1.39,0.076137137
+SUCCESS: treebylevels_gpt Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.js][JavaScript] Run #3
+treebylevels_llama_opt.js,JavaScript,3,0.85,0.056607752
+[treebylevels_llama_opt.js][JavaScript] Run #3
+treebylevels_llama_opt.js,JavaScript,3,0.96,0.064208522
+SUCCESS: treebylevels_llama_opt Run #3 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.js][JavaScript] Run #10
+queuetime_gpt_opt.js,JavaScript,10,1.09,0.073180133
+[queuetime_gpt_opt.js][JavaScript] Run #10
+queuetime_gpt_opt.js,JavaScript,10,1.15,0.074615268
+SUCCESS: queuetime_gpt_opt Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.rs][Rust] Run #4
+treebylevels_qwen.rs,Rust,4,0.20,0.013734659
+[treebylevels_qwen.rs][Rust] Run #4
+treebylevels_qwen.rs,Rust,4,0.21,0.014077522
+SUCCESS: treebylevels_qwen Run #4 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.py][Python] Run #1
+mergearrays_llama_opt.py,Python,1,1.87,0.109922448
+[mergearrays_llama_opt.py][Python] Run #1
+mergearrays_llama_opt.py,Python,1,1.79,0.105466718
+SUCCESS: mergearrays_llama_opt Run #1 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.js][JavaScript] Run #5
+mergearrays_llama_opt.js,JavaScript,5,0.91,0.058101796
+[mergearrays_llama_opt.js][JavaScript] Run #5
+mergearrays_llama_opt.js,JavaScript,5,0.96,0.061239992
+SUCCESS: mergearrays_llama_opt Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.py][Python] Run #8
+queuetime_llama.py,Python,8,6.98,0.399519311
+[queuetime_llama.py][Python] Run #8
+queuetime_llama.py,Python,8,6.80,0.374392950
+SUCCESS: queuetime_llama Run #8 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.js][JavaScript] Run #3
+treebylevels_qwen_opt.js,JavaScript,3,0.93,0.059338785
+[treebylevels_qwen_opt.js][JavaScript] Run #3
+treebylevels_qwen_opt.js,JavaScript,3,0.88,0.061096100
+SUCCESS: treebylevels_qwen_opt Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.js][JavaScript] Run #6
+treebylevels_llama_opt.js,JavaScript,6,0.85,0.056051352
+[treebylevels_llama_opt.js][JavaScript] Run #6
+treebylevels_llama_opt.js,JavaScript,6,0.92,0.059705013
+SUCCESS: treebylevels_llama_opt Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.rs][Rust] Run #5
+sjf_qwen_opt.rs,Rust,5,1.87,0.108729741
+[sjf_qwen_opt.rs][Rust] Run #5
+sjf_qwen_opt.rs,Rust,5,1.71,0.101924250
+SUCCESS: sjf_qwen_opt Run #5 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.py][Python] Run #1
+sjf_gpt.py,Python,1,4.02,0.227780551
+[sjf_gpt.py][Python] Run #1
+sjf_gpt.py,Python,1,4.02,0.225534870
+SUCCESS: sjf_gpt Run #1 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.py][Python] Run #5
+mergearrays_gpt.py,Python,5,1.85,0.107836858
+[mergearrays_gpt.py][Python] Run #5
+mergearrays_gpt.py,Python,5,1.85,0.109587915
+SUCCESS: mergearrays_gpt Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels.rs][Rust] Run #5
+treebylevels.rs,Rust,5,0.21,0.013931889
+[treebylevels.rs][Rust] Run #5
+treebylevels.rs,Rust,5,0.23,0.014360731
+SUCCESS: treebylevels Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.py][Python] Run #3
+queuetime_gpt.py,Python,3,2.64,0.148521959
+[queuetime_gpt.py][Python] Run #3
+queuetime_gpt.py,Python,3,3.02,0.172700339
+SUCCESS: queuetime_gpt Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.js][JavaScript] Run #8
+treebylevels_llama.js,JavaScript,8,0.89,0.058931120
+[treebylevels_llama.js][JavaScript] Run #8
+treebylevels_llama.js,JavaScript,8,0.92,0.062617995
+SUCCESS: treebylevels_llama Run #8 completed
+Sleeping 1 minute before next run...
+[sjf_llama.py][Python] Run #2
+sjf_llama.py,Python,2,4.23,0.235235429
+[sjf_llama.py][Python] Run #2
+sjf_llama.py,Python,2,4.39,0.233399340
+SUCCESS: sjf_llama Run #2 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.js][JavaScript] Run #2
+treebylevels_llama_opt.js,JavaScript,2,0.92,0.057638225
+[treebylevels_llama_opt.js][JavaScript] Run #2
+treebylevels_llama_opt.js,JavaScript,2,1.01,0.063345105
+SUCCESS: treebylevels_llama_opt Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.py][Python] Run #3
+queuetime_llama.py,Python,3,6.97,0.372181969
+[queuetime_llama.py][Python] Run #3
+queuetime_llama.py,Python,3,6.74,0.366467772
+SUCCESS: queuetime_llama Run #3 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.js][JavaScript] Run #4
+queuetime_qwen.js,JavaScript,4,0.96,0.060195319
+[queuetime_qwen.js][JavaScript] Run #4
+queuetime_qwen.js,JavaScript,4,0.95,0.058767042
+SUCCESS: queuetime_qwen Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.js][JavaScript] Run #8
+queuetime_gpt.js,JavaScript,8,0.91,0.060666023
+[queuetime_gpt.js][JavaScript] Run #8
+queuetime_gpt.js,JavaScript,8,1.04,0.067022823
+SUCCESS: queuetime_gpt Run #8 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.py][Python] Run #6
+treebylevels_gpt.py,Python,6,1.12,0.067783984
+[treebylevels_gpt.py][Python] Run #6
+treebylevels_gpt.py,Python,6,1.04,0.065999653
+SUCCESS: treebylevels_gpt Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.js][JavaScript] Run #5
+sjf_llama_opt.js,JavaScript,5,0.86,0.057383343
+[sjf_llama_opt.js][JavaScript] Run #5
+sjf_llama_opt.js,JavaScript,5,1.03,0.065288377
+SUCCESS: sjf_llama_opt Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.py][Python] Run #7
+treebylevels_qwen.py,Python,7,0.80,0.042450241
+[treebylevels_qwen.py][Python] Run #7
+treebylevels_qwen.py,Python,7,0.78,0.045381710
+SUCCESS: treebylevels_qwen Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.js][JavaScript] Run #7
+queuetime_qwen.js,JavaScript,7,0.93,0.061208372
+[queuetime_qwen.js][JavaScript] Run #7
+queuetime_qwen.js,JavaScript,7,0.94,0.063347212
+SUCCESS: queuetime_qwen Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.js][JavaScript] Run #1
+mergearrays_qwen.js,JavaScript,1,0.89,0.057168348
+[mergearrays_qwen.js][JavaScript] Run #1
+mergearrays_qwen.js,JavaScript,1,0.97,0.063391224
+SUCCESS: mergearrays_qwen Run #1 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.py][Python] Run #4
+sjf_gpt.py,Python,4,3.93,0.221385420
+[sjf_gpt.py][Python] Run #4
+sjf_gpt.py,Python,4,4.22,0.223039029
+SUCCESS: sjf_gpt Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.js][JavaScript] Run #7
+treebylevels_llama.js,JavaScript,7,0.90,0.056504745
+[treebylevels_llama.js][JavaScript] Run #7
+treebylevels_llama.js,JavaScript,7,0.90,0.058666968
+SUCCESS: treebylevels_llama Run #7 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.py][Python] Run #4
+sjf_qwen.py,Python,4,2.18,0.122309271
+[sjf_qwen.py][Python] Run #4
+sjf_qwen.py,Python,4,2.21,0.121162029
+SUCCESS: sjf_qwen Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime.py][Python] Run #9
+queuetime.py,Python,9,6.65,0.365263126
+[queuetime.py][Python] Run #9
+queuetime.py,Python,9,6.61,0.364160856
+SUCCESS: queuetime Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels.js][JavaScript] Run #6
+treebylevels.js,JavaScript,6,0.83,0.053261992
+[treebylevels.js][JavaScript] Run #6
+treebylevels.js,JavaScript,6,0.95,0.062392860
+SUCCESS: treebylevels Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_llama.js][JavaScript] Run #9
+sjf_llama.js,JavaScript,9,0.84,0.054947665
+[sjf_llama.js][JavaScript] Run #9
+sjf_llama.js,JavaScript,9,0.92,0.061265622
+SUCCESS: sjf_llama Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_llama.js][JavaScript] Run #8
+sjf_llama.js,JavaScript,8,0.86,0.054388028
+[sjf_llama.js][JavaScript] Run #8
+sjf_llama.js,JavaScript,8,1.67,0.090213724
+SUCCESS: sjf_llama Run #8 completed
+Sleeping 1 minute before next run...
+[mergearrays.js][JavaScript] Run #7
+mergearrays.js,JavaScript,7,0.84,0.054603896
+[mergearrays.js][JavaScript] Run #7
+mergearrays.js,JavaScript,7,0.93,0.063144490
+SUCCESS: mergearrays Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt_opt.js][JavaScript] Run #3
+mergearrays_gpt_opt.js,JavaScript,3,0.87,0.057834482
+[mergearrays_gpt_opt.js][JavaScript] Run #3
+mergearrays_gpt_opt.js,JavaScript,3,1.03,0.064011847
+SUCCESS: mergearrays_gpt_opt Run #3 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.py][Python] Run #3
+sjf_qwen.py,Python,3,2.17,0.123398109
+[sjf_qwen.py][Python] Run #3
+sjf_qwen.py,Python,3,2.21,0.122021135
+SUCCESS: sjf_qwen Run #3 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.py][Python] Run #2
+sjf_gpt.py,Python,2,4.48,0.254690441
+[sjf_gpt.py][Python] Run #2
+sjf_gpt.py,Python,2,4.27,0.237462527
+SUCCESS: sjf_gpt Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.js][JavaScript] Run #5
+queuetime_llama_opt.js,JavaScript,5,1.79,0.105818235
+[queuetime_llama_opt.js][JavaScript] Run #5
+queuetime_llama_opt.js,JavaScript,5,1.87,0.110181632
+SUCCESS: queuetime_llama_opt Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime.py][Python] Run #2
+queuetime.py,Python,2,6.66,0.362861755
+[queuetime.py][Python] Run #2
+queuetime.py,Python,2,6.73,0.363826682
+SUCCESS: queuetime Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.py][Python] Run #10
+queuetime_llama.py,Python,10,6.69,0.367128500
+[queuetime_llama.py][Python] Run #10
+queuetime_llama.py,Python,10,6.68,0.367048826
+SUCCESS: queuetime_llama Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.js][JavaScript] Run #2
+queuetime_llama_opt.js,JavaScript,2,1.87,0.111495145
+[queuetime_llama_opt.js][JavaScript] Run #2
+queuetime_llama_opt.js,JavaScript,2,1.84,0.111939117
+SUCCESS: queuetime_llama_opt Run #2 completed
+Sleeping 1 minute before next run...
+[mergearrays.py][Python] Run #4
+mergearrays.py,Python,4,1.83,0.109265994
+[mergearrays.py][Python] Run #4
+mergearrays.py,Python,4,1.78,0.107728408
+SUCCESS: mergearrays Run #4 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.js][JavaScript] Run #7
+sjf_llama_opt.js,JavaScript,7,0.86,0.057733140
+[sjf_llama_opt.js][JavaScript] Run #7
+sjf_llama_opt.js,JavaScript,7,1.01,0.065994781
+SUCCESS: sjf_llama_opt Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.js][JavaScript] Run #3
+queuetime_gpt.js,JavaScript,3,0.92,0.060150634
+[queuetime_gpt.js][JavaScript] Run #3
+queuetime_gpt.js,JavaScript,3,0.97,0.061032830
+SUCCESS: queuetime_gpt Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.rs][Rust] Run #5
+treebylevels_qwen.rs,Rust,5,0.22,0.013961744
+[treebylevels_qwen.rs][Rust] Run #5
+treebylevels_qwen.rs,Rust,5,0.22,0.014100722
+SUCCESS: treebylevels_qwen Run #5 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.js][JavaScript] Run #6
+mergearrays_llama.js,JavaScript,6,0.94,0.065694438
+[mergearrays_llama.js][JavaScript] Run #6
+mergearrays_llama.js,JavaScript,6,0.87,0.057605697
+SUCCESS: mergearrays_llama Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.js][JavaScript] Run #8
+sjf_gpt.js,JavaScript,8,0.99,0.065067391
+[sjf_gpt.js][JavaScript] Run #8
+sjf_gpt.js,JavaScript,8,1.03,0.069490235
+SUCCESS: sjf_gpt Run #8 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.py][Python] Run #4
+sjf_llama_opt.py,Python,4,26.05,1.383702378
+[sjf_llama_opt.py][Python] Run #4
+sjf_llama_opt.py,Python,4,26.82,1.435001155
+SUCCESS: sjf_llama_opt Run #4 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt_opt.js][JavaScript] Run #2
+mergearrays_gpt_opt.js,JavaScript,2,1.15,0.077152561
+[mergearrays_gpt_opt.js][JavaScript] Run #2
+mergearrays_gpt_opt.js,JavaScript,2,0.96,0.062530569
+SUCCESS: mergearrays_gpt_opt Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.py][Python] Run #6
+queuetime_qwen.py,Python,6,6.91,0.373663287
+[queuetime_qwen.py][Python] Run #6
+queuetime_qwen.py,Python,6,6.80,0.372558411
+SUCCESS: queuetime_qwen Run #6 completed
+Sleeping 1 minute before next run...
+[queuetime.py][Python] Run #1
+queuetime.py,Python,1,6.55,0.365632943
+[queuetime.py][Python] Run #1
+queuetime.py,Python,1,6.61,0.362705854
+SUCCESS: queuetime Run #1 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.js][JavaScript] Run #1
+sjf_gpt.js,JavaScript,1,1.02,0.066675097
+[sjf_gpt.js][JavaScript] Run #1
+sjf_gpt.js,JavaScript,1,1.03,0.063714905
+SUCCESS: sjf_gpt Run #1 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.js][JavaScript] Run #3
+queuetime_gpt_opt.js,JavaScript,3,0.86,0.056520078
+[queuetime_gpt_opt.js][JavaScript] Run #3
+queuetime_gpt_opt.js,JavaScript,3,0.94,0.063770427
+SUCCESS: queuetime_gpt_opt Run #3 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.js][JavaScript] Run #8
+mergearrays_gpt.js,JavaScript,8,0.83,0.054741434
+[mergearrays_gpt.js][JavaScript] Run #8
+mergearrays_gpt.js,JavaScript,8,1.52,0.083338191
+SUCCESS: mergearrays_gpt Run #8 completed
 Sleeping 1 minute before next run...
 [treebylevels.py][Python] Run #9
+treebylevels.py,Python,9,1.05,0.065757593
+[treebylevels.py][Python] Run #9
+treebylevels.py,Python,9,1.01,0.065845750
+SUCCESS: treebylevels Run #9 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.py][Python] Run #2
+queuetime_llama.py,Python,2,6.58,0.367041144
+[queuetime_llama.py][Python] Run #2
+queuetime_llama.py,Python,2,6.54,0.368344840
+SUCCESS: queuetime_llama Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.py][Python] Run #10
+queuetime_gpt_opt.py,Python,10,1.42,0.081513278
+[queuetime_gpt_opt.py][Python] Run #10
+queuetime_gpt_opt.py,Python,10,1.42,0.082038880
+SUCCESS: queuetime_gpt_opt Run #10 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.rs][Rust] Run #8
+sjf_qwen_opt.rs,Rust,8,1.65,0.101505664
+[sjf_qwen_opt.rs][Rust] Run #8
+sjf_qwen_opt.rs,Rust,8,1.67,0.100956870
+SUCCESS: sjf_qwen_opt Run #8 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.js][JavaScript] Run #7
+sjf_gpt.js,JavaScript,7,1.10,0.069015137
+[sjf_gpt.js][JavaScript] Run #7
+sjf_gpt.js,JavaScript,7,1.00,0.066872776
+SUCCESS: sjf_gpt Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays.rs][Rust] Run #5
+mergearrays.rs,Rust,5,0.94,0.059118364
+[mergearrays.rs][Rust] Run #5
+mergearrays.rs,Rust,5,0.96,0.062793416
+SUCCESS: mergearrays Run #5 completed
+Sleeping 1 minute before next run...
+[sjf.py][Python] Run #1
+sjf.py,Python,1,1.38,0.077246798
+[sjf.py][Python] Run #1
+sjf.py,Python,1,1.33,0.076630611
+SUCCESS: sjf Run #1 completed
+Sleeping 1 minute before next run...
+[mergearrays.rs][Rust] Run #4
+mergearrays.rs,Rust,4,0.93,0.059242313
+[mergearrays.rs][Rust] Run #4
+mergearrays.rs,Rust,4,0.91,0.061984780
+SUCCESS: mergearrays Run #4 completed
+Sleeping 1 minute before next run...
+[mergearrays.rs][Rust] Run #8
+mergearrays.rs,Rust,8,0.95,0.059558396
+[mergearrays.rs][Rust] Run #8
+mergearrays.rs,Rust,8,0.95,0.061261608
+SUCCESS: mergearrays Run #8 completed
+Sleeping 1 minute before next run...
+[sjf.rs][Rust] Run #1
+sjf.rs,Rust,1,0.27,0.017054265
+[sjf.rs][Rust] Run #1
+sjf.rs,Rust,1,0.26,0.016936154
+SUCCESS: sjf Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.py][Python] Run #5
+treebylevels_gpt.py,Python,5,1.01,0.067618892
+[treebylevels_gpt.py][Python] Run #5
+treebylevels_gpt.py,Python,5,1.02,0.066381842
+SUCCESS: treebylevels_gpt Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime.js][JavaScript] Run #1
+queuetime.js,JavaScript,1,0.93,0.059744931
+[queuetime.js][JavaScript] Run #1
+queuetime.js,JavaScript,1,0.89,0.059769051
+SUCCESS: queuetime Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.js][JavaScript] Run #10
+treebylevels_qwen_opt.js,JavaScript,10,0.88,0.058056701
+[treebylevels_qwen_opt.js][JavaScript] Run #10
+treebylevels_qwen_opt.js,JavaScript,10,0.83,0.056750929
+SUCCESS: treebylevels_qwen_opt Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.js][JavaScript] Run #1
+treebylevels_qwen.js,JavaScript,1,0.87,0.055931992
+[treebylevels_qwen.js][JavaScript] Run #1
+treebylevels_qwen.js,JavaScript,1,0.87,0.059881826
+SUCCESS: treebylevels_qwen Run #1 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.js][JavaScript] Run #5
+sjf_qwen.js,JavaScript,5,1.04,0.067149004
+[sjf_qwen.js][JavaScript] Run #5
+sjf_qwen.js,JavaScript,5,1.02,0.065162002
+SUCCESS: sjf_qwen Run #5 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt_opt.js][JavaScript] Run #9
+mergearrays_gpt_opt.js,JavaScript,9,0.87,0.056712947
+[mergearrays_gpt_opt.js][JavaScript] Run #9
+mergearrays_gpt_opt.js,JavaScript,9,1.37,0.076675314
+SUCCESS: mergearrays_gpt_opt Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.rs][Rust] Run #1
+sjf_qwen.rs,Rust,1,1.73,0.100600204
+[sjf_qwen.rs][Rust] Run #1
+sjf_qwen.rs,Rust,1,1.63,0.100798528
+SUCCESS: sjf_qwen Run #1 completed
+Sleeping 1 minute before next run...
+[queuetime.js][JavaScript] Run #4
+queuetime.js,JavaScript,4,0.90,0.059405288
+[queuetime.js][JavaScript] Run #4
+queuetime.js,JavaScript,4,0.97,0.063119272
+SUCCESS: queuetime Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.py][Python] Run #7
+queuetime_qwen.py,Python,7,6.51,0.368320244
+[queuetime_qwen.py][Python] Run #7
+queuetime_qwen.py,Python,7,6.39,0.366200900
+SUCCESS: queuetime_qwen Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays.js][JavaScript] Run #5
+mergearrays.js,JavaScript,5,0.90,0.059325630
+[mergearrays.js][JavaScript] Run #5
+mergearrays.js,JavaScript,5,0.86,0.057178330
+SUCCESS: mergearrays Run #5 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.js][JavaScript] Run #6
+mergearrays_gpt.js,JavaScript,6,0.92,0.060616125
+[mergearrays_gpt.js][JavaScript] Run #6
+mergearrays_gpt.js,JavaScript,6,0.94,0.063668845
+SUCCESS: mergearrays_gpt Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.py][Python] Run #3
+treebylevels_qwen_opt.py,Python,3,2.14,0.119487363
+[treebylevels_qwen_opt.py][Python] Run #3
+treebylevels_qwen_opt.py,Python,3,2.20,0.118598944
+SUCCESS: treebylevels_qwen_opt Run #3 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.js][JavaScript] Run #3
+sjf_qwen_opt.js,JavaScript,3,1.03,0.067396596
+[sjf_qwen_opt.js][JavaScript] Run #3
+sjf_qwen_opt.js,JavaScript,3,0.96,0.064583580
+SUCCESS: sjf_qwen_opt Run #3 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.js][JavaScript] Run #10
+queuetime_llama_opt.js,JavaScript,10,1.82,0.109084490
+[queuetime_llama_opt.js][JavaScript] Run #10
+queuetime_llama_opt.js,JavaScript,10,1.77,0.105413286
+SUCCESS: queuetime_llama_opt Run #10 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.rs][Rust] Run #4
+sjf_qwen_opt.rs,Rust,4,1.75,0.102656385
+[sjf_qwen_opt.rs][Rust] Run #4
+sjf_qwen_opt.rs,Rust,4,1.66,0.102589955
+SUCCESS: sjf_qwen_opt Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.py][Python] Run #6
+treebylevels_llama.py,Python,6,1.00,0.064173703
+[treebylevels_llama.py][Python] Run #6
+treebylevels_llama.py,Python,6,1.04,0.065968811
+SUCCESS: treebylevels_llama Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_llama.py][Python] Run #10
+sjf_llama.py,Python,10,4.13,0.229201067
+[sjf_llama.py][Python] Run #10
+sjf_llama.py,Python,10,4.27,0.231583155
+SUCCESS: sjf_llama Run #10 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.js][JavaScript] Run #2
+mergearrays_llama_opt.js,JavaScript,2,0.93,0.060018529
+[mergearrays_llama_opt.js][JavaScript] Run #2
+mergearrays_llama_opt.js,JavaScript,2,0.93,0.061324832
+SUCCESS: mergearrays_llama_opt Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.py][Python] Run #7
+queuetime_llama_opt.py,Python,7,2.64,0.150864071
+[queuetime_llama_opt.py][Python] Run #7
+queuetime_llama_opt.py,Python,7,2.67,0.150621926
+SUCCESS: queuetime_llama_opt Run #7 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.js][JavaScript] Run #2
+sjf_llama_opt.js,JavaScript,2,0.95,0.062189978
+[sjf_llama_opt.js][JavaScript] Run #2
+sjf_llama_opt.js,JavaScript,2,0.98,0.065559860
+SUCCESS: sjf_llama_opt Run #2 completed
+Sleeping 1 minute before next run...
+[sjf.js][JavaScript] Run #3
+sjf.js,JavaScript,3,0.84,0.056646570
+[sjf.js][JavaScript] Run #3
+sjf.js,JavaScript,3,0.81,0.057655136
+SUCCESS: sjf Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.py][Python] Run #1
+treebylevels_qwen.py,Python,1,0.70,0.039821218
+[treebylevels_qwen.py][Python] Run #1
+treebylevels_qwen.py,Python,1,0.76,0.042864347
+SUCCESS: treebylevels_qwen Run #1 completed
+Sleeping 1 minute before next run...
+[sjf.py][Python] Run #5
+sjf.py,Python,5,1.41,0.078107460
+[sjf.py][Python] Run #5
+sjf.py,Python,5,1.37,0.078740098
+SUCCESS: sjf Run #5 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.py][Python] Run #10
+mergearrays_gpt.py,Python,10,1.76,0.106086042
+[mergearrays_gpt.py][Python] Run #10
+mergearrays_gpt.py,Python,10,1.77,0.107858947
+SUCCESS: mergearrays_gpt Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.js][JavaScript] Run #6
+queuetime_llama_opt.js,JavaScript,6,1.79,0.108377137
+[queuetime_llama_opt.js][JavaScript] Run #6
+queuetime_llama_opt.js,JavaScript,6,1.67,0.106437245
+SUCCESS: queuetime_llama_opt Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.py][Python] Run #7
+treebylevels_gpt.py,Python,7,1.02,0.065330344
+[treebylevels_gpt.py][Python] Run #7
+treebylevels_gpt.py,Python,7,1.03,0.067263509
+SUCCESS: treebylevels_gpt Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays.rs][Rust] Run #6
+mergearrays.rs,Rust,6,0.94,0.059675956
+[mergearrays.rs][Rust] Run #6
+mergearrays.rs,Rust,6,0.95,0.060461597
+SUCCESS: mergearrays Run #6 completed
+Sleeping 1 minute before next run...
+[sjf.py][Python] Run #10
+sjf.py,Python,10,1.40,0.078011845
+[sjf.py][Python] Run #10
+sjf.py,Python,10,1.38,0.077537765
+SUCCESS: sjf Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.js][JavaScript] Run #5
+treebylevels_gpt_opt.js,JavaScript,5,0.91,0.058721658
+[treebylevels_gpt_opt.js][JavaScript] Run #5
+treebylevels_gpt_opt.js,JavaScript,5,1.41,0.076913900
+SUCCESS: treebylevels_gpt_opt Run #5 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.py][Python] Run #4
+mergearrays_gpt.py,Python,4,1.75,0.105742721
+[mergearrays_gpt.py][Python] Run #4
+mergearrays_gpt.py,Python,4,1.72,0.105136649
+SUCCESS: mergearrays_gpt Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.py][Python] Run #8
+treebylevels_llama_opt.py,Python,8,1.01,0.064421438
+[treebylevels_llama_opt.py][Python] Run #8
+treebylevels_llama_opt.py,Python,8,1.00,0.066650951
+SUCCESS: treebylevels_llama_opt Run #8 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen_opt.py][Python] Run #4
+queuetime_qwen_opt.py,Python,4,2.54,0.146949758
+[queuetime_qwen_opt.py][Python] Run #4
+queuetime_qwen_opt.py,Python,4,2.71,0.151477102
+SUCCESS: queuetime_qwen_opt Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.py][Python] Run #2
+queuetime_llama_opt.py,Python,2,2.55,0.146959351
+[queuetime_llama_opt.py][Python] Run #2
+queuetime_llama_opt.py,Python,2,2.72,0.152353964
+SUCCESS: queuetime_llama_opt Run #2 completed
+Sleeping 1 minute before next run...
+[sjf.rs][Rust] Run #8
+sjf.rs,Rust,8,0.25,0.016465545
+[sjf.rs][Rust] Run #8
+sjf.rs,Rust,8,0.26,0.016967366
+SUCCESS: sjf Run #8 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.js][JavaScript] Run #5
+sjf_qwen_opt.js,JavaScript,5,1.02,0.066330331
+[sjf_qwen_opt.js][JavaScript] Run #5
+sjf_qwen_opt.js,JavaScript,5,1.02,0.068056103
+SUCCESS: sjf_qwen_opt Run #5 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.js][JavaScript] Run #6
+sjf_llama_opt.js,JavaScript,6,0.89,0.058389158
+[sjf_llama_opt.js][JavaScript] Run #6
+sjf_llama_opt.js,JavaScript,6,0.89,0.059755889
+SUCCESS: sjf_llama_opt Run #6 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.js][JavaScript] Run #7
+queuetime_gpt.js,JavaScript,7,0.87,0.056871617
+[queuetime_gpt.js][JavaScript] Run #7
+queuetime_gpt.js,JavaScript,7,0.94,0.059931677
+SUCCESS: queuetime_gpt Run #7 completed
+Sleeping 1 minute before next run...
+[sjf.py][Python] Run #4
+sjf.py,Python,4,1.41,0.077431390
+[sjf.py][Python] Run #4
+sjf.py,Python,4,1.38,0.077477716
+SUCCESS: sjf Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.py][Python] Run #6
+queuetime_llama.py,Python,6,6.75,0.382669918
+[queuetime_llama.py][Python] Run #6
+queuetime_llama.py,Python,6,6.79,0.379759316
+SUCCESS: queuetime_llama Run #6 completed
+Sleeping 1 minute before next run...
+[sjf.js][JavaScript] Run #1
+sjf.js,JavaScript,1,0.86,0.056214097
+[sjf.js][JavaScript] Run #1
+sjf.js,JavaScript,1,0.90,0.058341148
+SUCCESS: sjf Run #1 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama.js][JavaScript] Run #8
+mergearrays_llama.js,JavaScript,8,0.91,0.062034540
+[mergearrays_llama.js][JavaScript] Run #8
+mergearrays_llama.js,JavaScript,8,0.93,0.061022228
+SUCCESS: mergearrays_llama Run #8 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.js][JavaScript] Run #9
+treebylevels_qwen.js,JavaScript,9,0.81,0.052798402
+[treebylevels_qwen.js][JavaScript] Run #9
+treebylevels_qwen.js,JavaScript,9,0.92,0.061001027
+SUCCESS: treebylevels_qwen Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_gpt_opt.js][JavaScript] Run #5
+sjf_gpt_opt.js,JavaScript,5,0.87,0.056340823
+[sjf_gpt_opt.js][JavaScript] Run #5
+sjf_gpt_opt.js,JavaScript,5,0.88,0.057002766
+SUCCESS: sjf_gpt_opt Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.py][Python] Run #5
+treebylevels_llama.py,Python,5,0.99,0.063503267
+[treebylevels_llama.py][Python] Run #5
+treebylevels_llama.py,Python,5,1.03,0.066390669
+SUCCESS: treebylevels_llama Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.py][Python] Run #2
+treebylevels_llama_opt.py,Python,2,1.02,0.064198825
+[treebylevels_llama_opt.py][Python] Run #2
+treebylevels_llama_opt.py,Python,2,1.02,0.065135220
+SUCCESS: treebylevels_llama_opt Run #2 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.py][Python] Run #8
+sjf_gpt.py,Python,8,3.89,0.224651070
+[sjf_gpt.py][Python] Run #8
+sjf_gpt.py,Python,8,4.03,0.223945482
+SUCCESS: sjf_gpt Run #8 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.py][Python] Run #6
+sjf_qwen.py,Python,6,2.09,0.122109389
+[sjf_qwen.py][Python] Run #6
+sjf_qwen.py,Python,6,2.06,0.119643672
+SUCCESS: sjf_qwen Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.js][JavaScript] Run #6
+treebylevels_gpt_opt.js,JavaScript,6,0.87,0.057248855
+[treebylevels_gpt_opt.js][JavaScript] Run #6
+treebylevels_gpt_opt.js,JavaScript,6,0.86,0.055181503
+SUCCESS: treebylevels_gpt_opt Run #6 completed
+Sleeping 1 minute before next run...
+[sjf.py][Python] Run #3
+sjf.py,Python,3,1.45,0.077937308
+[sjf.py][Python] Run #3
+sjf.py,Python,3,1.39,0.078806748
+SUCCESS: sjf Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.py][Python] Run #9
+treebylevels_llama.py,Python,9,1.01,0.064789849
+[treebylevels_llama.py][Python] Run #9
+treebylevels_llama.py,Python,9,1.01,0.065560770
+SUCCESS: treebylevels_llama Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_llama.js][JavaScript] Run #1
+sjf_llama.js,JavaScript,1,0.90,0.059271504
+[sjf_llama.js][JavaScript] Run #1
+sjf_llama.js,JavaScript,1,0.94,0.064327459
+SUCCESS: sjf_llama Run #1 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.py][Python] Run #4
+queuetime_gpt_opt.py,Python,4,1.47,0.081446465
+[queuetime_gpt_opt.py][Python] Run #4
+queuetime_gpt_opt.py,Python,4,1.40,0.080998116
+SUCCESS: queuetime_gpt_opt Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.rs][Rust] Run #1
+treebylevels_qwen_opt.rs,Rust,1,0.21,0.014117360
+[treebylevels_qwen_opt.rs][Rust] Run #1
+treebylevels_qwen_opt.rs,Rust,1,0.21,0.014156730
+SUCCESS: treebylevels_qwen_opt Run #1 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.py][Python] Run #1
+queuetime_llama_opt.py,Python,1,2.63,0.149600473
+[queuetime_llama_opt.py][Python] Run #1
+queuetime_llama_opt.py,Python,1,2.76,0.149125423
+SUCCESS: queuetime_llama_opt Run #1 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.py][Python] Run #9
+treebylevels_llama_opt.py,Python,9,1.01,0.065104144
+[treebylevels_llama_opt.py][Python] Run #9
+treebylevels_llama_opt.py,Python,9,1.05,0.067559644
+SUCCESS: treebylevels_llama_opt Run #9 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.py][Python] Run #5
+treebylevels_qwen_opt.py,Python,5,2.11,0.118669516
+[treebylevels_qwen_opt.py][Python] Run #5
+treebylevels_qwen_opt.py,Python,5,2.15,0.117300965
+SUCCESS: treebylevels_qwen_opt Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime.js][JavaScript] Run #2
+queuetime.js,JavaScript,2,0.92,0.060062818
+[queuetime.js][JavaScript] Run #2
+queuetime.js,JavaScript,2,0.91,0.060742160
+SUCCESS: queuetime Run #2 completed
+Sleeping 1 minute before next run...
+[treebylevels.py][Python] Run #5
+treebylevels.py,Python,5,1.12,0.068529595
+[treebylevels.py][Python] Run #5
+treebylevels.py,Python,5,1.00,0.064383410
+SUCCESS: treebylevels Run #5 completed
+Sleeping 1 minute before next run...
+[sjf_gpt.py][Python] Run #3
+sjf_gpt.py,Python,3,3.97,0.219867797
+[sjf_gpt.py][Python] Run #3
+sjf_gpt.py,Python,3,4.20,0.220889716
+SUCCESS: sjf_gpt Run #3 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt_opt.js][JavaScript] Run #10
+mergearrays_gpt_opt.js,JavaScript,10,0.87,0.055003370
+[mergearrays_gpt_opt.js][JavaScript] Run #10
+mergearrays_gpt_opt.js,JavaScript,10,0.92,0.060511888
+SUCCESS: mergearrays_gpt_opt Run #10 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.js][JavaScript] Run #7
+sjf_qwen_opt.js,JavaScript,7,0.96,0.063223428
+[sjf_qwen_opt.js][JavaScript] Run #7
+sjf_qwen_opt.js,JavaScript,7,1.05,0.068114866
+SUCCESS: sjf_qwen_opt Run #7 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.js][JavaScript] Run #4
+mergearrays_qwen.js,JavaScript,4,0.86,0.056447730
+[mergearrays_qwen.js][JavaScript] Run #4
+mergearrays_qwen.js,JavaScript,4,0.93,0.060084667
+SUCCESS: mergearrays_qwen Run #4 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.py][Python] Run #10
+queuetime_qwen.py,Python,10,6.48,0.366361729
+[queuetime_qwen.py][Python] Run #10
+queuetime_qwen.py,Python,10,6.64,0.364722800
+SUCCESS: queuetime_qwen Run #10 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.py][Python] Run #10
+sjf_llama_opt.py,Python,10,26.20,1.402644346
+[sjf_llama_opt.py][Python] Run #10
+sjf_llama_opt.py,Python,10,25.52,1.389912243
+SUCCESS: sjf_llama_opt Run #10 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen_opt.js][JavaScript] Run #2
+treebylevels_qwen_opt.js,JavaScript,2,0.83,0.053745686
+[treebylevels_qwen_opt.js][JavaScript] Run #2
+treebylevels_qwen_opt.js,JavaScript,2,0.89,0.057297933
+SUCCESS: treebylevels_qwen_opt Run #2 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.rs][Rust] Run #3
+treebylevels_qwen.rs,Rust,3,0.22,0.014158345
+[treebylevels_qwen.rs][Rust] Run #3
+treebylevels_qwen.rs,Rust,3,0.23,0.014232087
+SUCCESS: treebylevels_qwen Run #3 completed
+Sleeping 1 minute before next run...
+[sjf_gpt_opt.js][JavaScript] Run #9
+sjf_gpt_opt.js,JavaScript,9,0.82,0.052489257
+[sjf_gpt_opt.js][JavaScript] Run #9
+sjf_gpt_opt.js,JavaScript,9,0.89,0.059052281
+SUCCESS: sjf_gpt_opt Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.js][JavaScript] Run #6
+sjf_qwen.js,JavaScript,6,1.08,0.067071516
+[sjf_qwen.js][JavaScript] Run #6
+sjf_qwen.js,JavaScript,6,0.99,0.066365189
+SUCCESS: sjf_qwen Run #6 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.js][JavaScript] Run #10
+sjf_qwen_opt.js,JavaScript,10,0.97,0.063384158
+[sjf_qwen_opt.js][JavaScript] Run #10
+sjf_qwen_opt.js,JavaScript,10,1.07,0.069367073
+SUCCESS: sjf_qwen_opt Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime.py][Python] Run #10
+queuetime.py,Python,10,6.65,0.362848909
+[queuetime.py][Python] Run #10
+queuetime.py,Python,10,6.48,0.362931924
+SUCCESS: queuetime Run #10 completed
+Sleeping 1 minute before next run...
+[queuetime_llama_opt.py][Python] Run #5
+queuetime_llama_opt.py,Python,5,2.66,0.150370385
+[queuetime_llama_opt.py][Python] Run #5
+queuetime_llama_opt.py,Python,5,2.81,0.150313398
+SUCCESS: queuetime_llama_opt Run #5 completed
+Sleeping 1 minute before next run...
+[sjf_gpt_opt.js][JavaScript] Run #7
+sjf_gpt_opt.js,JavaScript,7,0.88,0.057997109
+[sjf_gpt_opt.js][JavaScript] Run #7
+sjf_gpt_opt.js,JavaScript,7,0.89,0.058217135
+SUCCESS: sjf_gpt_opt Run #7 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.rs][Rust] Run #8
+treebylevels_qwen.rs,Rust,8,0.21,0.013419393
+[treebylevels_qwen.rs][Rust] Run #8
+treebylevels_qwen.rs,Rust,8,0.20,0.014133539
+SUCCESS: treebylevels_qwen Run #8 completed
+Sleeping 1 minute before next run...
+[sjf.rs][Rust] Run #7
+sjf.rs,Rust,7,0.26,0.017092819
+[sjf.rs][Rust] Run #7
+sjf.rs,Rust,7,0.25,0.017112208
+SUCCESS: sjf Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.js][JavaScript] Run #8
+queuetime_llama.js,JavaScript,8,0.99,0.063331431
+[queuetime_llama.js][JavaScript] Run #8
+queuetime_llama.js,JavaScript,8,0.98,0.064043619
+SUCCESS: queuetime_llama Run #8 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.js][JavaScript] Run #5
+treebylevels_qwen.js,JavaScript,5,0.87,0.056744384
+[treebylevels_qwen.js][JavaScript] Run #5
+treebylevels_qwen.js,JavaScript,5,0.92,0.061563514
+SUCCESS: treebylevels_qwen Run #5 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.py][Python] Run #8
+treebylevels_qwen.py,Python,8,0.70,0.039972754
+[treebylevels_qwen.py][Python] Run #8
+treebylevels_qwen.py,Python,8,0.78,0.042754725
+SUCCESS: treebylevels_qwen Run #8 completed
+Sleeping 1 minute before next run...
+[sjf.py][Python] Run #8
+sjf.py,Python,8,1.46,0.078809662
+[sjf.py][Python] Run #8
+sjf.py,Python,8,1.36,0.079037332
+SUCCESS: sjf Run #8 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.js][JavaScript] Run #6
+queuetime_gpt_opt.js,JavaScript,6,0.90,0.059815450
+[queuetime_gpt_opt.js][JavaScript] Run #6
+queuetime_gpt_opt.js,JavaScript,6,1.43,0.077090904
+SUCCESS: queuetime_gpt_opt Run #6 completed
+Sleeping 1 minute before next run...
+[treebylevels.js][JavaScript] Run #4
+treebylevels.js,JavaScript,4,0.86,0.055954544
+[treebylevels.js][JavaScript] Run #4
+treebylevels.js,JavaScript,4,0.93,0.059760190
+SUCCESS: treebylevels Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.rs][Rust] Run #7
+treebylevels_qwen.rs,Rust,7,0.22,0.014391585
+[treebylevels_qwen.rs][Rust] Run #7
+treebylevels_qwen.rs,Rust,7,0.22,0.013822547
+SUCCESS: treebylevels_qwen Run #7 completed
+Sleeping 1 minute before next run...
+[sjf_llama.py][Python] Run #7
+sjf_llama.py,Python,7,4.96,0.275430473
+[sjf_llama.py][Python] Run #7
+sjf_llama.py,Python,7,4.43,0.239102472
+SUCCESS: sjf_llama Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.py][Python] Run #7
+queuetime_gpt_opt.py,Python,7,2.23,0.108027831
+[queuetime_gpt_opt.py][Python] Run #7
+queuetime_gpt_opt.py,Python,7,1.52,0.085346319
+SUCCESS: queuetime_gpt_opt Run #7 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.py][Python] Run #1
+queuetime_qwen.py,Python,1,7.49,0.428203423
+[queuetime_qwen.py][Python] Run #1
+queuetime_qwen.py,Python,1,6.97,0.413664511
+SUCCESS: queuetime_qwen Run #1 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.py][Python] Run #3
+sjf_llama_opt.py,Python,3,25.71,1.380016619
+[sjf_llama_opt.py][Python] Run #3
+sjf_llama_opt.py,Python,3,26.78,1.417449049
+SUCCESS: sjf_llama_opt Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.py][Python] Run #1
+treebylevels_llama.py,Python,1,1.11,0.074075387
+[treebylevels_llama.py][Python] Run #1
+treebylevels_llama.py,Python,1,1.07,0.071871823
+SUCCESS: treebylevels_llama Run #1 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.py][Python] Run #9
+queuetime_llama.py,Python,9,7.50,0.429529215
+[queuetime_llama.py][Python] Run #9
+queuetime_llama.py,Python,9,6.55,0.364165683
+SUCCESS: queuetime_llama Run #9 completed
+Sleeping 1 minute before next run...
+[mergearrays.py][Python] Run #6
+mergearrays.py,Python,6,1.82,0.105681692
+[mergearrays.py][Python] Run #6
+mergearrays.py,Python,6,1.91,0.114616260
+SUCCESS: mergearrays Run #6 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.js][JavaScript] Run #9
+queuetime_llama.js,JavaScript,9,0.93,0.059688992
+[queuetime_llama.js][JavaScript] Run #9
+queuetime_llama.js,JavaScript,9,0.95,0.060025305
+SUCCESS: queuetime_llama Run #9 completed
+Sleeping 1 minute before next run...
+[queuetime_llama.js][JavaScript] Run #3
+queuetime_llama.js,JavaScript,3,1.00,0.064635937
+[queuetime_llama.js][JavaScript] Run #3
+queuetime_llama.js,JavaScript,3,1.07,0.064391067
+SUCCESS: queuetime_llama Run #3 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.js][JavaScript] Run #3
+sjf_qwen.js,JavaScript,3,1.13,0.067168248
+[sjf_qwen.js][JavaScript] Run #3
+sjf_qwen.js,JavaScript,3,1.44,0.077380233
+SUCCESS: sjf_qwen Run #3 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.py][Python] Run #3
+queuetime_qwen.py,Python,3,7.13,0.401709080
+[queuetime_qwen.py][Python] Run #3
+queuetime_qwen.py,Python,3,7.46,0.404945415
+SUCCESS: queuetime_qwen Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama.py][Python] Run #8
+treebylevels_llama.py,Python,8,1.00,0.064482664
+[treebylevels_llama.py][Python] Run #8
+treebylevels_llama.py,Python,8,1.06,0.067977729
+SUCCESS: treebylevels_llama Run #8 completed
+Sleeping 1 minute before next run...
+[queuetime.py][Python] Run #3
+queuetime.py,Python,3,6.69,0.364270535
+[queuetime.py][Python] Run #3
+queuetime.py,Python,3,6.73,0.364003022
+SUCCESS: queuetime Run #3 completed
+Sleeping 1 minute before next run...
+[mergearrays_qwen.js][JavaScript] Run #5
+mergearrays_qwen.js,JavaScript,5,0.91,0.059773257
+[mergearrays_qwen.js][JavaScript] Run #5
+mergearrays_qwen.js,JavaScript,5,1.07,0.064593153
+SUCCESS: mergearrays_qwen Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt_opt.js][JavaScript] Run #4
+queuetime_gpt_opt.js,JavaScript,4,0.91,0.060127889
+[queuetime_gpt_opt.js][JavaScript] Run #4
+queuetime_gpt_opt.js,JavaScript,4,0.92,0.060934146
+SUCCESS: queuetime_gpt_opt Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt_opt.js][JavaScript] Run #1
+treebylevels_gpt_opt.js,JavaScript,1,0.82,0.054703197
+[treebylevels_gpt_opt.js][JavaScript] Run #1
+treebylevels_gpt_opt.js,JavaScript,1,0.93,0.063436069
+SUCCESS: treebylevels_gpt_opt Run #1 completed
+Sleeping 1 minute before next run...
+[queuetime.rs][Rust] Run #10
+queuetime.rs,Rust,10,2.54,0.160561420
+[queuetime.rs][Rust] Run #10
+queuetime.rs,Rust,10,3.32,0.182189707
+SUCCESS: queuetime Run #10 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.rs][Rust] Run #3
+sjf_qwen.rs,Rust,3,1.70,0.103507198
+[sjf_qwen.rs][Rust] Run #3
+sjf_qwen.rs,Rust,3,1.69,0.101772452
+SUCCESS: sjf_qwen Run #3 completed
+Sleeping 1 minute before next run...
+[sjf_llama_opt.py][Python] Run #2
+sjf_llama_opt.py,Python,2,25.59,1.386121058
+[sjf_llama_opt.py][Python] Run #2
+sjf_llama_opt.py,Python,2,25.53,1.380134214
+SUCCESS: sjf_llama_opt Run #2 completed
+Sleeping 1 minute before next run...
+[treebylevels_gpt.js][JavaScript] Run #4
+treebylevels_gpt.js,JavaScript,4,0.86,0.053016567
+[treebylevels_gpt.js][JavaScript] Run #4
+treebylevels_gpt.js,JavaScript,4,0.95,0.063270696
+SUCCESS: treebylevels_gpt Run #4 completed
+Sleeping 1 minute before next run...
+[sjf_llama.js][JavaScript] Run #5
+sjf_llama.js,JavaScript,5,0.89,0.060200702
+[sjf_llama.js][JavaScript] Run #5
+sjf_llama.js,JavaScript,5,0.94,0.061765380
+SUCCESS: sjf_llama Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime.rs][Rust] Run #2
+queuetime.rs,Rust,2,2.53,0.162672199
+[queuetime.rs][Rust] Run #2
+queuetime.rs,Rust,2,2.74,0.163748046
+SUCCESS: queuetime Run #2 completed
+Sleeping 1 minute before next run...
+[queuetime.rs][Rust] Run #4
+queuetime.rs,Rust,4,3.05,0.178237125
+[queuetime.rs][Rust] Run #4
+queuetime.rs,Rust,4,2.81,0.166706101
+SUCCESS: queuetime Run #4 completed
+Sleeping 1 minute before next run...
+[sjf_llama.py][Python] Run #5
+sjf_llama.py,Python,5,4.48,0.249231291
+[sjf_llama.py][Python] Run #5
+sjf_llama.py,Python,5,4.51,0.233486267
+SUCCESS: sjf_llama Run #5 completed
+Sleeping 1 minute before next run...
+[queuetime_qwen.py][Python] Run #8
+queuetime_qwen.py,Python,8,6.74,0.367716455
+[queuetime_qwen.py][Python] Run #8
+queuetime_qwen.py,Python,8,6.65,0.366672252
+SUCCESS: queuetime_qwen Run #8 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.py][Python] Run #4
+mergearrays_llama_opt.py,Python,4,1.99,0.113967951
+[mergearrays_llama_opt.py][Python] Run #4
+mergearrays_llama_opt.py,Python,4,2.12,0.129477518
+SUCCESS: mergearrays_llama_opt Run #4 completed
+Sleeping 1 minute before next run...
+[treebylevels_llama_opt.js][JavaScript] Run #9
+treebylevels_llama_opt.js,JavaScript,9,0.89,0.055163933
+[treebylevels_llama_opt.js][JavaScript] Run #9
+treebylevels_llama_opt.js,JavaScript,9,1.39,0.073525817
+SUCCESS: treebylevels_llama_opt Run #9 completed
+Sleeping 1 minute before next run...
+[sjf_qwen.js][JavaScript] Run #10
+sjf_qwen.js,JavaScript,10,0.98,0.064131382
+[sjf_qwen.js][JavaScript] Run #10
+sjf_qwen.js,JavaScript,10,1.03,0.066608636
+SUCCESS: sjf_qwen Run #10 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt_opt.js][JavaScript] Run #8
+mergearrays_gpt_opt.js,JavaScript,8,0.94,0.061449527
+[mergearrays_gpt_opt.js][JavaScript] Run #8
+mergearrays_gpt_opt.js,JavaScript,8,0.96,0.061736350
+SUCCESS: mergearrays_gpt_opt Run #8 completed
+Sleeping 1 minute before next run...
+[sjf_llama.js][JavaScript] Run #3
+sjf_llama.js,JavaScript,3,0.91,0.060254819
+[sjf_llama.js][JavaScript] Run #3
+sjf_llama.js,JavaScript,3,0.97,0.065448541
+SUCCESS: sjf_llama Run #3 completed
+Sleeping 1 minute before next run...
+[treebylevels_qwen.js][JavaScript] Run #4
+treebylevels_qwen.js,JavaScript,4,0.91,0.059082599
+[treebylevels_qwen.js][JavaScript] Run #4
+treebylevels_qwen.js,JavaScript,4,0.95,0.059246771
+SUCCESS: treebylevels_qwen Run #4 completed
+Sleeping 1 minute before next run...
+[mergearrays_gpt.py][Python] Run #3
+mergearrays_gpt.py,Python,3,1.80,0.106965010
+[mergearrays_gpt.py][Python] Run #3
+mergearrays_gpt.py,Python,3,1.69,0.104405670
+SUCCESS: mergearrays_gpt Run #3 completed
+Sleeping 1 minute before next run...
+[queuetime_gpt.py][Python] Run #1
+queuetime_gpt.py,Python,1,2.59,0.145879554
+[queuetime_gpt.py][Python] Run #1
+queuetime_gpt.py,Python,1,3.28,0.161447395
+SUCCESS: queuetime_gpt Run #1 completed
+Sleeping 1 minute before next run...
+[mergearrays_llama_opt.js][JavaScript] Run #3
+mergearrays_llama_opt.js,JavaScript,3,1.15,0.070109706
+[mergearrays_llama_opt.js][JavaScript] Run #3
+mergearrays_llama_opt.js,JavaScript,3,1.12,0.072589668
+SUCCESS: mergearrays_llama_opt Run #3 completed
+Sleeping 1 minute before next run...
+[sjf_qwen_opt.js][JavaScript] Run #4
+sjf_qwen_opt.js,JavaScript,4,1.18,0.079355050
+[sjf_qwen_opt.js][JavaScript] Run #4
+sjf_qwen_opt.js,JavaScript,4,1.12,0.073839423
+SUCCESS: sjf_qwen_opt Run #4 completed
+Sleeping 1 minute before next run...
