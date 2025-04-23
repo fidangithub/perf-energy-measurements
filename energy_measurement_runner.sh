@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Number of perf repetitions
-PERF_REPEATS=5
-
 # Valid scripts (original and optimized)
 SCRIPTS=(
     "mergearrays.js"
@@ -89,10 +86,10 @@ measure_energy() {
     local language=$2
     local command=$3
 
-    echo "Running [$label] ($language) with perf -r $PERF_REPEATS..." | tee -a "$LOG_FILE"
+    echo "$label" | tee -a "$LOG_FILE"
 
-    perf_output=$(sudo perf stat -r $PERF_REPEATS -e power/energy-pkg/ $command 2>&1)
-    # perf_output=$(sudo perf stat -r $PERF_REPEATS -e power/energy-pkg/,instructions,cycles,cache-misses $command 2>&1)
+    perf_output=$(sudo perf stat -e power/energy-pkg/ $command 2>&1)
+    # perf_output=$(sudo perf stat -e power/energy-pkg/,instructions,cycles,cache-misses $command 2>&1)
 
     # Extract values
     energy_joules=$(echo "$perf_output" | grep "power/energy-pkg/" | awk '{print $1}')
@@ -109,8 +106,6 @@ measure_energy() {
 # Initialize log
 echo "script,language,energy_joules,time_seconds" > "$LOG_FILE"
 
-
-printf "%-35s | %-10s | %-15s | %-10s\n" "Script" "Language" "Energy (Joules)" "Time (s)" >> "$LOG_FILE"
 echo "---------------------------------------------------------------" >> "$LOG_FILE"
 
 for script_file in "${SCRIPTS[@]}"; do
