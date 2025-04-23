@@ -1,6 +1,11 @@
 #!/bin/bash
 
-# Valid scripts (original and optimized)
+set -e
+
+# Number of runs per script
+RUNS_PER_SCRIPT=10
+
+# Script list (original + all variants)
 SCRIPTS=(
     "mergearrays.js"
     "mergearrays.py"
@@ -77,51 +82,55 @@ SCRIPTS=(
     "treebylevels_qwen_opt.rs"
 )
 
-# Output log file
-LOG_FILE="perf-energy-measurements/energy_results.log"
 SCRIPT_DIR="perf-energy-measurements"
+LOG_FILE="perf-energy-measurements/energy_results.log"
+
+# Initialize CSV header once
+echo "script,language,run_id,energy_joules,time_seconds" > "$LOG_FILE"
+
+# Create list of [script,run_id] entries
+entries=()
+for script in "${SCRIPTS[@]}"; do
+    for i in $(seq 1 $RUNS_PER_SCRIPT); do
+        entries+=("$script:$i")
+    done
+done
+
+# Shuffle the entries
+shuffled_entries=($(printf "%s\n" "${entries[@]}" | shuf))
 
 measure_energy() {
     local label=$1
     local language=$2
     local command=$3
+    local run_id=$4
 
-    echo "$label" | tee -a "$LOG_FILE"
+    echo "[$label][$language] Run #$run_id" | tee -a "$LOG_FILE"
 
     perf_output=$(sudo perf stat -e power/energy-pkg/ $command 2>&1)
-    # perf_output=$(sudo perf stat -e power/energy-pkg/,instructions,cycles,cache-misses $command 2>&1)
 
-    # Extract values
     energy_joules=$(echo "$perf_output" | grep "power/energy-pkg/" | awk '{print $1}')
     time_seconds=$(echo "$perf_output" | grep "seconds time elapsed" | awk '{print $1}')
 
-    # Fallbacks
     energy_joules=${energy_joules:-"N/A"}
     time_seconds=${time_seconds:-"N/A"}
 
-    # Output to CSV
-    echo "$label,$language,$energy_joules,$time_seconds" >> "$LOG_FILE"
+    echo "$label,$language,$run_id,$energy_joules,$time_seconds" >> "$LOG_FILE"
 }
 
-# Initialize log
-echo "script,language,energy_joules,time_seconds" > "$LOG_FILE"
+# Loop through randomized list
+for entry in "${shuffled_entries[@]}"; do
+    IFS=":" read -r script_file run_id <<< "$entry"
 
-echo "---------------------------------------------------------------" >> "$LOG_FILE"
-
-for script_file in "${SCRIPTS[@]}"; do
     script="$SCRIPT_DIR/$script_file"
-    basefile=$(basename -- "$script")
+    basefile=$(basename -- "$script_file")
     extension="${basefile##*.}"
     label="${basefile%.*}"
 
     case $extension in
         js)
             language="JavaScript"
-
-            # Run warmup (not measured)
-            node --expose-gc "$script"
-
-            # Now run measured part (MEASURE=true) inside perf
+            node --expose-gc "$script" > /dev/null
             command="taskset -c 2 node --expose-gc $script"
             export MEASURE=true
             ;;
@@ -131,28 +140,27 @@ for script_file in "${SCRIPTS[@]}"; do
             ;;
         rs)
             language="Rust"
-            rustc "$script" -o temp_exec || { echo "Rust compilation failed for $script" | tee -a "$LOG_FILE"; continue; }
+            rustc "$script" -o temp_exec || { echo "Rust compilation failed for $script_file" | tee -a "$LOG_FILE"; continue; }
             command="taskset -c 2 ./temp_exec"
             ;;
         *)
-            echo "Unknown extension for $script — skipping." | tee -a "$LOG_FILE"
+            echo "Unknown extension for $script_file — skipping." | tee -a "$LOG_FILE"
             continue
             ;;
     esac
 
     echo "======================================"
-    echo "Measuring: $basefile"
+    echo "Run #$run_id for: $basefile"
     echo "--------------------------------------"
 
-    measure_energy "$basefile" "$language" "$command"
+    measure_energy "$basefile" "$language" "$command" "$run_id"
 
-    # Clean up Rust build
     if [[ $extension == "rs" && -f "./temp_exec" ]]; then
         rm ./temp_exec
     fi
 
-    echo "Waiting 1 minutes before the next script..." | tee -a "$LOG_FILE"
-    sleep 3
+    echo "Sleeping 1 minute before next run..." | tee -a "$LOG_FILE"
+    sleep 1
 done
 
 echo "All measurements complete!" | tee -a "$LOG_FILE"
