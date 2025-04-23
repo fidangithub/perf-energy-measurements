@@ -33,7 +33,7 @@ function SJF(jobs, index) {
 }
 
 
-const runTests = () => {
+const tests = () => {
    SJF(
     [5, 8, 3, 20, 1, 7, 12, 6, 10, 2, 9, 15, 11, 4, 13, 14, 19, 18, 17, 16, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
     10
@@ -56,14 +56,21 @@ const runTests = () => {
   );
 }
 
-if (process.env.MEASURE !== "true") {
-  for (let i = 0; i < 500; i++) runTests();
-  if (global.gc) global.gc();
-  process.exit(0);
+let warmup = () => {
+  for (let i = 0; i < 500; i++) tests();
+  if (global.gc) global.gc(); // final GC cleanup
 }
 
-if (global.gc) global.gc();
-for (let i = 0; i < 10000; i++) {
-  runTests();
+let runTests = () => {
+  for (let i = 0; i < 10000; i++) {
+    tests();
+  }
+  if (global.gc) global.gc(); // pre-benchmark GC
 }
-if (global.gc) global.gc();
+
+if (process.env.MEASURE === "true") {
+  runTests(); 
+} else {
+  warmup();
+  process.exit(0);
+}

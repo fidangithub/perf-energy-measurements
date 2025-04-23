@@ -131,8 +131,7 @@ for entry in "${shuffled_entries[@]}"; do
         js)
             language="JavaScript"
             node --expose-gc "$script" > /dev/null
-            command="taskset -c 2 node --expose-gc $script"
-            export MEASURE=true
+            command="taskset -c 2 env MEASURE=true node --expose-gc $script"
             ;;
         py)
             language="Python"

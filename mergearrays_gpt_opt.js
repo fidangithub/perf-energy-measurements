@@ -50,20 +50,29 @@ const arr6 = [
   169, 167, 165, 163, 161, 159, 157, 155, 153, 151, 149, 147, 145, 143, 141, 139, 137, 135, 133, 131
 ];
 
-//warm up
-if (process.env.MEASURE !== "true") {
-  for (let i = 0; i < 5000; i++) {
-    mergeArrays([1, 2, 3], [4, 5, 6]);
-  }
-  if (global.gc) global.gc();
-  process.exit(0); 
-}
-
-if (global.gc) global.gc();
-
-for (let i = 0; i < 10000; i++) {
+const tests = () => {
   mergeArrays(arr1, arr2);
   mergeArrays(arr3, arr4);
   mergeArrays(arr5, arr6);
 }
-if (global.gc) global.gc(); // cleanup after
+
+let warmup = () => {
+  for (let i = 0; i < 5000; i++) {
+    tests();
+  }
+  if (global.gc) global.gc(); // final GC cleanup
+}
+
+let runTests = () => {
+  for (let i = 0; i < 10000; i++) {
+    tests()
+  }
+  if (global.gc) global.gc(); // pre-benchmark GC
+}
+
+if (process.env.MEASURE === "true") {
+  runTests(); // perf wraps only this
+} else {
+  warmup();
+  process.exit(0);
+}

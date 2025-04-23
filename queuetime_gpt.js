@@ -13,7 +13,7 @@ function queueTime(customers, n) {
 }
 
 
-let runTests = () => {
+const tests = () => {
   queueTime([], 1);
   queueTime([5], 1);
   queueTime([2], 5);
@@ -72,14 +72,22 @@ let runTests = () => {
   );
 }
 
-if (process.env.MEASURE !== "true") {
-  for (let i = 0; i < 500; i++) runTests();
-  if (global.gc) global.gc();
-  process.exit(0);
+
+let warmup = () => {
+  for (let i = 0; i < 500; i++) tests();
+  if (global.gc) global.gc(); // final GC cleanup
 }
 
-if (global.gc) global.gc();
-for (let i = 0; i < 10000; i++) {
-  runTests();
+let runTests = () => {
+  for (let i = 0; i < 10000; i++) {
+    tests();
+  }
+  if (global.gc) global.gc(); // pre-benchmark GC
 }
-if (global.gc) global.gc();
+
+if (process.env.MEASURE === "true") {
+  runTests(); 
+} else {
+  warmup();
+  process.exit(0);
+}
