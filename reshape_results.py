@@ -12,7 +12,7 @@ rows = {}
 for _, row in df.iterrows():
     key = (row["script"], row["language"])
     if pd.isna(row["run_id"]):
-    continue
+        continue
     run_id = int(row["run_id"])
 
 
