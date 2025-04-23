@@ -153,8 +153,6 @@ for entry in "${shuffled_entries[@]}"; do
     echo "Run #$run_id for: $basefile"
     echo "--------------------------------------"
 
-    measure_energy "$basefile" "$language" "$command" "$run_id"
-
 
     if ! measure_energy "$basefile" "$language" "$command" "$run_id"; then
         echo "ERROR: Measurement failed for $label (Run #$run_id)" | tee -a "$LOG_FILE"
