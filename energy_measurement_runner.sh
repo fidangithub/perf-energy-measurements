@@ -3,7 +3,7 @@
 set -u
 
 # Number of runs per script
-RUNS_PER_SCRIPT=10
+RUNS_PER_SCRIPT=30
 
 # Script list (original + all variants)
 SCRIPTS=(
@@ -164,7 +164,7 @@ for entry in "${shuffled_entries[@]}"; do
     fi
 
     echo "Sleeping 1 minute before next run..." | tee -a "$LOG_FILE"
-    sleep 1
+    sleep 60
 done
 
 echo "All measurements complete!" | tee -a "$LOG_FILE"
