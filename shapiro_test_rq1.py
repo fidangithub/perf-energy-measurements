@@ -14,7 +14,7 @@ def apply_shapiro(group_data, group_name, variable_name):
         print(f"  Result: Data does not look Gaussian (reject H0)\n")
 
 def main():
-    filepath = "matched_groups_all.csv"  # The combined CSV you generated earlier
+    filepath = "./perf-energy-measurements/rq1_matched_groups.csv"  # The combined CSV you generated earlier
     data = load_data(filepath)
 
     comparisons = {
