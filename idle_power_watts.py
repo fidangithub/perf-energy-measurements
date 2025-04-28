@@ -1,4 +1,3 @@
-# Python example:
 import pandas as pd
 
 df = pd.read_csv("idle_energy_results.csv")

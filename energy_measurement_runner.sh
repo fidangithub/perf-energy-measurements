@@ -82,7 +82,7 @@ SCRIPTS=(
     "treebylevels_qwen_opt.rs"
 )
 
-SCRIPT_DIR="perf-energy-measurements"
+SCRIPT_DIR="perf-energy-measurements/samples"
 LOG_FILE="perf-energy-measurements/energy_results.log"
 
 # Initialize CSV header once
