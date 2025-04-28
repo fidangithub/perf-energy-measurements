@@ -11,6 +11,6 @@ for i in range(1, 31):
     
     energy_data[energy_col] = energy_data[energy_col] - (idle_power * energy_data[time_col])
 
-energy_data.to_csv('adjusted_energy_results_wide.csv', index=False)
+energy_data.to_csv('./perf-energy-measurements/adjusted_energy_results_wide.csv', index=False)
 
 print("Original energy columns have been adjusted and saved to 'adjusted_energy_results_wide.csv'.")
