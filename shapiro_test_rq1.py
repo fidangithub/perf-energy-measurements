@@ -39,3 +39,57 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# ===== Human vs GPT =====
+# Shapiro-Wilk Test for human_gpt - mean_energy
+#   Test Statistic: 0.7698, p-value: 0.0135
+#   Result: Data does not look Gaussian (reject H0)
+
+# Shapiro-Wilk Test for gpt - mean_energy
+#   Test Statistic: 0.8923, p-value: 0.2456
+#   Result: Data looks Gaussian (fail to reject H0)
+
+# Shapiro-Wilk Test for human_gpt - mean_time
+#   Test Statistic: 0.7816, p-value: 0.0182
+#   Result: Data does not look Gaussian (reject H0)
+
+# Shapiro-Wilk Test for gpt - mean_time
+#   Test Statistic: 0.9132, p-value: 0.3768
+#   Result: Data looks Gaussian (fail to reject H0)
+
+
+# ===== Human vs LLaMA =====
+# Shapiro-Wilk Test for human_llama - mean_energy
+#   Test Statistic: 0.7698, p-value: 0.0135
+#   Result: Data does not look Gaussian (reject H0)
+
+# Shapiro-Wilk Test for llama - mean_energy
+#   Test Statistic: 0.8739, p-value: 0.1644
+#   Result: Data looks Gaussian (fail to reject H0)
+
+# Shapiro-Wilk Test for human_llama - mean_time
+#   Test Statistic: 0.7816, p-value: 0.0182
+#   Result: Data does not look Gaussian (reject H0)
+
+# Shapiro-Wilk Test for llama - mean_time
+#   Test Statistic: 0.8984, p-value: 0.2793
+#   Result: Data looks Gaussian (fail to reject H0)
+
+
+# ===== Human vs Qwen =====
+# Shapiro-Wilk Test for human_qwen - mean_energy
+#   Test Statistic: 0.8134, p-value: 0.0211
+#   Result: Data does not look Gaussian (reject H0)
+
+# Shapiro-Wilk Test for qwen - mean_energy
+#   Test Statistic: 0.8356, p-value: 0.0390
+#   Result: Data does not look Gaussian (reject H0)
+
+# Shapiro-Wilk Test for human_qwen - mean_time
+#   Test Statistic: 0.8343, p-value: 0.0377
+#   Result: Data does not look Gaussian (reject H0)
+
+# Shapiro-Wilk Test for qwen - mean_time
+#   Test Statistic: 0.8537, p-value: 0.0642
+#   Result: Data looks Gaussian (fail to reject H0)
+
