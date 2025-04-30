@@ -21,42 +21,47 @@ def parse_task_info(task):
 
 df[['base_task', 'model']] = df['task'].apply(parse_task_info)
 
-# Filter to valid models
+# Filter to only the relevant models
 df = df[df['model'].isin(['human', 'gpt', 'llama', 'qwen'])]
 
-# Create output directory
-output_dir = './perf-energy-measurements/plots'
+# Output folder
+output_dir = './perf-energy-measurements/plots_by_model'
 os.makedirs(output_dir, exist_ok=True)
 
-# Metrics to plot
+# Define models to compare against human
+llms = ['gpt', 'llama', 'qwen']
 metrics = ['mean_energy', 'mean_time']
-
-# Unique tasks
 base_tasks = df['base_task'].unique()
 
-# Plot and save graphs
-for metric in metrics:
-    for task in base_tasks:
-        task_data = df[df['base_task'] == task]
-        pivot = task_data.pivot_table(index='language', columns='model', values=metric)
+# Generate graphs for each LLM vs Human
+for model in llms:
+    for metric in metrics:
+        for task in base_tasks:
+            task_data = df[df['base_task'] == task]
+            
+            # Filter to just human and current model
+            sub_data = task_data[task_data['model'].isin(['human', model])]
+            
+            # Pivot the data
+            pivot = sub_data.pivot_table(index='language', columns='model', values=metric)
 
-        # Keep only rows with human data and at least one model
-        pivot = pivot.dropna(subset=['human'])
-        models_to_plot = ['human'] + [m for m in ['gpt', 'llama', 'qwen'] if m in pivot.columns]
-        pivot = pivot[models_to_plot].dropna()
-
-        if not pivot.empty:
-            ax = pivot.plot(kind='bar', figsize=(10, 6))
-            title = "Energy Consumption" if metric == 'mean_energy' else "Execution Time"
-            ax.set_title(f"{title} - Human vs Models ({task})")
-            ax.set_ylabel("Mean " + ("Energy" if metric == 'mean_energy' else "Time"))
-            ax.set_xlabel("Programming Language")
-            plt.xticks(rotation=0)
-            plt.legend(title="Source")
-            plt.tight_layout()
-
-            file_name = f"{task}_{metric}.png"
-            plt.savefig(os.path.join(output_dir, file_name))
-            plt.close()
+            # Only keep rows where both human and current LLM are present
+            if 'human' in pivot.columns and model in pivot.columns:
+                pivot = pivot.dropna(subset=['human', model])
+                
+                if not pivot.empty:
+                    ax = pivot[['human', model]].plot(kind='bar', figsize=(10, 6))
+                    title = "Energy Consumption" if metric == 'mean_energy' else "Execution Time"
+                    ax.set_title(f"{title} - Human vs {model.upper()} ({task})")
+                    ax.set_ylabel("Mean " + ("Energy" if metric == 'mean_energy' else "Time"))
+                    ax.set_xlabel("Programming Language")
+                    plt.xticks(rotation=0)
+                    plt.legend(title="Source")
+                    plt.tight_layout()
+                    
+                    # Save the plot
+                    file_name = f"{task}_{model}_vs_human_{metric}.png"
+                    plt.savefig(os.path.join(output_dir, file_name))
+                    plt.close()
 
 print(f"All plots saved in '{output_dir}' folder.")
