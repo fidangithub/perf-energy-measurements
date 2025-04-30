@@ -10,7 +10,7 @@ def cliffs_delta(x, y):
     return (greater - less) / (m * n)
 
 # Load your CSV file
-df = pd.read_csv("rq1_matched_groups.csv")
+df = pd.read_csv("./perf-energy-measurements/rq1_matched_groups.csv")
 
 # Define model comparisons
 models = ['gpt', 'llama', 'qwen']
@@ -32,9 +32,10 @@ for model in models:
             'Metric': metric,
             'U-Statistic': u_stat,
             'p-Value': p_val,
-            'Cliff's Delta': delta
+            'Cliffs Delta': delta
         })
 
 # Output results
-results_df.to_csv("statistical_test_results.csv", index=False)
+results_df = pd.DataFrame(results)
+results_df.to_csv("./perf-energy-measurements/statistical_test_results.csv", index=False)
 print("Results saved to statistical_test_results.csv")

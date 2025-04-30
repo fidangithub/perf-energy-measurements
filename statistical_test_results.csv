@@ -1,0 +1,7 @@
+Comparison,Metric,U-Statistic,p-Value,Cliffs Delta
+human_gpt vs gpt,mean_energy,26.0,0.5737373737373737,-0.1875
+human_gpt vs gpt,mean_time,28.0,0.7209013209013208,-0.125
+human_llama vs llama,mean_energy,23.0,0.3822843822843822,-0.28125
+human_llama vs llama,mean_time,23.0,0.3822843822843822,-0.28125
+human_qwen vs qwen,mean_energy,38.0,0.3846730627355087,-0.24
+human_qwen vs qwen,mean_time,39.0,0.4273553138978077,-0.22
