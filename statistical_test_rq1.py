@@ -4,10 +4,13 @@ from scipy.stats import mannwhitneyu
 
 # Function to calculate Cliff's Delta
 def cliffs_delta(x, y):
+    x = list(map(float, x))
+    y = list(map(float, y))
     m, n = len(x), len(y)
-    greater = sum(i > j for i in x for j in y)
-    less = sum(i < j for i in x for j in y)
-    return (greater - less) / (m * n)
+    greater = sum(1 for xi in x for yj in y if xi > yj)
+    less = sum(1 for xi in x for yj in y if xi < yj)
+    return round((greater - less) / (m * n), 4)
+
 
 # Load your CSV file
 df = pd.read_csv("./perf-energy-measurements/rq1_matched_groups.csv")
