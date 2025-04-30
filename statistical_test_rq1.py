@@ -9,8 +9,9 @@ def cliffs_delta(x, y):
     m, n = len(x), len(y)
     greater = sum(1 for xi in x for yj in y if xi > yj)
     less = sum(1 for xi in x for yj in y if xi < yj)
-    return round((greater - less) / (m * n), 4)
-
+    delta = (greater - less) / (m * n)
+    print(f"Cliff's Delta Debug - len(x): {m}, len(y): {n}, greater: {greater}, less: {less}, delta: {delta}")
+    return round(delta, 4)
 
 # Load your CSV file
 df = pd.read_csv("./perf-energy-measurements/rq1_matched_groups.csv")
@@ -29,6 +30,7 @@ for model in models:
         u_stat, p_val = mannwhitneyu(human_group[metric], model_group[metric], alternative='two-sided')
         # Cliff's Delta
         delta = cliffs_delta(human_group[metric].values, model_group[metric].values)
+        
         
         results.append({
             'Comparison': f'human_{model} vs {model}',
