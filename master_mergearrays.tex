@@ -1,0 +1,73 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|ccccccc|ccccccc|}
+\hline
+\multicolumn{1}{|c|}{} & \multicolumn{7}{c|}{Mean Energy Usage (J)} & \multicolumn{7}{c|}{Mean Execution Time (s)} \\ \hline
+LLMs &
+  \multicolumn{1}{c|}{HW} &
+  \multicolumn{1}{c|}{GPT} &
+  \multicolumn{1}{c|}{GPT '} &
+  \multicolumn{1}{c|}{LLaMA} &
+  \multicolumn{1}{c|}{LLaMA '} &
+  \multicolumn{1}{c|}{Qwen} &
+  Qwen ' &
+  \multicolumn{1}{c|}{HW} &
+  \multicolumn{1}{c|}{GPT} &
+  \multicolumn{1}{c|}{GPT '} &
+  \multicolumn{1}{c|}{LLaMA} &
+  \multicolumn{1}{c|}{LLaMA '} &
+  \multicolumn{1}{c|}{Qwen} &
+  Qwen ' \\ \hline
+Javascript &
+  \multicolumn{1}{c|}{3.26} &
+  \multicolumn{1}{c|}{3.39} &
+  \multicolumn{1}{c|}{3.39} &
+  \multicolumn{1}{c|}{3.44} &
+  \multicolumn{1}{c|}{3.37} &
+  \multicolumn{1}{c|}{3.23} &
+  - &
+  \multicolumn{1}{c|}{0.22} &
+  \multicolumn{1}{c|}{0.23} &
+  \multicolumn{1}{c|}{0.23} &
+  \multicolumn{1}{c|}{0.24} &
+  \multicolumn{1}{c|}{0.23} &
+  \multicolumn{1}{c|}{0.22} &
+  - \\ \hline
+Python &
+  \multicolumn{1}{c|}{1.5} &
+  \multicolumn{1}{c|}{1.49} &
+  \multicolumn{1}{c|}{-} &
+  \multicolumn{1}{c|}{1.6} &
+  \multicolumn{1}{c|}{1.5} &
+  \multicolumn{1}{c|}{6.97} &
+  - &
+  \multicolumn{1}{c|}{0.11} &
+  \multicolumn{1}{c|}{0.1} &
+  \multicolumn{1}{c|}{-} &
+  \multicolumn{1}{c|}{0.11} &
+  \multicolumn{1}{c|}{0.11} &
+  \multicolumn{1}{c|}{0.43} &
+  - \\ \hline
+Rust &
+  \multicolumn{1}{c|}{0.82} &
+  \multicolumn{1}{c|}{-} &
+  \multicolumn{1}{c|}{-} &
+  \multicolumn{1}{c|}{-} &
+  \multicolumn{1}{c|}{-} &
+  \multicolumn{1}{c|}{-} &
+  - &
+  \multicolumn{1}{c|}{0.06} &
+  \multicolumn{1}{c|}{-} &
+  \multicolumn{1}{c|}{-} &
+  \multicolumn{1}{c|}{-} &
+  \multicolumn{1}{c|}{-} &
+  \multicolumn{1}{c|}{-} &
+  - \\ \hline
+\end{tabular}%
+}
+\centering
+\caption{Mean Energy and Execution Time for the Merge Arrays Problem Across Programming Languages and LLM Prompt Variants}
+\end{table}
