@@ -1,0 +1,7 @@
+Model,Metric,U-statistic,p-value,Cliff's delta,Effect size
+GPT,Energy,26.0,0.2281,0.4444,medium
+GPT,Time,24.0,0.3726,0.3333,medium
+LLAMA,Energy,31.0,0.9581,-0.0312,negligible
+LLAMA,Time,29.5,0.832,-0.0781,negligible
+QWEN,Energy,14.5,0.6291,-0.1944,small
+QWEN,Time,15.0,0.6868,-0.1667,small

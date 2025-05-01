@@ -83,5 +83,5 @@ for model, opt_model in zip(llm_versions, opt_versions):
 
 # --- Output to CSV ---
 results_df = pd.DataFrame(results)
-results_df.to_csv('/perf-energy-measurements/mannwhitney_llm_vs_opt_results.csv', index=False)
+results_df.to_csv('./perf-energy-measurements/mannwhitney_llm_vs_opt_results.csv', index=False)
 print("Results saved to 'mannwhitney_llm_vs_opt_results.csv'")
