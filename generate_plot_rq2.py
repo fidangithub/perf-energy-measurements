@@ -66,6 +66,8 @@ for model, opt_model in zip(llm_versions, opt_versions):
             ax.text(bar.get_x() + bar.get_width()/2, bar.get_height(), f'{bar.get_height():.2f}', 
                     ha='center', va='bottom', fontsize=8)
 
+        ax.set_xlim(-1, len(x)) 
+
         fig.tight_layout()
         fig.savefig(os.path.join(plot_dir, f"{model}_{task}_energy_comparison.png"))
         plt.close()
@@ -89,6 +91,8 @@ for model, opt_model in zip(llm_versions, opt_versions):
             ax.text(bar.get_x() + bar.get_width()/2, bar.get_height(), f'{bar.get_height():.2f}', 
                     ha='center', va='bottom', fontsize=8)
 
+        ax.set_xlim(-1, len(x))  
+        
         fig.tight_layout()
         fig.savefig(os.path.join(plot_dir, f"{model}_{task}_time_comparison.png"))
         plt.close()
