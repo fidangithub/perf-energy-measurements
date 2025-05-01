@@ -1,0 +1,5 @@
+Model,Spearman’s rho (ρ),p-value,Spearmans rho (ρ)
+GPT,0.994,0.0,
+LLAMA,0.9701,0.0001,
+QWEN,0.9939,0.0,
+ALL,,0.0,0.9935
