@@ -1,13 +1,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 import os
 import re
-import numpy as np
 
-# Load the data
+# Load the dataset
 df = pd.read_csv('./perf-energy-measurements/final_energy_results_round.csv')
 
-# Extract base task, model, and language from 'script' column
+# Extract task, model, and language
 def extract_info(script):
     match = re.match(r"^(.*?)(_gpt|_llama|_qwen|_gpt_opt|_llama_opt|_qwen_opt)?\.(\w+)$", script)
     if match:
@@ -19,15 +19,15 @@ def extract_info(script):
 
 df[['base_task', 'model', 'lang_ext']] = df['script'].apply(extract_info)
 
-# Models and their opt versions
+# Define LLMs and corresponding optimized versions
 llm_versions = ['gpt', 'llama', 'qwen']
 opt_versions = ['gpt_opt', 'llama_opt', 'qwen_opt']
 
-# Output directory
-plot_dir = './perf-energy-measurements/llm_vs_opt_barplots'
+# Create output directory
+plot_dir = './perf-energy-measurements/llm_vs_opt_taskwise_barplots'
 os.makedirs(plot_dir, exist_ok=True)
 
-# Generate plots
+# Generate plots by LLM and task
 for model, opt_model in zip(llm_versions, opt_versions):
     llm_df = df[df['model'] == model]
     opt_df = df[df['model'] == opt_model][['base_task', 'lang_ext', 'mean_energy', 'mean_time']]
@@ -35,36 +35,40 @@ for model, opt_model in zip(llm_versions, opt_versions):
 
     merged = llm_df.merge(opt_df, on=['base_task', 'lang_ext'], how='inner')
     merged['sample'] = merged['base_task'] + '-' + merged['lang_ext']
-    sample_count = len(merged)
 
-    # Sort by sample
-    merged = merged.sort_values('sample')
-    x_labels = merged['sample'].tolist()
-    x = np.arange(len(x_labels))  # the label locations
-    width = 0.35  # width of the bars
+    # Group by task
+    for task in merged['base_task'].unique():
+        task_data = merged[merged['base_task'] == task].sort_values('sample')
+        if task_data.empty:
+            continue
 
-    # --- Energy Side-by-Side Bar Plot ---
-    plt.figure(figsize=(12, 6))
-    plt.bar(x - width/2, merged['mean_energy'], width, label='Default Prompt')
-    plt.bar(x + width/2, merged['opt_energy'], width, label='Optimized Prompt')
-    plt.xticks(x, x_labels, rotation=45, ha='right')
-    plt.ylabel("Mean Energy")
-    plt.title(f"{model.upper()} - Energy Comparison (Samples: {sample_count})")
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(os.path.join(plot_dir, f"{model}_energy_comparison.png"))
-    plt.close()
+        x_labels = task_data['sample'].tolist()
+        x = np.arange(len(x_labels))
+        width = 0.35
+        sample_count = len(task_data)
 
-    # --- Time Side-by-Side Bar Plot ---
-    plt.figure(figsize=(12, 6))
-    plt.bar(x - width/2, merged['mean_time'], width, label='Default Prompt')
-    plt.bar(x + width/2, merged['opt_time'], width, label='Optimized Prompt')
-    plt.xticks(x, x_labels, rotation=45, ha='right')
-    plt.ylabel("Mean Time")
-    plt.title(f"{model.upper()} - Time Comparison (Samples: {sample_count})")
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(os.path.join(plot_dir, f"{model}_time_comparison.png"))
-    plt.close()
+        # --- Energy Plot ---
+        plt.figure(figsize=(10, 5))
+        plt.bar(x - width/2, task_data['mean_energy'], width, label='Default Prompt')
+        plt.bar(x + width/2, task_data['opt_energy'], width, label='Optimized Prompt')
+        plt.xticks(x, x_labels, rotation=45, ha='right')
+        plt.ylabel("Mean Energy")
+        plt.title(f"{model.upper()} - Energy Comparison for {task} (Samples: {sample_count})")
+        plt.legend()
+        plt.tight_layout()
+        plt.savefig(os.path.join(plot_dir, f"{model}_{task}_energy_comparison.png"))
+        plt.close()
 
-print(f"All side-by-side plots saved in '{plot_dir}'")
+        # --- Time Plot ---
+        plt.figure(figsize=(10, 5))
+        plt.bar(x - width/2, task_data['mean_time'], width, label='Default Prompt')
+        plt.bar(x + width/2, task_data['opt_time'], width, label='Optimized Prompt')
+        plt.xticks(x, x_labels, rotation=45, ha='right')
+        plt.ylabel("Mean Time")
+        plt.title(f"{model.upper()} - Time Comparison for {task} (Samples: {sample_count})")
+        plt.legend()
+        plt.tight_layout()
+        plt.savefig(os.path.join(plot_dir, f"{model}_{task}_time_comparison.png"))
+        plt.close()
+
+print(f"All task-separated plots saved in: {plot_dir}")
