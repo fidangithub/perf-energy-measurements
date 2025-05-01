@@ -2,11 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 import re
+import numpy as np
 
 # Load the data
 df = pd.read_csv('./perf-energy-measurements/final_energy_results_round.csv')
 
-# Extract base task, model name, and language from 'script' column
+# Extract base task, model, and language from 'script' column
 def extract_info(script):
     match = re.match(r"^(.*?)(_gpt|_llama|_qwen|_gpt_opt|_llama_opt|_qwen_opt)?\.(\w+)$", script)
     if match:
@@ -36,16 +37,17 @@ for model, opt_model in zip(llm_versions, opt_versions):
     merged['sample'] = merged['base_task'] + '-' + merged['lang_ext']
     sample_count = len(merged)
 
-    # Sort by sample for consistent bar order
+    # Sort by sample
     merged = merged.sort_values('sample')
-    x = merged['sample']
-    x_indexes = range(len(x))
+    x_labels = merged['sample'].tolist()
+    x = np.arange(len(x_labels))  # the label locations
+    width = 0.35  # width of the bars
 
-    # --- Energy Bar Plot ---
+    # --- Energy Side-by-Side Bar Plot ---
     plt.figure(figsize=(12, 6))
-    plt.bar(x_indexes, merged['mean_energy'], label='Default Prompt')
-    plt.bar(x_indexes, merged['opt_energy'], label='Optimized Prompt', alpha=0.7)
-    plt.xticks(x_indexes, x, rotation=45, ha='right')
+    plt.bar(x - width/2, merged['mean_energy'], width, label='Default Prompt')
+    plt.bar(x + width/2, merged['opt_energy'], width, label='Optimized Prompt')
+    plt.xticks(x, x_labels, rotation=45, ha='right')
     plt.ylabel("Mean Energy")
     plt.title(f"{model.upper()} - Energy Comparison (Samples: {sample_count})")
     plt.legend()
@@ -53,11 +55,11 @@ for model, opt_model in zip(llm_versions, opt_versions):
     plt.savefig(os.path.join(plot_dir, f"{model}_energy_comparison.png"))
     plt.close()
 
-    # --- Time Bar Plot ---
+    # --- Time Side-by-Side Bar Plot ---
     plt.figure(figsize=(12, 6))
-    plt.bar(x_indexes, merged['mean_time'], label='Default Prompt')
-    plt.bar(x_indexes, merged['opt_time'], label='Optimized Prompt', alpha=0.7)
-    plt.xticks(x_indexes, x, rotation=45, ha='right')
+    plt.bar(x - width/2, merged['mean_time'], width, label='Default Prompt')
+    plt.bar(x + width/2, merged['opt_time'], width, label='Optimized Prompt')
+    plt.xticks(x, x_labels, rotation=45, ha='right')
     plt.ylabel("Mean Time")
     plt.title(f"{model.upper()} - Time Comparison (Samples: {sample_count})")
     plt.legend()
@@ -65,4 +67,4 @@ for model, opt_model in zip(llm_versions, opt_versions):
     plt.savefig(os.path.join(plot_dir, f"{model}_time_comparison.png"))
     plt.close()
 
-print(f"All plots saved in '{plot_dir}'")
+print(f"All side-by-side plots saved in '{plot_dir}'")
