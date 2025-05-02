@@ -7,7 +7,7 @@ import os
 # Load your data
 df = pd.read_csv('./perf-energy-measurements/final_energy_results_round.csv')
 
-# Classify model
+# Classify models
 def classify_model(script):
     if '_gpt_opt' in script:
         return 'gpt_opt'
@@ -27,40 +27,66 @@ def classify_model(script):
 df['model'] = df['script'].apply(classify_model)
 df['lang'] = df['script'].apply(lambda x: x.split('.')[-1])
 
-# Create output directory
+# Output folder
 output_dir = './perf-energy-measurements/spearman_output'
 os.makedirs(output_dir, exist_ok=True)
 
-# Analyze model categories
-model_categories = ['human', 'gpt', 'gpt_opt', 'llama', 'llama_opt', 'qwen', 'qwen_opt']
+# Group definitions: model label and members
+model_groups = {
+    'Human': ['human'],
+    'GPT Default vs Optimized': ['gpt', 'gpt_opt'],
+    'LLaMA Default vs Optimized': ['llama', 'llama_opt'],
+    'Qwen Default vs Optimized': ['qwen', 'qwen_opt'],
+}
+
+# Color mapping
+color_map = {
+    'human': 'gray',
+    'gpt': 'blue',
+    'gpt_opt': 'blue',
+    'llama': 'green',
+    'llama_opt': 'green',
+    'qwen': 'red',
+    'qwen_opt': 'red',
+}
+
 correlation_results = []
 
-# Run Spearman correlation and save plots
-for model in model_categories:
-    model_df = df[df['model'] == model].copy()
-    if len(model_df) < 2:
+# Process each group
+for title, members in model_groups.items():
+    group_df = df[df['model'].isin(members)].copy()
+    if len(group_df) < 2:
         continue
 
-    rho, pval = spearmanr(model_df['mean_time'], model_df['mean_energy'])
+    # Compute Spearman correlation
+    rho, pval = spearmanr(group_df['mean_time'], group_df['mean_energy'])
     correlation_results.append({
-        'Model': model.upper(),
-        'Spearmans rho (ρ)': round(rho, 4),
+        'Model': title,
+        'Spearman’s rho (ρ)': round(rho, 4),
         'p-value': round(pval, 4)
     })
 
-    # Save scatterplot
-    plt.figure(figsize=(7, 5))
-    sns.scatterplot(data=model_df, x='mean_time', y='mean_energy')
-    plt.title(f"{model.upper()} — Spearmans ρ={rho:.3f}, p={pval:.4f}")
+    # Scatterplot
+    plt.figure(figsize=(8, 6))
+    sns.scatterplot(
+        data=group_df,
+        x='mean_time',
+        y='mean_energy',
+        hue='model',
+        palette={m: color_map[m] for m in members}
+    )
+    plt.title(f"{title} — Spearman’s ρ={rho:.3f}, p={pval:.4f}")
     plt.xlabel("Execution Time")
     plt.ylabel("Energy Consumption")
     plt.grid(True)
+    plt.legend(title="Prompt Type")
     plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, f"{model}_scatterplot.png"))
+    safe_name = title.lower().replace(' ', '_').replace('vs', 'vs_')
+    plt.savefig(os.path.join(output_dir, f"{safe_name}_scatterplot.png"))
     plt.close()
 
-# Save all results to a single CSV
+# Save correlation results
 correlation_df = pd.DataFrame(correlation_results)
 correlation_df.to_csv('./perf-energy-measurements/spearman_per_model.csv', index=False)
 
-print(f"✅ All scatterplots and Spearman results saved to: {output_dir}/")
+print(f"✅ All grouped scatterplots and correlation results saved to: {output_dir}/")
