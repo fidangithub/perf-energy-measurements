@@ -1,67 +1,74 @@
 import pandas as pd
+from scipy.stats import spearmanr
 import matplotlib.pyplot as plt
 import seaborn as sns
-from scipy.stats import spearmanr
 import re
 
-df = pd.read_csv('./perf-energy-measurements/final_energy_results_round.csv')
+# --- Load your dataset ---
+df = pd.read_csv('final_energy_results_round.csv')
 
-# --- Extract model and language from script name ---
-def extract_info(script):
-    match = re.match(r"^(.*?)(_gpt|_llama|_qwen)?\.(\w+)$", script)
-    if match:
-        base = match.group(1)
-        model = match.group(2)[1:] if match.group(2) else None
-        lang = match.group(3)
-        return pd.Series([base, model, lang])
-    return pd.Series([script, 'unknown', ''])
+# --- Classify models ---
+def classify_model(script):
+    if '_gpt_opt' in script:
+        return 'gpt_opt'
+    elif '_gpt' in script:
+        return 'gpt'
+    elif '_llama_opt' in script:
+        return 'llama_opt'
+    elif '_llama' in script:
+        return 'llama'
+    elif '_qwen_opt' in script:
+        return 'qwen_opt'
+    elif '_qwen' in script:
+        return 'qwen'
+    else:
+        return 'human'
 
-df[['base_task', 'model', 'lang']] = df['script'].apply(extract_info)
+df['model'] = df['script'].apply(classify_model)
+df['lang'] = df['script'].apply(lambda x: x.split('.')[-1])
 
-# --- Define models to compare ---
-models = ['gpt', 'llama', 'qwen']
-results = []
+# --- Models to analyze ---
+model_categories = ['human', 'gpt', 'gpt_opt', 'llama', 'llama_opt', 'qwen', 'qwen_opt']
+correlation_results = []
 plot_data = []
 
-# --- Calculate Spearman's rho for each model ---
-for model in models:
+# --- Compute Spearman correlation for each model ---
+for model in model_categories:
     model_df = df[df['model'] == model].copy()
-    rho, pval = spearmanr(model_df['mean_time'], model_df['mean_energy'])
+    if len(model_df) >= 2:
+        rho, pval = spearmanr(model_df['mean_time'], model_df['mean_energy'])
+        correlation_results.append({
+            'Model': model.upper(),
+            'Spearmans rho (ρ)': round(rho, 4),
+            'p-value': round(pval, 4)
+        })
+        model_df['Model'] = model.upper()
+        plot_data.append(model_df[['mean_time', 'mean_energy', 'Model']])
 
-    results.append({
-        'Model': model.upper(),
-        'Spearman’s rho (ρ)': round(rho, 4),
-        'p-value': round(pval, 4)
-    })
-
-    model_df['Model'] = model.upper()
-    plot_data.append(model_df[['mean_time', 'mean_energy', 'Model']])
-
-# --- Combined analysis ---
+# --- Combined correlation ---
 all_data = pd.concat(plot_data)
 rho_all, pval_all = spearmanr(all_data['mean_time'], all_data['mean_energy'])
-
-results.append({
+correlation_results.append({
     'Model': 'ALL',
     'Spearmans rho (ρ)': round(rho_all, 4),
     'p-value': round(pval_all, 4)
 })
 
-# --- Create summary table ---
-correlation_df = pd.DataFrame(results)
-correlation_df.to_csv('./perf-energy-measurements/spearman_correlation_results.csv', index=False)
+# --- Create results table ---
+correlation_df = pd.DataFrame(correlation_results)
+correlation_df.to_csv('spearman_correlation_results.csv', index=False)
 print("Saved: spearman_correlation_results.csv")
 
 # --- Scatterplot ---
-plt.figure(figsize=(8, 6))
-sns.scatterplot(data=all_data, x='mean_time', y='mean_energy', hue='Model', palette='deep')
-plt.title("Energy vs Execution Time (All Models)")
+plt.figure(figsize=(10, 6))
+sns.scatterplot(data=all_data, x='mean_time', y='mean_energy', hue='Model', palette='tab10')
+plt.title("Energy vs Execution Time Across All Models")
 plt.xlabel("Execution Time")
 plt.ylabel("Energy Consumption")
-plt.legend(title="Model")
+plt.legend(title="Model", bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.grid(True)
 plt.tight_layout()
-plt.savefig('./perf-energy-measurements/energy_vs_time_scatterplot.png')
+plt.savefig('energy_vs_time_scatterplot.png')
 plt.show()
 
 print("Saved: energy_vs_time_scatterplot.png")
