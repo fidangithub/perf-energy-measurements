@@ -1,77 +1,90 @@
-import os
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+import os
 
-# Load the CSV
-df = pd.read_csv("./perf-energy-measurements/final_energy_results_round.csv")
+df = pd.read_csv('./perf-energy-measurements/rq1_matched_groups_all_values.csv')
 
-# Remove _opt rows
-df = df[~df['script'].str.contains('_opt')].copy()
+# Setup color map
+model_colors = {
+    'gpt': '#ff7f0e',    # orange
+    'llama': '#2ca02c',  # red
+    'qwen': '#d62728',   # green
+    'Human': '#1f77b4'   # blue
+}
 
-# Extract metadata
-df['source'] = df['script'].apply(lambda x: 'human' if '.' not in x else x.split('.')[-1])
-df['language'] = df['script'].apply(lambda x: x.split('_')[-1].split('.')[0] if '.' in x else x.split('_')[-1])
-df['task'] = df['script'].apply(lambda x: '_'.join(x.split('_')[:-1]) if '.' not in x else '_'.join(x.split('_')[:-1]).split('.')[0])
+# Create output folder
+output_dir = './perf-energy-measurements/boxplots_rq1'
+os.makedirs(output_dir, exist_ok=True)
 
-# Melt time and energy
-energy_cols = [f"e{i}" for i in range(1, 31)]
-time_cols = [f"t{i}" for i in range(1, 31)]
+# Get all relevant LLMs
+llms = ['gpt', 'llama', 'qwen']
 
-df_energy = df.melt(id_vars=['script', 'source', 'language', 'task'], value_vars=energy_cols,
-                    var_name='measurement', value_name='value')
-df_energy['metric'] = 'energy'
+# Get 30 measurement columns
+e_cols = [f'e{i}' for i in range(1, 31)]
+t_cols = [f't{i}' for i in range(1, 31)]
 
-df_time = df.melt(id_vars=['script', 'source', 'language', 'task'], value_vars=time_cols,
-                  var_name='measurement', value_name='value')
-df_time['metric'] = 'time'
+# Loop through all rows with human vs LLM
+for _, row in df[df['group'].str.startswith('human_')].iterrows():
+    task = row['script']
+    llm = row['group'].split('_')[1]
 
-# Combine and normalize
-df_long = pd.concat([df_energy, df_time], ignore_index=True)
-df_long = df_long.dropna()
-df_long['norm_value'] = df_long.groupby('metric')['value'].transform(lambda x: x / x.max())
+    # Get the matching LLM row
+    llm_script = f"{task.split('.')[0]}_{llm}.{task.split('.')[-1]}"
+    llm_row = df[(df['group'] == llm) & (df['script'] == llm_script)]
 
-# Create folders
-output_base = "./perf-energy-measurements/llm_comparison_rq1_plots"
-llms = ['gpt', 'llama', 'gemini']
-for llm in llms:
-    os.makedirs(f"{output_base}/{llm}", exist_ok=True)
+    if llm_row.empty:
+        continue
 
-# Plotting
-for llm in llms:
-    tasks = df_long[df_long['source'] == llm]['task'].unique()
-    for task in tasks:
-        for metric in ['energy', 'time']:
-            valid_langs = df_long[
-                (df_long['source'] == llm) &
-                (df_long['task'] == task) &
-                (df_long['metric'] == metric)
-            ]['language'].unique()
+    # Extract energy and time values
+    human_energy = row[e_cols].values
+    llm_energy = llm_row[e_cols].values.flatten()
 
-            # Keep only if human + llm data exist for a language
-            comp = df_long[
-                (df_long['task'] == task) &
-                (df_long['metric'] == metric) &
-                (df_long['language'].isin(valid_langs)) &
-                (df_long['source'].isin(['human', llm]))
-            ]
+    human_time = row[t_cols].values
+    llm_time = llm_row[t_cols].values.flatten()
 
-            # Filter languages where both versions exist
-            paired_langs = comp.groupby(['language', 'source']).size().unstack().dropna().index
-            comp = comp[comp['language'].isin([lang for lang, _ in paired_langs])]
+    lang = task.split('.')[-1]
+    taskname = task.split('.')[0].lower()
+    modelname = llm.upper()
 
-            if comp.empty:
-                continue
+    ### ENERGY BOXPLOT
+    df_energy = pd.DataFrame({
+        'Energy': np.concatenate([human_energy, llm_energy]),
+        'Model': ['Human'] * 30 + [modelname] * 30
+    })
 
-            plt.figure(figsize=(10, 6))
-            sns.boxplot(x='language', y='norm_value', hue='source', data=comp, showmeans=True,
-                        meanprops={"marker": "o", "markerfacecolor": "white", "markeredgecolor": "black"})
-            plt.title(f'{metric.capitalize()} - Task: {task} - Human vs {llm.upper()}')
-            plt.ylabel(f'Normalized {metric.capitalize()}')
-            plt.xlabel('Programming Language')
-            plt.legend(title='Source')
-            plt.tight_layout()
+    plt.figure(figsize=(6, 5))
+    sns.boxplot(data=df_energy, x='Model', y='Energy',
+                palette={'Human': model_colors['Human'], modelname: model_colors[llm]},
+                showmeans=True,
+                meanprops={"marker": "o", "markerfacecolor": "black", "markeredgecolor": "black", "markersize": 6})
+    plt.title(f"{task} – Energy Comparison (Human vs {modelname})")
+    plt.ylabel("Energy Consumption")
+    plt.grid(axis='y')
+    plt.tight_layout()
+    fname = f"{llm}/{taskname}_{lang}_energy.png"
+    os.makedirs(os.path.join(output_dir, llm), exist_ok=True)
+    plt.savefig(os.path.join(output_dir, fname))
+    plt.close()
 
-            save_path = f"{output_base}/{llm}/{task}_{metric}_boxplot.png"
-            plt.savefig(save_path)
-            plt.close()
+    ### TIME BOXPLOT
+    df_time = pd.DataFrame({
+        'Time': np.concatenate([human_time, llm_time]),
+        'Model': ['Human'] * 30 + [modelname] * 30
+    })
+
+    plt.figure(figsize=(6, 5))
+    sns.boxplot(data=df_time, x='Model', y='Time',
+                palette={'Human': model_colors['Human'], modelname: model_colors[llm]},
+                showmeans=True,
+                meanprops={"marker": "o", "markerfacecolor": "black", "markeredgecolor": "black", "markersize": 6})
+    plt.title(f"{task} – Time Comparison (Human vs {modelname})")
+    plt.ylabel("Execution Time")
+    plt.grid(axis='y')
+    plt.tight_layout()
+    fname = f"{llm}/{taskname}_{lang}_time.png"
+    plt.savefig(os.path.join(output_dir, fname))
+    plt.close()
+
+print("✅ All box plots generated and saved in:", output_dir)
