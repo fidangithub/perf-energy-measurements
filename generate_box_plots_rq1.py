@@ -3,17 +3,17 @@ import matplotlib.pyplot as plt
 import os
 import re
 
-# Load the detailed measurement data
+# Load full 30-run results
 df = pd.read_csv('./perf-energy-measurements/final_energy_results_round.csv')
 
-# Exclude optimized outputs (_opt)
+# Exclude optimized versions (i.e., _opt suffixes)
 df = df[~df['script'].str.contains('_opt')]
 
-# Extract task and language from script name
+# Extract task and language
 df['task'] = df['script'].apply(lambda x: x.split('.')[0])
 df['language'] = df['script'].apply(lambda x: x.split('.')[-1])
 
-# Extract base task and model
+# Extract base task and model (human, gpt, llama, qwen)
 def parse_task_info(task):
     match = re.match(r"^(.*?)(_gpt|_llama|_qwen)?$", task)
     if match:
@@ -24,38 +24,56 @@ def parse_task_info(task):
 
 df[['base_task', 'model']] = df['task'].apply(parse_task_info)
 
-# Output folder
-output_dir = './perf-energy-measurements/box_plots_by_model'
+# Filter to valid models only
+df = df[df['model'].isin(['human', 'gpt', 'llama', 'qwen'])]
+
+# Create output directory
+output_dir = './perf-energy-measurements/plots_box_rq1'
 os.makedirs(output_dir, exist_ok=True)
 
-# Define metrics and LLMs
-metrics = ['energy', 'time']
+# Plot settings
 llms = ['gpt', 'llama', 'qwen']
+metrics = ['energy', 'time']
 base_tasks = df['base_task'].unique()
 
-# Plot boxplots comparing human vs LLM for each task and metric
+# Generate box plots
 for model in llms:
     for metric in metrics:
         for task in base_tasks:
-            task_df = df[df['base_task'] == task]
+            subset = df[
+                (df['base_task'] == task) &
+                (df['model'].isin(['human', model]))
+            ]
 
-            for lang in task_df['language'].unique():
-                subset = task_df[(task_df['language'] == lang) & (task_df['model'].isin(['human', model]))]
+            if subset.empty:
+                continue
 
-                if subset['model'].nunique() < 2:
-                    continue  # Skip if one of the models is missing
+            for lang in subset['language'].unique():
+                lang_data = subset[subset['language'] == lang]
 
-                # Create boxplot
-                plt.figure(figsize=(8, 6))
-                subset.boxplot(column=metric, by='model', grid=False, showmeans=True,
-                               meanprops={"marker": "o", "markerfacecolor": "red", "markeredgecolor": "black"})
+                if lang_data['model'].nunique() < 2:
+                    continue
 
-                plt.title(f"{metric.capitalize()} - {task} ({lang})\nHuman vs {model.upper()}")
-                plt.suptitle("")  # Remove default suptitle
-                plt.xlabel("Source")
-                plt.ylabel(f"{metric.capitalize()} (rounded)")
+                ax = lang_data.boxplot(
+                    column=metric,
+                    by='model',
+                    showmeans=True,
+                    grid=False,
+                    figsize=(8, 5),
+                    meanline=True,
+                    notch=True,
+                    patch_artist=True
+                )
+
+                title_metric = "Energy Consumption" if metric == 'energy' else "Execution Time"
+                ax.set_title(f"{title_metric} - {lang.upper()} ({task})")
+                ax.set_ylabel("Joules" if metric == 'energy' else "Seconds")
+                ax.set_xlabel("Source")
+                plt.suptitle("")  # Remove default Pandas title
                 plt.tight_layout()
 
-                file_name = f"{task}_{model}_vs_human_{metric}_{lang}.png"
-                plt.savefig(os.path.join(output_dir, file_name))
+                filename = f"{task}_{model}_vs_human_{metric}_{lang}.png"
+                plt.savefig(os.path.join(output_dir, filename))
                 plt.close()
+
+print(f"✅ Box plots saved to '{output_dir}' — Total: {len(os.listdir(output_dir))} plots.")
