@@ -1,59 +1,90 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+import os
 
-def load_and_prepare_full_data(filepath):
-    # Load CSV
-    data = pd.read_csv(filepath)
+df = pd.read_csv('./perf-energy-measurements/rq1_matched_groups_all_values.csv')
 
-    # Filter out optimized versions
-    data = data[~data['script'].str.contains('_opt')]
+# Setup color map
+model_colors = {
+    'gpt': '#ff7f0e',    # orange
+    'llama': '#2ca02c',  # red
+    'qwen': '#d62728',   # green
+    'Human': '#1f77b4'   # blue
+}
 
-    # Extract base name for matching
-    def get_base_name(script):
-        for tag in ['_gpt', '_llama', '_qwen']:
-            script = script.replace(tag, '')
-        return script
+# Create output folder
+output_dir = './perf-energy-measurements/boxplots_rq1'
+os.makedirs(output_dir, exist_ok=True)
 
-    data['base_name'] = data['script'].apply(get_base_name)
+# Get all relevant LLMs
+llms = ['gpt', 'llama', 'qwen']
 
-    # Split datasets
-    human_data = data[~data['script'].str.contains('_gpt|_llama|_qwen')]
-    gpt_data = data[data['script'].str.contains('_gpt')]
-    llama_data = data[data['script'].str.contains('_llama')]
-    qwen_data = data[data['script'].str.contains('_qwen')]
+# Get 30 measurement columns
+e_cols = [f'e{i}' for i in range(1, 31)]
+t_cols = [f't{i}' for i in range(1, 31)]
 
-    # Match based on base_name
-    def match_groups(human_df, llm_df):
-        common_bases = set(human_df['base_name']).intersection(set(llm_df['base_name']))
-        human_matched = human_df[human_df['base_name'].isin(common_bases)].copy()
-        llm_matched = llm_df[llm_df['base_name'].isin(common_bases)].copy()
-        return human_matched, llm_matched
+# Loop through all rows with human vs LLM
+for _, row in df[df['group'].str.startswith('human_')].iterrows():
+    task = row['script']
+    llm = row['group'].split('_')[1]
 
-    human_gpt, gpt_matched = match_groups(human_data, gpt_data)
-    human_llama, llama_matched = match_groups(human_data, llama_data)
-    human_qwen, qwen_matched = match_groups(human_data, qwen_data)
+    # Get the matching LLM row
+    llm_script = f"{task.split('.')[0]}_{llm}.{task.split('.')[-1]}"
+    llm_row = df[(df['group'] == llm) & (df['script'] == llm_script)]
 
-    # Add group labels
-    human_gpt['group'] = 'human_gpt'
-    gpt_matched['group'] = 'gpt'
-    human_llama['group'] = 'human_llama'
-    llama_matched['group'] = 'llama'
-    human_qwen['group'] = 'human_qwen'
-    qwen_matched['group'] = 'qwen'
+    if llm_row.empty:
+        continue
 
-    # Drop mean values and base_name
-    cols_to_drop = ['mean_energy', 'mean_time', 'base_name']
-    final_combined = pd.concat([
-        human_gpt.drop(columns=cols_to_drop),
-        gpt_matched.drop(columns=cols_to_drop),
-        human_llama.drop(columns=cols_to_drop),
-        llama_matched.drop(columns=cols_to_drop),
-        human_qwen.drop(columns=cols_to_drop),
-        qwen_matched.drop(columns=cols_to_drop),
-    ], ignore_index=True)
+    # Extract energy and time values
+    human_energy = row[e_cols].values
+    llm_energy = llm_row[e_cols].values.flatten()
 
-    return final_combined
+    human_time = row[t_cols].values
+    llm_time = llm_row[t_cols].values.flatten()
 
-if __name__ == "__main__":
-    filepath = "./perf-energy-measurements/final_energy_results_wide.csv"  # Update this if the path differs
-    full_grouped_data = load_and_prepare_full_data(filepath)
-    full_grouped_data.to_csv("rq1_matched_groups_all_values.csv", index=False)
+    lang = task.split('.')[-1]
+    taskname = task.split('.')[0].lower()
+    modelname = llm.upper()
+
+    ### ENERGY BOXPLOT
+    df_energy = pd.DataFrame({
+        'Energy': np.concatenate([human_energy, llm_energy]),
+        'Model': ['Human'] * 30 + [modelname] * 30
+    })
+
+    plt.figure(figsize=(6, 5))
+    sns.boxplot(data=df_energy, x='Model', y='Energy',
+                palette={'Human': model_colors['Human'], modelname: model_colors[llm]},
+                showmeans=True,
+                meanprops={"marker": "o", "markerfacecolor": "black", "markeredgecolor": "black", "markersize": 6})
+    plt.title(f"{task} – Energy Comparison (Human vs {modelname})")
+    plt.ylabel("Energy Consumption")
+    plt.grid(axis='y')
+    plt.tight_layout()
+    fname = f"{llm}/{taskname}_{lang}_energy.png"
+    os.makedirs(os.path.join(output_dir, llm), exist_ok=True)
+    plt.savefig(os.path.join(output_dir, fname))
+    plt.close()
+
+    ### TIME BOXPLOT
+    df_time = pd.DataFrame({
+        'Time': np.concatenate([human_time, llm_time]),
+        'Model': ['Human'] * 30 + [modelname] * 30
+    })
+
+    plt.figure(figsize=(6, 5))
+    sns.boxplot(data=df_time, x='Model', y='Time',
+                palette={'Human': model_colors['Human'], modelname: model_colors[llm]},
+                showmeans=True,
+                meanprops={"marker": "o", "markerfacecolor": "black", "markeredgecolor": "black", "markersize": 6})
+    plt.title(f"{task} – Time Comparison (Human vs {modelname})")
+    plt.ylabel("Execution Time")
+    plt.grid(axis='y')
+    plt.tight_layout()
+    fname = f"{llm}/{taskname}_{lang}_time.png"
+    plt.savefig(os.path.join(output_dir, fname))
+    plt.close()
+
+print("✅ All box plots generated and saved in:", output_dir)
