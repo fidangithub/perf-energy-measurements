@@ -65,8 +65,6 @@ for title, models in group_definitions.items():
                     color=color_map[model],
                     marker=marker_map.get(lang, 'o'),
                     s=80, edgecolor='black')
-        plt.text(row['mean_time'] + 0.003, row['mean_energy'],
-                 row['task'], fontsize=8)
 
     # Custom legends
     shape_legend = [
